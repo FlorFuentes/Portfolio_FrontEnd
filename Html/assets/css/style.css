@@ -1,0 +1,53 @@
+/* logo arg.programa */
+.bg-black {
+  background-color: black;
+}
+
+/* si quiero cambiar el color de la letra con esto,pero tengo que tener en cuenta que se nota el fondo de la imagen del logo */
+
+/* .letra-negra{
+    filter: invert(1);
+    -webkit-filter: invert(1); 
+    -moz-filter: invert(1)
+}  */
+
+/* redes con fondo transparente */
+.list-group.list-group-horizontal {
+  --bs-list-group-bg: transparent;
+}
+/* COLOR ICONOS CUANDO PASO EL MOUSE */
+.fa-brands.fa-github:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  transition: all 0.5s ease;
+}
+.fa-brands.fa-telegram:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  /*  color: #0088CC !important; */
+  transition: all 0.5s ease;
+}
+.fa-brands.fa-linkedin:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  /* color: #0e76a8!important ; */
+  transition: all 0.5s ease;
+}
+.fa-solid.fa-user-lock:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  transition: all 0.5s ease;
+}
+
+section {
+  background-image: url("../img/fondo.jpg");
+  min-height: 75vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  --webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+  background-repeat: no-repeat;
+}
