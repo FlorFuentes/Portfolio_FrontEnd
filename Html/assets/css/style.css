@@ -74,13 +74,20 @@ h2.intro{
 .div-profile {
   position: relative;
   min-height: 300px;
+  
 }
 /* Acerca de mi */
 .div-profile p{
 margin:5% 10% auto 35%;
- font: small-caps 100%/200% serif;
+font: small-caps 100%/200% serif;
+/* hacer q la imagen rodee el texto */
 
 
+
+/* float: left;
+  shape-outside: circle();
+  shape-outside: margin-box;
+ */
 }
 
 .fotoperfil {
@@ -96,13 +103,19 @@ margin:5% 10% auto 35%;
   top: -50px;
 }
 /* Experiencia */
-.div-experience p h2{
+/* margin:3%;
+.div-experience {  
+  height:10%;  
+}*/
+
+/* Carrusel */
+.carousel.slide{
   
- margin:3%;
-  height:10%;
+max-width:75%;
+
 }
-
-
+/* 
+*/
 
 footer {
   padding: 10px;
