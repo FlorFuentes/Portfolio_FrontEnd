@@ -70,12 +70,19 @@ h2.intro{
   
 }
 
-
-/* Foto mia */
+ /* Foto mia */
 .div-profile {
   position: relative;
   min-height: 300px;
 }
+/* Acerca de mi */
+.div-profile p{
+margin:5% 10% auto 35%;
+ font: small-caps 100%/200% serif;
+
+
+}
+
 .fotoperfil {
   margin: 0px 30px 30px 60px;
   height: 200px;
@@ -87,4 +94,19 @@ h2.intro{
 
   position: absolute;
   top: -50px;
+}
+/* Experiencia */
+.div-experience p h2{
+  
+ margin:3%;
+  height:10%;
+}
+
+
+
+footer {
+  padding: 10px;
+  background-color: rgb(14, 19, 19);
+  color: rgb(245, 245, 245);
+  text-align: center;
 }
