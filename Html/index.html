@@ -19,7 +19,10 @@
 </head>
   <body>           
 
-    <nav class="navbar navbar-expand-lg bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-celeste scrolling-navbar fixed-top"
+    >
+      <!-- SAQUE  bg-black A LA CLASE -->
+      <!-- ACA CAMBIE -->
       <div class="container-fluid">
         <a
           class="navbar-brand"
@@ -27,63 +30,93 @@
           target="_blank"
         >
           <img
-            src="./Assets/img/ArgPrograma.png"
+            src="./assets/img/argentina.png"
             alt="Logo"
-            class="w-50 letra-negra"
-          />
-          <!-- aca esta por si quiero cambiar la letra,sino saco esta letra-negra -->
+            class="w-85"
+          /><!-- letra-blanca aca esta por si quiero cambiar la letra del logo,sino pongo esta letra-blanca -->
         </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <ul class="list-group list-group-horizontal">
-          <li class="list-group-item">
-            <a href="https://github.com/FlorFuentes" target="_blank"
-              ><i class="fa-brands fa-github text-white"></i
-            ></a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://t.me/Flor_Fuentes_12" target="_blank"
-              ><i class="fa-brands fa-telegram text-white"></i
-            ></a>
-          </li>
-          <li class="list-group-item">
-            <a href="https://linkedin.com" target="_blank"
-              ><i class="fa-brands fa-linkedin text-white"></i
-            ></a>
-          </li>
-          <!-- HACERME EL LINKEDIN -->
-          <li class="list-group-item">
-            <!-- Button trigger modal -->
-            <!-- boton que abre el login -->
-            <i
-              class="fa-solid fa-user-lock text-white"
-              data-bs-toggle="modal"
-              data-bs-target="#loginModal"
-            ></i>
-          </li>
-        </ul>
+        <!-- menu colapsable -->
+        <div class="collapse navbar-collapse" id="menu">
+          <!-- AGREGUE ESTO -->
+          <ul
+            class="navbar-nav ms-auto align-items-center justify-content-center">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Acerca de mi</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Experiencia</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Educacion</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Proyectos</a>
+            </li>
+
+
+
+            <!-- HACERME EL LINKEDIN -->
+            <li class="nav-link">
+              <!-- ESTO CAMBIE -->
+              <!-- Button trigger modal -->
+              <!-- boton que abre el login -->
+              <i
+                class="fa-solid fa-user-lock text-white"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+              ></i>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- Seccion del banner -->
     <section class="banner">
-      <h1 class=" text-center intro">¡Hola,soy Florencia Fuentes!</h1><br>
-      <h2 class=" text-center intro"> Desarrollador Full Stack Jr</h2><!-- Si quiero la letra blanco pongo en la clase text-white -->
+      <h1 class="text-center intro">Florencia Fuentes</h1>
+      <br />
+      <h2 class="text-center intro">Desarrollador Full Stack Jr</h2>
+      <!-- Si quiero la letra blanco pongo en la clase text-white -->
     </section>
-    
+
     <!-- presentacion-->
     <section class="presentacion">
       <div class="container div-profile">
-        <img src="./assets/img/FB_IMG_1428285724958.jpg" alt="fotoPerfil" class="fotoperfil rounded-circle img-fluid perfil ">    
+        <img
+          src="./assets/img/FB_IMG_1428285724958.jpg"
+          alt="fotoPerfil"
+          class="fotoperfil rounded-circle img-fluid perfil"
+        />
 
-       <!-- acerca de mi me queda abajo -->
+        <!-- acerca de mi me queda abajo -->
         <div class="container text-center">
           <div class="row d-flex justify-content-center">
             <div class="col-12 text-center">
-              <p> Una de mis grandes pasiones es el desarrollo de paginas web.
-                Siempre me gusto este hermoso mundo de la programación.
-                 Empece leyendo pdf,paginas, viendo videos y haciendo a la par para poder entender y practicar,de esto hace ya 2 años.
-                
-                Otra de mis pasiones es el Taekwondo. Hace 12 años que practico este arte marcial tan maravilloso. Di clases para la escuela que pertenezco y hoy en dia estoy preparandome para rendir el examen para IIIdan.
-                 </p>
+              <p id="Acerca de mi">
+                Una de mis grandes pasiones es el desarrollo de paginas web.
+                Siempre me gusto este hermoso mundo de la programación. Empece
+                leyendo pdf,paginas, viendo videos y haciendo a la par para
+                poder entender y practicar,de esto hace ya 2 años. Otra de mis
+                pasiones es el Taekwondo. Hace 12 años que practico este arte
+                marcial tan maravilloso. Di clases para la escuela que
+                pertenezco y hoy en dia estoy preparandome para rendir el examen
+                para IIIdan.
+              </p>
             </div>
           </div>
         </div>
@@ -91,56 +124,207 @@
     </section>
 
     <!-- Experiencia -->
-    <section class="experiencia text-center">
-      
-       <div class="container div-experience  d-flex justify-content-center ">
-          <div class="row">
-            <div class="col-12">
-              <h2 > <strong> Experiencia laboral </strong></h2><br>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quisquam illo quo pariatur hic, omnis aspernatur neque libero maxime natus, animi rerum! A, nobis consequuntur voluptatum itaque tempore harum hic.</p>
-            </div>
-        
-        </div>
-      </div>   
-    </section>
-
-<!-- Educacion -->
-    <section class="educacion text-center">
-      <h2>Educación</h2>
-      <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./assets/img/cursos/Ciberseguridad.png" class="d-block w-100" alt="CertiCiberseguridad">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/cursos/Digitaliza.png" class="d-block w-100" alt="CertiDigitaliza">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/cursos/MuniPlataforma5.png" class="d-block w-100" alt="CertiMuni">
-          </div>
-          <div class="carousel-item">
-            <img src="./assets/img/cursos/Plataforma5.png" class="d-block w-100" alt="CertiPlataforma5">
-          </div>
-           <div class="carousel-item">
-            <img src="./assets/img/cursos/SeProgramar.png" class="d-block w-100" alt="CertiSeProgramar">
+    <section class="experiencia text-center" >
+      <div class="container div-experience d-flex justify-content-center">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="experiencia-title">
+              <!-- agregue clase --><strong> Experiencia laboral </strong>
+            </h2>
+            <br />
+            <p class="experiencia-descripcion">
+              <!-- Agregue clase -->
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, quisquam illo quo pariatur hic, omnis aspernatur
+              neque libero maxime natus, animi rerum! A, nobis consequuntur
+              voluptatum itaque tempore harum hic.
+            </p>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-  
     </section>
 
+    <!-- Educacion carrusel -->
+    <!-- <section class="educacion text-center">
+      <h2>Educación</h2><br>
+      <div class="carrusel-continer container-fluid row d-flex justify-content-center"> -->
+    <!--  ESTA PARTE MODIFICAR EN EL ORIGINAL-->
 
-    
+    <!-- <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/cursos/CiberSeguridad.jpg" class="d-block w-100" alt="CertiCiberseguridad">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/cursos/Digitaliza.png" class="d-block w-100" alt="CertiDigitaliza">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/cursos/MuniPlataforma5.jpg" class="d-block w-100" alt="CertiMuni">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/cursos/Plataforma5.jpg" class="d-block w-100" alt="CertiPlataforma5">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/cursos/SeProgramar.png" class="d-block w-100" alt="CertiSeProgramar">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
 
+   -->
 
+    <!-- CARD -->
+    <section class="edu-sec d-flex flex-column justify-content-center">
+      <h2 class="text-center">Educacion</h2>
+      <br />
+      <div
+        class="card-container container-fluid row d-flex justify-content-around align-items-center"
+      >
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/SeProgramar.png"
+              class="card-image"
+              alt="certificadoSeProgramar"
+            /><!--  CAMBIE ESTO  -->
+            <div class="card-body text-center">
+              <p class="card-text">Se Programar</p>
+            </div>
+            <a
+              href="https://seprogramarsso.inti.gob.ar/auth/realms/master/protocol/saml/clients/mumuki?SAMLRequest=fZFNb8IwDIb%2FSm85tQkhGiOiSGhckNgFth12mdxiICIfXZxM%2B%2FlrYUhMm3a0%2Ffrxa3tG4GynFzkd%2FQbfM1IqFkQYkwn%2BIXjKDuMW44dp8XmzrtkxpY4054RdDIcIDmJlfDLVITQVRA49iQ9Q3oK1DbQnVix7qvEwIP8EEIXfjIhgHXEHlDDyXptCG%2Bw32hr0qS9ml0%2BGFatlzd4awLHYqaaUU7gvFYh92aidKlG1uJ8obKbTSS8lyrjylMCnmkkhZTmSpbh7EmMtpB6pV1a8YKSzV1kJVnw660kPc2uWo9cByJD24JB0avV28bjWvVDD9Wy3Ld3%2FPde12Hw2qPXZXZxf9prx29wl%2Bvmq%2BRc%3D&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=OUWkbXFXKkBXZsyek84eOzp2jW0dsQOZ35Ucj4Ai4Cs5B6FBxQtze6ctiJy8P8kIa%2B2%2FRpMVpEKjVRLF60ljNJQBP4MNG99HqkFxwXM5OA9twFGVWXlurDv3oPwjl3DmeI20n8lOa4ggCyZ3u17exQy1OtJE6%2F%2FOgYV%2FDZgzsEVXVTgnNuifipPSOSQVJGb3uw6LAydCa5Plv1jsCt36a4UQ%2BfdLbJZ6Su9Bqt%2BLUO9UlyZILFayCnebQqRRlK8%2BpAExJ2PVs0voMyKUO2PKDN7pgAQUhkVvWBW6D4oFTX0En5t0FZC20qfcm1yWcoit2jRqMz77K3S%2BrBvlVKxzUw%3D%3D"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            ><!-- AGREGUE ESTO -->
+          </div>
+        </div>
+        <!-- otro diploma -->
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/Plataforma5.jpg"
+              class="card-image"
+              alt="certificadoPlataforma5"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Plataforma5</p>
+            </div>
+            <a
+              href="https://www.plataforma5.la/?gclid=Cj0KCQiAyracBhDoARIsACGFcS4xh5JEHIF0-t9HFsIN2oFYbvv04f7Wovg3cAJs0dj4gBFeQHtd-44aAnNZEALw_wcB"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </div>
+        <!-- otro diploma -->
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/MuniPlataforma5.jpg"
+              class="card-image"
+              alt="certificadoMunibariloche"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Municipalidad de San Carlos de Bariloche</p>
+            </div>
+            <a
+              href="http://sistemasenlaweb.com.ar/portalweb/cursos"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </div>
+        <!-- otro diploma -->
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/Grasshopper.jpg"
+              class="card-image"
+              alt="certificadoGrasshopper"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Grasshopper</p>
+            </div>
+            <a
+              href="https://learn.grasshopper.app/"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </div>
+        <!-- otro diploma -->
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/Digitaliza.jpg"
+              class="card-image"
+              alt="certificadoGoogleActivate"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Google Activate</p>
+            </div>
+            <a
+              href="https://formacionactivate.withgoogle.com/ia"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </div>
+
+        <!-- otro diploma -->
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/CiberSeguridad.jpg"
+              class="card-image"
+              alt="certificadoGoogleActivate"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Google Activate</p>
+            </div>
+            <a
+              href="https://formacionactivate.withgoogle.com/ia"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </div>
+
+        <!-- otro diploma -->
+        <div class="card-1 col-12 col-sm-6 col-md-4">
+          <div class="card">
+            <img
+              src="./assets/img/cursos/Accenture.jpg"
+              class="card-image"
+              alt="certificadoAccenture"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Accenture</p>
+            </div>
+            <a
+              href="https://www.accenture.com/ar-es"
+              class="card-link btn btn-primary"
+              target="_blank"
+              >Ver</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- El login -->
     <div
@@ -203,17 +387,39 @@
       </div>
     </div>
 
+    <footer class="footer">
+      <div>
+        <p>¡Para contactarte conmigo podes seguirme en las redes!</p>
+      </div>
+      <div
+            class="redes d-flex flex-row justify-content-center align-items-center">
+            <a
+              class="nav-link"
+              href="https://github.com/FlorFuentes"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github text-white"></i
+            ></a>
 
-    <footer>
+            <a class="nav-link" href="https://t.me/Flor_Fuentes_12" target="_blank"
+              ><i class="fa-brands fa-telegram text-white"></i
+            ></a>
+
+            <a class="nav-link" href="https://linkedin.com" target="_blank"
+              ><i class="fa-brands fa-linkedin text-white"></i
+            ></a>
+      </div>
+
       <p class="disclaimer">
         Copyright © Todos los derechos reservados 05/2023
       </p>
     </footer>
 
-
-
-
-
+    <!--  <footer>
+      <p class="disclaimer">
+        Copyright © Todos los derechos reservados 05/2023
+      </p>
+    </footer> -->
 
 
 

@@ -1,34 +1,157 @@
-/* Si quiero el fondo de color */
-/* body { */
-  /* background-color: #dfdfdf; */
-  /* background-color: #333;
+
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+
+  background-image:var(--background-img);
+  background-repeat:no-repeat;
+  background-position: center center;
+  background-size:cover;
+  background-attachment:fixed;
 }
+/* color navbar */
+.bg-celeste {
+  background: rgba(30, 143, 255, 0.411); 
+}
+/* menu hamburguesa */
+/* .navbar-toggler{
+  background:rgba(255, 255, 255, 0.39) ;
+} */
+
+
+
+/* si quiero cambiar el color de la letra del logo arg. con esto,pero tengo que tener en cuenta que se nota el fondo de la imagen del logo */
+
+/* .letra-blanca {
+ 
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  -moz-filter: invert(1);
+} */
+
+
+
+
+/* Banner */
+.banner {
+  
+  background-image: url("../img/FondoBari.jpg"); /* cambie foto */
+  /*   opacity: 0.9;
  */
-
-
-/* logo arg.programa */
-.bg-black {
-  background-color: black;
+  /* background-image: url("../img/fondo.jpg"); */
+  min-height: 75vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  --webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Nombre mio en el banner*/
+h1.intro {
+  color: white; /* cambie */
+  padding-top: 10%;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-weight: bold; */
+}
+h2.intro {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-/* si quiero cambiar el color de la letra con esto,pero tengo que tener en cuenta que se nota el fondo de la imagen del logo */
-
-/* .letra-negra{
-    filter: invert(1);
-    -webkit-filter: invert(1); 
-    -moz-filter: invert(1)
-}  */
-
-/* redes con fondo transparente */
-.list-group.list-group-horizontal {
-  --bs-list-group-bg: transparent;
+/* Foto mia */
+.div-profile {
+  position: relative;
+  min-height: 300px;
 }
-/* COLOR ICONOS CUANDO PASO EL MOUSE */
+/* Acerca de mi */
+.div-profile p {
+  margin: 5% 10% auto 35%;
+  font: small-caps 100%/200% serif;
+  /* hacer q la imagen rodee el texto */
+
+  /* float: left;
+  shape-outside: circle();
+  shape-outside: margin-box;
+ */
+}
+
+.fotoperfil {
+  margin: 0px 30px 30px 60px;
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
+  background-color: white;
+  /* background-color: rgb(14, 13, 13); */
+
+  position: absolute;
+  top: -50px;
+}
+/*Experiencia */
+/* margin:3%;
+.div-experience {  
+  height:10%;  
+}*/
+
+
+
+/* card  */
+
+.edu-sec {
+  padding: 40px 20px;
+}
+.card-container {
+  padding: 10px;
+}
+.card-1 {
+  min-width: 320px;
+  max-width: 380px;
+  height: 390px;
+  padding: 0;
+}
+.card {
+  margin: 40px 10px;
+  transition: all 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card-image {
+  width: 100%;
+  height: 270px;
+}
+
+.card-body {
+  background-color: #efefef;
+}
+
+
+/* footer */
+footer {
+  /* -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); */
+  
+  filter: brightness(80%);
+  background-image:url("../img/footer.jpg");
+  min-height: 45vh;
+  width: 100%;
+  
+  text-align: center; 
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*MOVIMIENTO ICONOS CUANDO PASO EL MOUSE */
 .fa-brands.fa-github:hover {
-  --bs-text-opacity: 1;
+  --bs-text-opacity: 100%;
   transform: scale(1.3, 1.3);
   transition: all 0.5s ease;
-}
+} 
 .fa-brands.fa-telegram:hover {
   --bs-text-opacity: 1;
   transform: scale(1.3, 1.3);
@@ -46,80 +169,28 @@
   transform: scale(1.3, 1.3);
   transition: all 0.5s ease;
 }
-/* Banner */
-.banner {
-  background-image: url("../img/fondo.jpg");
-  min-height: 75vh;
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  --webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -msn-background-size: cover;
-  background-repeat: no-repeat; 
-}
-/* Nombre mio en el banner*/
-h1.intro{
-  padding-top:10%;
- font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- /* font-weight: bold; */
-}
-h2.intro{
-  font-family:Georgia, 'Times New Roman', Times, serif;
+
+/* Iconos */
+a.nav-link{
+ 
+  padding: 10px 100px;
   
 }
-
- /* Foto mia */
-.div-profile {
-  position: relative;
-  min-height: 300px;
+i.fa-brands{
   
+  font-size: 20px;
 }
-/* Acerca de mi */
-.div-profile p{
-margin:5% 10% auto 35%;
-font: small-caps 100%/200% serif;
-/* hacer q la imagen rodee el texto */
-
-
-
-/* float: left;
-  shape-outside: circle();
-  shape-outside: margin-box;
- */
-}
-
-.fotoperfil {
-  margin: 0px 30px 30px 60px;
-  height: 200px;
-  width: 200px;
-  padding: 5px;
-  /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
-   background-color: white; 
-   /* background-color: rgb(14, 13, 13); */ 
-
-  position: absolute;
-  top: -50px;
-}
-/* Experiencia */
-/* margin:3%;
-.div-experience {  
-  height:10%;  
-}*/
-
-/* Carrusel */
-.carousel.slide{
+/* texto */
+footer div p{
   
-max-width:75%;
 
+padding:20px;
+font-size: 2rem;
+color:white;
 }
-/* 
-*/
-
-footer {
-  padding: 10px;
-  background-color: rgb(14, 19, 19);
-  color: rgb(245, 245, 245);
-  text-align: center;
+/* Derechos */
+.disclaimer{
+  
+  padding: 20px;
+  color:white;
 }
