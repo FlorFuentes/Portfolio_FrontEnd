@@ -12,17 +12,17 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Tapestry&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-  <body>           
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-celeste scrolling-navbar fixed-top"
-    >
-      <!-- SAQUE  bg-black A LA CLASE -->
-      <!-- ACA CAMBIE -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-celeste scrolling-navbar fixed-top" >
+     
       <div class="container-fluid">
         <a
           class="navbar-brand"
@@ -49,20 +49,20 @@
 
         <!-- menu colapsable -->
         <div class="collapse navbar-collapse" id="menu">
-          <!-- AGREGUE ESTO -->
+          
           <ul
             class="navbar-nav ms-auto align-items-center justify-content-center">
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Acerca de mi</a>
+              <a class="nav-link active" aria-current="page" href="#Acercademi">Acerca de mi</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Experiencia</a>
+              <a class="nav-link active" aria-current="page" href="#experiencia">Experiencia</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Educacion</a>
+              <a class="nav-link active" aria-current="page" href="#educacion">Educacion</a>
             </li>
 
             <li class="nav-item">
@@ -71,30 +71,24 @@
 
 
 
-            <!-- HACERME EL LINKEDIN -->
+ <!-- HACERME EL LINKEDIN -->
             <li class="nav-link">
-              <!-- ESTO CAMBIE -->
-              <!-- Button trigger modal -->
-              <!-- boton que abre el login -->
-              <i
-                class="fa-solid fa-user-lock text-white"
-                data-bs-toggle="modal"
-                data-bs-target="#loginModal"
-              ></i>
+ <!-- boton que envia a el login -->
+              <a href="./login.html"> <i class="fa-solid fa-user-lock text-white"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- Seccion del banner -->
+<!-- Seccion del banner -->
     <section class="banner">
       <h1 class="text-center intro">Florencia Fuentes</h1>
       <br />
       <h2 class="text-center intro">Desarrollador Full Stack Jr</h2>
-      <!-- Si quiero la letra blanco pongo en la clase text-white -->
+<!-- Si quiero la letra blanco pongo en la clase text-white -->
     </section>
 
-    <!-- presentacion-->
+<!-- presentacion-->
     <section class="presentacion">
       <div class="container div-profile">
         <img
@@ -103,11 +97,11 @@
           class="fotoperfil rounded-circle img-fluid perfil"
         />
 
-        <!-- acerca de mi me queda abajo -->
+<!-- acerca de mi me queda abajo -->
         <div class="container text-center">
           <div class="row d-flex justify-content-center">
             <div class="col-12 text-center">
-              <p id="Acerca de mi">
+              <p id="Acercademi">
                 Una de mis grandes pasiones es el desarrollo de paginas web.
                 Siempre me gusto este hermoso mundo de la programación. Empece
                 leyendo pdf,paginas, viendo videos y haciendo a la par para
@@ -123,17 +117,14 @@
       </div>
     </section>
 
-    <!-- Experiencia -->
+<!-- Experiencia -->
     <section class="experiencia text-center" >
       <div class="container div-experience d-flex justify-content-center">
         <div class="row">
           <div class="col-12">
-            <h2 class="experiencia-title">
-              <!-- agregue clase --><strong> Experiencia laboral </strong>
-            </h2>
+            <h2 class="experiencia-title" id="experiencia"><strong> Experiencia laboral </strong></h2>
             <br />
             <p class="experiencia-descripcion">
-              <!-- Agregue clase -->
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perferendis, quisquam illo quo pariatur hic, omnis aspernatur
               neque libero maxime natus, animi rerum! A, nobis consequuntur
@@ -184,7 +175,7 @@
 
     <!-- CARD -->
     <section class="edu-sec d-flex flex-column justify-content-center">
-      <h2 class="text-center">Educacion</h2>
+      <h2 class="text-center" id="educacion">Educacion</h2>
       <br />
       <div
         class="card-container container-fluid row d-flex justify-content-around align-items-center"
@@ -195,7 +186,7 @@
               src="./assets/img/cursos/SeProgramar.png"
               class="card-image"
               alt="certificadoSeProgramar"
-            /><!--  CAMBIE ESTO  -->
+            />
             <div class="card-body text-center">
               <p class="card-text">Se Programar</p>
             </div>
@@ -204,10 +195,10 @@
               class="card-link btn btn-primary"
               target="_blank"
               >Ver</a
-            ><!-- AGREGUE ESTO -->
+            >
           </div>
         </div>
-        <!-- otro diploma -->
+<!-- otro diploma -->
         <div class="card-1 col-12 col-sm-6 col-md-4">
           <div class="card">
             <img
@@ -226,7 +217,7 @@
             >
           </div>
         </div>
-        <!-- otro diploma -->
+<!-- otro diploma -->
         <div class="card-1 col-12 col-sm-6 col-md-4">
           <div class="card">
             <img
@@ -245,7 +236,7 @@
             >
           </div>
         </div>
-        <!-- otro diploma -->
+<!-- otro diploma -->
         <div class="card-1 col-12 col-sm-6 col-md-4">
           <div class="card">
             <img
@@ -264,7 +255,7 @@
             >
           </div>
         </div>
-        <!-- otro diploma -->
+<!-- otro diploma -->
         <div class="card-1 col-12 col-sm-6 col-md-4">
           <div class="card">
             <img
@@ -284,7 +275,7 @@
           </div>
         </div>
 
-        <!-- otro diploma -->
+<!-- otro diploma -->
         <div class="card-1 col-12 col-sm-6 col-md-4">
           <div class="card">
             <img
@@ -304,7 +295,7 @@
           </div>
         </div>
 
-        <!-- otro diploma -->
+<!-- otro diploma -->
         <div class="card-1 col-12 col-sm-6 col-md-4">
           <div class="card">
             <img
@@ -326,9 +317,8 @@
       </div>
     </section>
 
-    <!-- El login -->
-    <div
-      class="modal fade"
+<!-- El login -->
+    <div class="modal fade"
       id="loginModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
@@ -348,7 +338,7 @@
             ></button>
           </div>
           <div class="modal-body">
-            <!-- formulario -->
+<!-- formulario -->
             <form>
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email</label>
@@ -387,43 +377,30 @@
       </div>
     </div>
 
-    <footer class="footer">
-      <div>
-        <p>¡Para contactarte conmigo podes seguirme en las redes!</p>
-      </div>
-      <div
-            class="redes d-flex flex-row justify-content-center align-items-center">
-            <a
-              class="nav-link"
-              href="https://github.com/FlorFuentes"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github text-white"></i
-            ></a>
+    <footer class="footer"> 
+          <div>
+            <p>¡Para contactarte conmigo podes seguirme en las redes!</p>
+          </div>
+          <div
+                class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
+                <a
+                  class="nav-link"
+                  href="https://github.com/FlorFuentes"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github text-white"></i
+                ></a>
 
-            <a class="nav-link" href="https://t.me/Flor_Fuentes_12" target="_blank"
-              ><i class="fa-brands fa-telegram text-white"></i
-            ></a>
+                <a class="nav-link" href="https://t.me/Flor_Fuentes_12" target="_blank"
+                  ><i class="fa-brands fa-telegram text-white"></i
+                ></a>
 
-            <a class="nav-link" href="https://linkedin.com" target="_blank"
-              ><i class="fa-brands fa-linkedin text-white"></i
-            ></a>
-      </div>
-
-      <p class="disclaimer">
-        Copyright © Todos los derechos reservados 05/2023
-      </p>
+                <a class="nav-link" href="https://linkedin.com" target="_blank"
+                  ><i class="fa-brands fa-linkedin text-white"></i
+                ></a>
+          </div>
+          <p class="disclaimer">Copyright © Todos los derechos reservados 05/2023</p>
     </footer>
-
-    <!--  <footer>
-      <p class="disclaimer">
-        Copyright © Todos los derechos reservados 05/2023
-      </p>
-    </footer> -->
-
-
-
-
 
     <script src="https://kit.fontawesome.com/ba0ece2d64.js"></script>
     <!-- JavaScript Bundle with Popper -->

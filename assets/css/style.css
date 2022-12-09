@@ -53,8 +53,8 @@ body{
 /* Nombre mio en el banner*/
 h1.intro {
   color: white; /* cambie */
-  padding-top: 10%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-top: 15%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   /* font-weight: bold; */
 }
 h2.intro {
@@ -170,10 +170,21 @@ footer {
   transition: all 0.5s ease;
 }
 
+/* vidrio en el html poner un div con la clase esta q contenga el texto e iconos */
+/* .cont-iconos-footer{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  border: 1.5px solid;
+  min-width: 2px;
+  min-height:2px;
+  padding: 2rem;
+} */
+
 /* Iconos */
 a.nav-link{
  
-  padding: 10px 100px;
+  padding: 10px 20px;
   
 }
 i.fa-brands{
@@ -193,4 +204,13 @@ color:white;
   
   padding: 20px;
   color:white;
+}
+
+/* Login */
+/* .login{
+  height: 80vh;
+  
+} */
+.formulario-login{
+margin-top:15%;
 }
