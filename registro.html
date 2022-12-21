@@ -21,22 +21,19 @@
     <title>Registro</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-celeste scrolling-navbar fixed-top" >
-     
-        <div class="container-fluid">
-          <a
-            class="navbar-brand"
-            href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
-            target="_blank"
-          >
-            <img
-              src="./assets/img/argentina.png"
-              alt="Logo"
-              class="w-85"
-            />
-          </a>
-        </div>
-    </nav>
+     <!-- <nav
+      class="navbar nav-login navbar-expand-lg navbar-dark bg-celeste scrolling-navbar fixed-top"
+    >
+      <div class="container-fluid">
+        <a
+          class="navbar-brand"
+          href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa"
+          target="_blank"
+        >
+          <img src="./assets/img/argentina.png" alt="Logo" class="w-85" />
+        </a>
+      </div>
+    </nav> -->
 
 <!-- formulario de login -->
 <section class="login">
@@ -50,24 +47,27 @@
 
             <form>
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <h2>Crear cuenta</h2>
+
+                <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
                 <input
-                  type="email" class="form-control"id="exampleInputEmail1"   aria-describedby="emailHelp"/>
-                <div id="emailHelp" class="form-text">
-                  Nunca compartiremos tu información con nadie.
-                </div>
+                  type="email" class="form-control"id="exampleInputEmail1"   aria-describedby="emailHelp" placeholder="Florencia"/>
+
+                <label for="exampleInputEmail1" class="form-label">Correo Electronico</label>
+                <input
+                  type="email" class="form-control"id="exampleInputEmail1"   aria-describedby="emailHelp" placeholder="flopy_200412@hotmail.com"/>
+            
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                <input  type="password"  class="form-control"  id="exampleInputPassword1"/>
+                <input  type="password"  class="form-control"  id="exampleInputPassword1" placeholder="******"/>
               </div>
             </form>
             </div>
               <div class="modal-footer">
-                <button   type="submit" class="btn btn-secondary">Ingresar 
-                </button>
-                <button   type="submit" class="btn btn-secondary">Volver al Inicio 
-                </button>
+                <input type="submit" value="Entrar">
+
+               
               </div>
             <small>Si ya tenes cuenta <a href="./login.html"> Ingresá </a></small>
           </div>
