@@ -1,0 +1,78 @@
+/* Boton editar*/
+.educacion{
+    text-decoration: none;
+    max-width: 200px;
+    margin:50px;
+    padding:10px;
+    color:white;
+    border-radius:10px;
+    background-color: rgba(30, 143, 255, 0.671);
+    cursor:pointer;
+    transition: all 0.2s ease-in-out
+}
+.educacion:hover {
+    background-color:  rgba(30, 143, 255, 0.411);
+    color: white;
+}
+.educacion i{
+  padding: 0px 10px;
+}
+.form-educacion{
+    appearance: none;
+}
+/* Ocultamos formulario */
+.form-educacion:checked ~ .form-edicion{
+  height: 0px;
+  display: none;
+}
+
+
+/* card educacion */
+.edu-title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+        0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+        0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+        0 20px 20px rgba(0, 0, 0, 0.15);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.edu-sec {
+    padding: 40px 20px;
+}
+
+.card-container {
+    padding: 10px;
+}
+
+.card-1 {
+    min-width: 320px;
+    max-width: 380px;
+    height: 390px;
+    padding: 0;
+}
+
+.card {
+    margin: 40px 10px;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 270px;
+}
+
+.card-body {
+    background-color: #efefef;
+}
+
+

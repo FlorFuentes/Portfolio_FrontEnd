@@ -1,0 +1,32 @@
+/* Foto mia */
+.div-profile {
+    margin: 0 auto;
+  }
+  
+  .div-img-profile {
+    /* position: relative; */
+    min-height: 150px;
+  }
+  
+  /* Acerca de mi */
+  .div-p p {
+    /* margin: 5% 10% auto 35%; */
+    margin: 30px 40px;
+    font: small-caps 100%/200% serif;
+    font-size: 1.2rem;
+  }
+  
+  .fotoperfil {
+    /* margin: 0px 30px 30px 60px; */
+    height: 200px;
+    width: 200px;
+    padding: 5px;
+    /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
+    background-color: white;
+    /* background-color: rgb(14, 13, 13); */
+    /* position: absolute;
+    top: -50px;
+    left: 32%; */
+    transform: translateY(-50px);
+  }
+  

@@ -1,0 +1,53 @@
+<div id="redes"></div>
+<footer class="footer">
+    <!-- boton para editar footer -->
+    
+    <label class="edicion-footer" for="effooter">Editar<i class="fa-solid fa-pen"></i></label>
+    <input name="effooter" id="effooter" class="form-footer" type="checkbox" checked>
+    <form class="form-edicion" id="footer">
+        <div class="form-div">
+            <label for="Contacto">Podes contactarte conmigo a :</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="WhatsApp/Facebook/LinKedin/Instagram">
+        </div>
+        <!-- redes -->
+        <div class="form-div">
+            <label for="Redes">gitHub (URL)</label>
+            <input type="url" id="Redes" name="Redes" placeholder="https://www.github/perfil">
+        </div>
+
+        <div class="form-div">
+            <label for="Redes">Telegram (URL)</label>
+            <input type="url" id="Redes" name="Redes" placeholder="https://t.me/perfil">
+        </div>
+
+        <div class="form-div">
+            <label for="Redes">Linkedin (URL)</label>
+            <input type="url" id="Redes" name="Redes" placeholder="https://www.linkedin.com/perfil">
+        </div>
+
+        <div class="button-aceptar text-center">
+            <input type="submit" value="Aceptar">
+        </div>
+    </form>
+
+
+    <div>
+        <p>¡Para contactarte conmigo podes seguirme en las redes!</p>
+    </div>
+    <div class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
+        <a class="nav-link" title="GitHub" href="https://github.com/FlorFuentes" target="_blank">
+            <i class="fa-brands fa-github text-white"></i></a>
+
+        <a class="nav-link" title="Telegram" href="https://t.me/Flor_Fuentes_12" target="_blank"><i
+                class="fa-brands fa-telegram text-white"></i></a>
+
+        <a class="nav-link" title="Linkedin" href="https://www.linkedin.com/in/florencia-fuentes-52b841263/"
+            target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
+    </div>
+    <div class="boton-up">
+        <a title="Volver al inicio" (click)="toInicio()"> <i class="fa-regular fa-circle-up text-white fa-2x"></i></a>
+    </div>
+    <p class="disclaimer">Copyright © Todos los derechos reservados 05/2023</p>
+
+
+</footer>

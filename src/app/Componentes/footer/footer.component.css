@@ -1,0 +1,79 @@
+/* footer */
+footer {
+    /* -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); */
+    opacity: 0.9;
+    background-image: url("../../../assets/img/footer2.webp");
+    filter: brightness(80%);
+    /*   background-image: url("../img/footer.jpg"); */ /* MONTAÑA B/N */
+    min-height: 45vh;
+    width: 100%;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  /*MOVIMIENTO ICONOS CUANDO PASO EL MOUSE */
+  .fa-brands.fa-github:hover {
+    --bs-text-opacity: 100%;
+    transform: scale(1.3, 1.3);
+    transition: all 0.5s ease;
+  }
+  .fa-brands.fa-telegram:hover {
+    --bs-text-opacity: 1;
+    transform: scale(1.3, 1.3);
+    /*  color: #0088CC !important; */
+    transition: all 0.5s ease;
+  }
+  .fa-brands.fa-linkedin:hover {
+    --bs-text-opacity: 1;
+    transform: scale(1.3, 1.3);
+    /* color: #0e76a8!important ; */
+    transition: all 0.5s ease;
+  }
+  .fa-solid.fa-user-lock:hover {
+    --bs-text-opacity: 1;
+    transform: scale(1.3, 1.3);
+    transition: all 0.5s ease;
+  }
+  
+  /* Iconos */
+  a.nav-link {
+    padding: 10px 20px;
+  }
+  i.fa-brands {
+    font-size: 23px;
+  }
+  /* Boton volver arriba */
+  .boton-up {
+    cursor:pointer;
+    display: flex;
+    justify-content: end;
+  }
+  .fa-regular.fa-circle-up {
+    margin: 5px;
+    min-height: 20px;
+    /*   width: 94vw;
+   */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  .boton-up a {
+    text-decoration: none;
+  }
+  /* texto */
+  footer div p {
+    font-family: "Caramel", cursive;
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+  /* Derechos */
+  .disclaimer {
+    padding: 20px;
+    color: white;
+  }
+  
+  

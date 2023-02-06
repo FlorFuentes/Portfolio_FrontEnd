@@ -1,0 +1,71 @@
+/* color navbar */
+ .bg-celeste {
+    background: rgba(30, 143, 255, 0.411);
+  } 
+  
+  /* si quiero cambiar el color de la letra del logo arg. con esto,pero tengo que tener en cuenta que se nota el fondo de la imagen del logo */
+  /* .letra-blanca {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -moz-filter: invert(1);
+  } */
+.nav-item{
+  cursor:pointer;
+}
+
+/* label para que aparezca el simbolito del menu hamburguesa */
+label[for="menuhamb"] {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0px 7px;
+  cursor: pointer;
+
+  /* se usa esta linea para ocultarlo cuando la pagina es mayor a 990px */
+  display: none;
+}
+
+/* input checkbox oculto */
+input#menuhamb {
+  appearance: none; /* con esta linea se oculta esteticamente, pero sigue estando */
+  display: none; /* pero con esta, lo volamos alv, para que quede solo el label como clikeable ;) */
+  
+}
+
+.div-sube-baja {
+  display: flex;
+  justify-content: end;
+}
+
+/* Aca es donde CREO, pero no estoy seguro, estaba el error, cambie el rulito por un mas, que tiene unas cosas distintas, pero funciono. */
+input#menuhamb:checked + div.div-sube-baja {
+  /* background: red; */
+  height: 300px;
+  visibility: visible;
+  
+}
+
+/* La media query de toda la vida, para que se vea bien en responsive, solo con esta configuracion ya alcanza para q funcione. */
+@media screen and (max-width: 990px) {
+  .div-sube-baja {
+    height: 0px;
+    visibility: hidden;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* el unico proposito de esto es que aparezca el boton cuando se hace el menu hamburguesa */
+  label[for="menuhamb"] {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0px 7px;
+    cursor: pointer;
+
+    /* con el display: block; recuperamos el contenido que ocultamos con el otro */
+    display: block;
+  }
+}

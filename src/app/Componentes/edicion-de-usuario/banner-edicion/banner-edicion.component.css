@@ -1,0 +1,89 @@
+/* Boton editar*/
+.ban{
+    text-decoration: none;
+    max-width: 200px;
+    padding:10px;
+    margin:100px;
+    color:white;
+    background-color: rgba(30, 143, 255, 0.671);
+    border-radius:10px;
+    cursor:pointer;
+    transition: all 0.2s ease-in-out
+}
+.ban:hover {
+  background-color:  rgba(30, 143, 255, 0.411);
+  color: white;
+}
+.ban i{
+  padding: 0px 10px;
+}
+.form-banner{
+    appearance: none;
+}
+/* Para ocultar el  formulario */
+.form-banner:checked ~ .form-edicion{
+  height: 0px;
+  display: none;
+}
+/* formulario */
+.form-edicion{
+/*   background-color:rgba(30, 143, 255, 0.504);
+ */  
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+}
+.form-div{
+/*     color:white;
+ */    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 16px 0;
+}
+.form-div input[type="text"]{
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+/* Boton aceptar */
+.button-aceptar input[type="submit"] {
+  margin: 10px;
+  padding: 8px 38px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  transition: all 0.2s ease;
+  text-align: center;
+}
+.button-aceptar input[type="submit"]:hover {
+  background-color:rgba(30, 143, 255, 0.411) ;
+  color: white;
+}
+
+
+
+/* banner original */
+.banner {
+    background-image: url("../../../../assets/img/FondoBari.jpg");  
+    min-height: 75vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    --webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -msn-background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* Nombre mio en el banner*/
+  h1.intro {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: white;
+    /* font-weight: bold; */
+  }
+  h2.intro {
+    color: white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  

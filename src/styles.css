@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-image: var(--background-img);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .formulario-login {
+    min-width: 300px;
+  }
+  .formulario-login h2 {
+    font-size: 1.3rem;
+    margin: 20px 0;
+  }
+}
+/* @media screen and (max-width: 500px) {
+    .proyecto .container {
+        display: flex;
+        flex-direction: column;
+  }  
+}  */

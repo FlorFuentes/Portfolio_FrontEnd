@@ -1,0 +1,42 @@
+
+.formulario-login {
+    /* From https://css.glass */
+    background: rgba(238, 239, 247, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3.1px);
+    /* color:white; */
+    text-align: center;
+    width: 40%;
+    height: 70%;
+    min-width: 400px;
+    font-family: rubik, sans-serif;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-label {
+    text-align: left;
+  }
+  .formulario-login h2 {
+    padding: 4%;
+    margin: 5px 0;
+  
+    /* color:white; */
+  }
+  /* Boton enviar */
+  input[type="submit"] {
+    outline: none;
+    border: none;
+    background-color: #0a7bc7;
+    /* color:white; */
+    width: 100%;
+    margin: 10px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  
+  

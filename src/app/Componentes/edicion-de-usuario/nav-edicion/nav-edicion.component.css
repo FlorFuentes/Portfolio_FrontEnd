@@ -1,0 +1,123 @@
+/* color navbar */
+.bg-celeste {
+    background: rgba(30, 143, 255, 0.411);
+} 
+.nav-item{
+  cursor:pointer;
+}
+
+
+
+
+/* alex */
+.nav-item:hover .nav-link, .nav-item-drop:hover .btn {
+  color: var(--white);
+  background-color:var(--shadow-1);
+  box-shadow: 0 0 2px 2px var(--shadow-1);
+  border-radius: 5px;
+  transform: translateY(-2px);
+  border-bottom: 1px solid var(--white);
+}
+
+/* .nav-item-drop .nav-link {
+  font-size: 1.5rem;
+  padding:0 30px;
+  
+}
+
+.nav-item-drop .btn {
+  color: var(--almost-white);
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.dropdown-item {
+  color: var(--almost-white);
+  border-radius: 0px;
+  outline: none;
+}
+
+.dropdown-item:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.dropdown-item i {
+  margin-right: 5px;
+}
+
+.dropdown-menu {
+  background-color:var(--shadow-4);
+  outline: none;
+}
+
+.btn-group .btn {
+  border: none;
+  outline: none;
+}
+
+.hero-image-profile-small {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+ */
+
+
+
+/* label para que aparezca el simbolito del menu hamburguesa */
+label[for="menuhamb"] {
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0px 7px;
+  cursor: pointer;
+
+  /* se usa esta linea para ocultarlo cuando la pagina es mayor a 990px */
+  display: none;
+}
+
+/* input checkbox oculto */
+input#menuhamb {
+  appearance: none; /* con esta linea se oculta esteticamente, pero sigue estando */
+  display: none; /* pero con esta, lo volamos alv, para que quede solo el label como clikeable ;) */
+  
+}
+
+.div-sube-baja {
+  display: flex;
+  justify-content: end;
+}
+
+/* Aca es donde CREO, pero no estoy seguro, estaba el error, cambie el rulito por un mas, que tiene unas cosas distintas, pero funciono. */
+input#menuhamb:checked + div.div-sube-baja {
+  /* background: red; */
+  height: 300px;
+  visibility: visible;
+  
+}
+
+/* La media query de toda la vida, para que se vea bien en responsive, solo con esta configuracion ya alcanza para q funcione. */
+@media screen and (max-width: 990px) {
+  .div-sube-baja {
+    height: 0px;
+    visibility: hidden;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* el unico proposito de esto es que aparezca el boton cuando se hace el menu hamburguesa */
+  label[for="menuhamb"] {
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0px 7px;
+    cursor: pointer;
+
+    /* con el display: block; recuperamos el contenido que ocultamos con el otro */
+    display: block;
+  }
+}
