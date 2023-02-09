@@ -1,29 +1,38 @@
 /* Boton editar*/
-.educacion{
+.educacion {
     text-decoration: none;
     max-width: 200px;
-    margin:50px;
-    padding:10px;
-    color:white;
-    border-radius:10px;
+    margin: 50px;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
     background-color: rgba(30, 143, 255, 0.671);
-    cursor:pointer;
+    cursor: pointer;
     transition: all 0.2s ease-in-out
 }
+
 .educacion:hover {
-    background-color:  rgba(30, 143, 255, 0.411);
+    background-color: rgba(30, 143, 255, 0.411);
     color: white;
 }
-.educacion i{
-  padding: 0px 10px;
+
+.educacion i {
+    padding: 0px 10px;
 }
-.form-educacion{
+
+/* .iconos {
+  margin-right: 300px;
+}
+ */
+.form-educacion {
     appearance: none;
 }
+
 /* Ocultamos formulario */
-.form-educacion:checked ~ .form-edicion{
-  height: 0px;
-  display: none;
+.form-educacion:checked~.form-edicion {
+    height: 0px;
+    display: none;
+  
 }
 
 
@@ -62,6 +71,7 @@
     transition: all 0.2s ease;
 }
 
+
 .card:hover {
     transform: scale(1.05);
 }
@@ -74,5 +84,3 @@
 .card-body {
     background-color: #efefef;
 }
-
-

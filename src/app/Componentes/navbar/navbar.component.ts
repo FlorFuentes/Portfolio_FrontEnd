@@ -10,7 +10,6 @@ export class NavbarComponent {
 
  toAcercademi(){
   document.getElementById("acerca-de-mi")?.scrollIntoView({behavior:"smooth"});
-  console.log("soy el acerca de mi")
  }
  toExperiencia(){
   document.getElementById("experiencia")?.scrollIntoView({behavior:"smooth"});

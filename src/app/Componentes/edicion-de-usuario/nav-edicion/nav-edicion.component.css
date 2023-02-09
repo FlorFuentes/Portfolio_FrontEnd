@@ -9,59 +9,41 @@
 
 
 
-/* alex */
+
 .nav-item:hover .nav-link, .nav-item-drop:hover .btn {
-  color: var(--white);
+  color:white;
   background-color:var(--shadow-1);
   box-shadow: 0 0 2px 2px var(--shadow-1);
   border-radius: 5px;
   transform: translateY(-2px);
   border-bottom: 1px solid var(--white);
 }
-
-/* .nav-item-drop .nav-link {
-  font-size: 1.5rem;
-  padding:0 30px;
-  
-}
-
-.nav-item-drop .btn {
-  color: var(--almost-white);
-  font-size: 1.5rem;
-  outline: none;
-}
-
 .dropdown-item {
-  color: var(--almost-white);
+/*   background-color: rgba(30, 143, 255, 0.411);
+ */  color:rgba(0, 0, 0, 0.57);
   border-radius: 0px;
-  outline: none;
 }
 
 .dropdown-item:hover {
   color: var(--white);
-  cursor: pointer;
-}
+} 
+ 
+
+
 
 .dropdown-item i {
   margin-right: 5px;
 }
-
+ /* TRANSPARENCIA EN LA CAJA DE C.S Y G.C
 .dropdown-menu {
   background-color:var(--shadow-4);
-  outline: none;
-}
+}  */
 
-.btn-group .btn {
-  border: none;
-  outline: none;
-}
-
-.hero-image-profile-small {
-  width: 35px;
+.btn img {
   height: 35px;
+  width: 35px;
   border-radius: 50%;
 }
- */
 
 
 
