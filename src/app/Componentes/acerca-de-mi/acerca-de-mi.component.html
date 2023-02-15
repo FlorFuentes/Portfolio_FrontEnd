@@ -4,7 +4,7 @@
     <div class="container-fluid div-profile row d-flex flex-column flex-md-row">
       <div class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
       <img
-        src="./assets/img/FB_IMG_1428285724958.jpg"
+        [src]="miPortfolio.acercaDeMi.imagenPerfil"
         alt="fotoPerfil"
         class="fotoperfil rounded-circle img-fluid perfil"
       />
@@ -13,15 +13,7 @@
 <!-- Acerca de mi -->
       <div class="container text-center row d-flex justify-content-center col-12 col-md-8">
           <div class="col-12 text-center div-p">
-            <p  >
-              Una de mis grandes pasiones es el desarrollo de paginas web.
-              Siempre me gusto este hermoso mundo de la programación. Empece
-              leyendo pdf,paginas, viendo videos y haciendo a la par para
-              poder entender y practicar,de esto hace ya 2 años. Otra de mis
-              pasiones es el Taekwondo. Hace 12 años que practico este arte
-              marcial tan maravilloso. Di clases para la escuela que
-              pertenezco y hoy en dia estoy preparandome para rendir el examen
-              para IIIdan.
+            <p *ngIf="miPortfolio" >{{miPortfolio.acercaDeMi.sobremi}}
             </p>
           </div>
         </div>

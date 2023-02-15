@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 
 @Component({
   selector: 'app-banner',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner.component.css']
 })
 export class BannerComponent {
+  miPortfolio: any;
 
+   constructor(private datosPortfolio: MiServicioService) { }
+
+  ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+      this.miPortfolio = data;
+    });
+  }
 }

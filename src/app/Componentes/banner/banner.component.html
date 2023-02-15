@@ -2,7 +2,7 @@
 <div id="inicio"></div>
 
 <section class="banner" id="inicio">
-    <h1 class="text-center intro">Florencia Fuentes</h1>
+    <h1 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.nombre}}</h1>
     <br />
-    <h2 class="text-center intro">Desarrollador Full Stack Jr</h2>
+    <h2 class="text-center intro">{{miPortfolio.banner.descripcion}}</h2>
 </section>
