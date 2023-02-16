@@ -1,26 +1,27 @@
 .banner {
-    background-image: url("../../../assets/img/FondoBari.jpg");
-    /*   opacity: 0.9;
+  background-image: url("../../../assets/img/FondoBari.jpg");
+  /*   opacity: 0.9;
    */
-    min-height: 75vh;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    --webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -msn-background-size: cover;
-    background-repeat: no-repeat;
-  }
-  /* Nombre mio en el banner*/
-  h1.intro {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: white;
-    padding-top: 15%;
-    /* font-weight: bold; */
-  }
-  h2.intro {
-    color: white;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  
+  min-height: 75vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  --webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Nombre mio en el banner*/
+h1.intro {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  padding-top: 15%;
+  /* font-weight: bold; */
+}
+
+h2.intro {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

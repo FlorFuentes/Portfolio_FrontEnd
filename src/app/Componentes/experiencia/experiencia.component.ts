@@ -16,7 +16,7 @@ export class ExperienciaComponent {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
-      this.experienciaLista = data.educacion;
+      this.experienciaLista = data.experiencia;
     });
   }
 

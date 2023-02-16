@@ -1,70 +1,74 @@
 /*Experiencia */
 .experiencia {
-    min-height: 450px;
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-  }
-  .fa-solid.fa-shop {
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border: rgb(199, 18, 18);
-  }
-  .fa-solid.fa-cart-shopping {
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  .fa-solid.fa-person-running {
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  .experiencia-cont {
-    box-shadow: 1.5px 1.1px 1.2px rgba(0, 0, 0, 0.073),
-      3.7px 2.7px 2.8px rgba(0, 0, 0, 0.105), 7px 5.1px 5.3px rgba(0, 0, 0, 0.13),
-      12.5px 9.2px 9.4px rgba(0, 0, 0, 0.155),
-      23.4px 17.1px 17.5px rgba(0, 0, 0, 0.187),
-      56px 41px 42px rgba(0, 0, 0, 0.26);
-    border-radius: 16px;
-    margin: 10px 10px 20px 10px;
-    background-color: rgba(30, 143, 255, 0.616);
-  }
-  
-  .experiencia-title {
-    text-align: left;
-    font-weight: bold;
-    font-size: 3rem;
-    color: black;
-    text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
-      0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-      0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-      0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-      0 20px 20px rgba(0, 0, 0, 0.15);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    /*   font-family: "Vast Shadow";
+  min-height: 450px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-solid.fa-shop {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border: rgb(199, 18, 18);
+}
+
+.fa-solid.fa-cart-shopping {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.fa-solid.fa-person-running {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.experiencia-cont {
+  box-shadow: 1.5px 1.1px 1.2px rgba(0, 0, 0, 0.073),
+    3.7px 2.7px 2.8px rgba(0, 0, 0, 0.105), 7px 5.1px 5.3px rgba(0, 0, 0, 0.13),
+    12.5px 9.2px 9.4px rgba(0, 0, 0, 0.155),
+    23.4px 17.1px 17.5px rgba(0, 0, 0, 0.187),
+    56px 41px 42px rgba(0, 0, 0, 0.26);
+  border-radius: 16px;
+  margin: 10px 10px 20px 10px;
+  background-color: rgba(30, 143, 255, 0.616);
+}
+
+.experiencia-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
+    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /*   font-family: "Vast Shadow";
    */
-  }
-  .experiencia-info {
-    margin: 10px 0;
-  }
-  
-  .experiencia-info h3 {
-    padding: 0 10px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-  }
-  
-  .experiencia-info h5 {
-    padding: 0 14px;
-    text-align: center;
-  }
-  
-  .experiencia-info p {
-    padding: 10px;
-    font-style: initial;
-  }
-  
+}
+
+.experiencia-info {
+  margin: 10px 0;
+}
+
+.experiencia-info h3 {
+  padding: 0 10px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.experiencia-info h5 {
+  padding: 0 14px;
+  text-align: center;
+}
+
+.experiencia-info p {
+  padding: 10px;
+  font-style: initial;
+}

@@ -2,24 +2,24 @@
 
 <section class="proyecto">
     <h1 class="pro-title text-center" >Proyectos</h1>
-    <div class="container">
+    <div *ngFor="let proyectos of proyectosLista" class="container">
 <!-- Color game -->
       <div class="card">
           <div class="face face1">
               <div class="content">
                 <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                <h3>Color<br> Game</h3>
+                <h3 *ngIf="miPortfolio">{{proyectos.nombre}}</h3>
               </div>
           </div>
           <div class="face face2">
               <div class="content">
-                  <p>Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB.</p>
+                  <p *ngIf="miPortfolio">{{proyectos.descripcion}}</p>
                       <a href="https://graceful-malasada-201f0b.netlify.app/" target="_blank">Juegar</a>
               </div>
           </div>
       </div>
 <!-- To do list -->
-      <div class="card">
+     <!--  <div class="card">
           <div class="face face1">
               <div class="content">
                   <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
@@ -33,8 +33,8 @@
               </div>
           </div>
       </div>
-<!-- Weather channel-->
-      <div class="card">
+ --><!-- Weather channel-->
+<!--       <div class="card">
           <div class="face face1">
               <div class="content">
                 <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
@@ -51,8 +51,9 @@
     </div><br>
 
     <div class="container">
-<!-- Portfolio Plataforma5-->
-      <div class="card">
+ -->
+ <!-- Portfolio Plataforma5-->
+   <!--    <div class="card">
         <div class="face face1">
             <div class="content">
                 <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
@@ -65,9 +66,9 @@
                     <a href="https://gorgeous-seahorse-4ac653.netlify.app/#porfolio"target="_blank">Ver portfolio</a>
             </div>
         </div>
-      </div>
+      </div> -->
 <!-- Portfolio yoProgramo-->
-      <div class="card">
+      <!-- <div class="card">
         <div class="face face1">
             <div class="content">
                 <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
@@ -80,6 +81,6 @@
                     <a href="#"target="_blank">Ver portfolio</a>
             </div>
         </div>
-      </div>
+      </div> -->
     </div>
-  </section> <br><br>
+  </section> 

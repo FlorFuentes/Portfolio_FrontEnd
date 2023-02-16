@@ -1,62 +1,62 @@
 <div id="habilidadestecnicas"></div>
 
 <section class="habilidades">
-    <h1 class="ski-title text-center" >Habilidades Técnicas</h1>
-
-    <div class="container fondo-ski">
-          <div class="skill">
-            <h3>PSeInt</h3>
-            <h4>95%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar pseint"></span>
-          </div>
-          <div class="skill">
-              <h3>Html</h3>
-              <h4>85%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar html"></span>
-          </div>
-          <div class="skill">
-              <h3>Css</h3>
-              <h4>85%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar css"></span>
-          </div>
-          <div class="skill">
-            <h3>Bootstrap 5</h3>
-            <h4>80%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar bootstrap"></span>
-          </div>
-          <div class="skill">
-              <h3>JavaScript</h3>
-              <h4>30%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar javascript"></span>
-          </div>
-          <div class="skill">
-              <h3>TypeScript</h3>
-              <h4>10%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar typescript"></span>
-          </div>
-          <div class="skill">
-            <h3>Python</h3>
-            <h4>30%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar python"></span>
-          </div>
-          <div class="skill">
-              <h3>Git</h3>
-              <h4>10%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar git"></span>
-          </div>
-          <div class="skill">
-            <h3>GitHub</h3>
-            <h4>10%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar github"></span>
-        </div>
-      </div>
+  <h1 class="ski-title text-center">Habilidades Técnicas</h1>
+  <div *ngFor="let habilidadesTecnicas of habilidadLista " class="container fondo-ski">
+    <div class="skill">
+      <h3 *ngIf="miPortfolio">{{habilidadesTecnicas.nombre}}</h3>
+      <h4 *ngIf="miPortfolio">{{habilidadesTecnicas.porcentaje}}</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar pseint"></span>
+    </div>
+  </div>
 </section>
+    <!-- <div class="skill">
+      <h3>Html</h3>
+      <h4>85%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar html"></span>
+    </div>
+    <div class="skill">
+      <h3>Css</h3>
+      <h4>85%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar css"></span>
+    </div>
+    <div class="skill">
+      <h3>Bootstrap 5</h3>
+      <h4>80%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar bootstrap"></span>
+    </div>
+    <div class="skill">
+      <h3>JavaScript</h3>
+      <h4>30%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar javascript"></span>
+    </div>
+    <div class="skill">
+      <h3>TypeScript</h3>
+      <h4>10%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar typescript"></span>
+    </div>
+    <div class="skill">
+      <h3>Python</h3>
+      <h4>30%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar python"></span>
+    </div>
+    <div class="skill">
+      <h3>Git</h3>
+      <h4>10%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar git"></span>
+    </div>
+    <div class="skill">
+      <h3>GitHub</h3>
+      <h4>10%</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar github"></span>
+    </div> -->
+  

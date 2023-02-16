@@ -5,14 +5,10 @@
     <h2 class="experiencia-title text-center "> Experiencia</h2>
     <div *ngFor="let experiencia of experienciaLista" class="experiencia-cont row   d-flex justify-content-center">
       <i class="fa-solid fa-shop fa-4x"></i>
-<!-- 1 -->
       <div class="experiencia-info d-flex flex-column col-12">
-        <h3 *ngIf="miPortfolio">{{miPortfolio.experiencia.puestoYperiodo}}</h3><br>
-        <h5> {{miPortfolio.experiencia.descripcion}}</h5>
-        <p> <strong>Las labores en que me desarrolle fueron:</strong>
-          <br> Armado de stock y reposición de mercaderia
-          <br>Venta de celulares<br>Carga virtual<br>Carga de sube<br>Cobranza de pago facil
-        </p>
+        <h3 *ngIf="miPortfolio">{{experiencia.puestoYperiodo}}</h3><br>
+        <h5 *ngIf="miPortfolio">{{experiencia.ubicacion}}</h5>
+        <p *ngIf="miPortfolio">{{experiencia.descripcion}}</p>
       </div>
     </div>
 <!-- 2 -->
