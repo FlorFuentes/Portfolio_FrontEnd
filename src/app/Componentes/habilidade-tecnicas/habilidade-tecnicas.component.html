@@ -1,6 +1,6 @@
 <div id="habilidadestecnicas"></div>
-
-<section class="habilidades">
+<!-- DATA -->
+<!-- <section class="habilidades">
   <h1 class="ski-title text-center">Habilidades Técnicas</h1>
   <div *ngFor="let habilidadesTecnicas of habilidadLista " class="container fondo-ski">
     <div class="skill">
@@ -9,8 +9,17 @@
       <span class="skill-bar"></span>
       <span class="fill-bar pseint"></span>
     </div>
-  </div>
-</section>
+ -->
+<section class="habilidades">
+  <h1 class="ski-title text-center" id="habilidadestecnicas">Habilidades Técnicas</h1>
+
+  <div  class="container fondo-ski">
+    <div *ngFor="let habilidadesTecnicas of habilidadLista" class="skill">
+      <h3 *ngIf="miPortfolio">{{habilidadesTecnicas.nombre}}</h3>
+      <h4 *ngIf="miPortfolio">{{habilidadesTecnicas.porcentaje}}</h4>
+      <span class="skill-bar"></span>
+      <span class="fill-bar pseint"></span>
+    </div>
     <!-- <div class="skill">
       <h3>Html</h3>
       <h4>85%</h4>
@@ -59,4 +68,5 @@
       <span class="skill-bar"></span>
       <span class="fill-bar github"></span>
     </div> -->
-  
+  </div>
+</section>
