@@ -39,12 +39,12 @@ body {
 /* Nombre mio en el banner*/
 h1.intro {
   font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
+  color: #ffffff;
   padding-top: 15%;
   /* font-weight: bold; */
 }
 h2.intro {
-  color: white;
+  color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -72,7 +72,7 @@ h2.intro {
   width: 200px;
   padding: 5px;
   /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
-  background-color: white;
+  background-color: #ffffff;
   /* background-color: rgb(14, 13, 13); */
   /* position: absolute;
   top: -50px;
@@ -88,18 +88,17 @@ h2.intro {
   justify-content: center;
 }
 .fa-solid.fa-shop {
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 10px;
-  border: rgb(199, 18, 18);
 }
 .fa-solid.fa-cart-shopping {
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 10px;
 }
 .fa-solid.fa-person-running {
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 10px;
 }
@@ -111,14 +110,14 @@ h2.intro {
     56px 41px 42px rgba(0, 0, 0, 0.26);
   border-radius: 16px;
   margin: 10px 10px 20px 10px;
-  background-color: rgba(30, 143, 255, 0.616);
+  background-color: #1e8fff9d;
 }
 
 .experiencia-title {
   text-align: left;
   font-weight: bold;
   font-size: 3rem;
-  color: black;
+  color: #000000;
   text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
     0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -155,7 +154,7 @@ h2.intro {
   text-align: left;
   font-weight: bold;
   font-size: 3rem;
-  color: black;
+  color: #000000;
   text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
     0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -203,7 +202,7 @@ h2.intro {
   max-width: 1000px;
   width: 90vw;
   min-width: 300px;
-  background: rgba(28, 134, 220, 0.438);
+  background: #1c86dc70;
   border-radius: 10px;
   padding: 15px 30px;
 }
@@ -211,7 +210,7 @@ h2.intro {
   text-align: left;
   font-weight: bold;
   font-size: 3rem;
-  color: black;
+  color: #000000;
   text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
     0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -380,7 +379,7 @@ h2.intro {
   text-align: left;
   font-weight: bold;
   font-size: 3rem;
-  color: black;
+  color: #000000;
   text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
     0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
     0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
@@ -465,7 +464,7 @@ h2.intro {
   align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 20px 50px hsla(0, 0%, 0%, 0.8);
   transform: translateY(-100px);
 }
 
@@ -489,7 +488,7 @@ h2.intro {
 }
 
 .proyecto .container .card .face.face2 .content a:hover {
-  background: rgb(51, 51, 51);
+  background: #333333;
   color: #fff;
 }
 
@@ -518,13 +517,11 @@ footer {
 .fa-brands.fa-telegram:hover {
   --bs-text-opacity: 1;
   transform: scale(1.3, 1.3);
-  /*  color: #0088CC !important; */
   transition: all 0.5s ease;
 }
 .fa-brands.fa-linkedin:hover {
   --bs-text-opacity: 1;
   transform: scale(1.3, 1.3);
-  /* color: #0e76a8!important ; */
   transition: all 0.5s ease;
 }
 .fa-solid.fa-user-lock:hover {
@@ -566,8 +563,9 @@ footer div p {
 }
 /* Derechos */
 .disclaimer {
+  margin:0 auto;
   padding: 20px;
-  color: white;
+  color: #ffffff;
 }
 
 /* Login */
@@ -599,7 +597,7 @@ backdrop-filter: blur(5px);
 border: 1px solid rgba(255, 255, 255, 0.3); */
 
   /* From https://css.glass */
-  background: rgba(238, 239, 247, 0.29);
+  background: #eeeff74a;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(3px);
