@@ -24,18 +24,15 @@
             </form>
         </div>
         
-        <div class="experiencia-cont row   d-flex justify-content-center">
+        <div *ngFor="let experiencia of experienciaLista" class="experiencia-cont row   d-flex justify-content-center">
             <i class="fa-solid fa-shop fa-4x"></i>
             <div class="experiencia-info d-flex flex-column col-12">
-                <h3> Encargada de ventas en kiosco de stella (2006-2010)</h3><br>
-                <h5> Av. Bustillos Km 12,500. San Carlos de Bariloche</h5>
-                <p> <strong>Las labores en que me desarrolle fueron:</strong>
-                    <br> Armado de stock y reposición de mercaderia
-                    <br>Venta de celulares<br>Carga virtual<br>Carga de sube<br>Cobranza de pago facil
-                </p>
+                <h3 *ngIf="miPortfolio">{{experiencia.puestoYperiodo}}</h3><br>
+                <h5 *ngIf="miPortfolio">{{experiencia.ubicacion}}</h5>
+                <p *ngIf="miPortfolio"> {{experiencia.descripcion}}</p>
             </div>
         </div>
-        <div class="experiencia-cont row   d-flex justify-content-center">
+        <!-- <div class="experiencia-cont row   d-flex justify-content-center">
             <i class="fa-solid fa-cart-shopping fa-4x"></i>
             <div class="experiencia-info d-flex flex-column col-12">
                 <h3>Cajera en supermercado UNO (2010-2015)</h3>
@@ -63,5 +60,6 @@
                     responsabilidad dentro de mi escuela. </p>
             </div>
         </div>
-    </div>   
+    -->   
+    </div>
 </section>

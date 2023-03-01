@@ -46,17 +46,14 @@
         </div>
       </form>
       </div>
-
-
-
     <div class="container fondo-ski">
-          <div class="skill">
-            <h3>PSeInt</h3>
-            <h4>95%</h4>
+          <div *ngFor="let habilidadesTecnicas of habilidadLista" class="skill">
+            <h3 *ngIf="miPortfolio">{{habilidadesTecnicas.nombre}}</h3>
+            <h4 *ngIf="miPortfolio">{{habilidadesTecnicas.porcentaje}}</h4>
             <span class="skill-bar"></span>
             <span class="fill-bar pseint"></span>
           </div>
-          <div class="skill">
+          <!-- <div class="skill">
               <h3>Html</h3>
               <h4>85%</h4>
               <span class="skill-bar"></span>
@@ -103,7 +100,7 @@
             <h4>10%</h4>
             <span class="skill-bar"></span>
             <span class="fill-bar github"></span>
-        </div>
+        </div> -->
       </div>
 
 </section>

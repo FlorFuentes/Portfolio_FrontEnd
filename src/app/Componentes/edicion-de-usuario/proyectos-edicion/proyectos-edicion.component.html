@@ -4,8 +4,7 @@
     <h1 class="pro-title text-center">Proyectos</h1>
     <label class="proyectos text-center" for="efproyectos">Editar <i class="fa-solid fa-pen"></i></label>
     <input name="efproyectos" id="efproyectos" class="form-proyectos" type="checkbox" checked>
-
-<!-- Formulario -->
+    <!-- Formulario -->
     <form class="form-edicion" id="proyecto">
 
         <div class="form-div">
@@ -27,26 +26,43 @@
         </div>
     </form>
 
-    <div class="container">
-        <!-- Color game -->
-        <div class="card">
+    <!-- <div class="container">
+        <div class="card"> -->
+            <!-- tacho -->
+            <div class="cont-top">
+                <a class="btn-elim" title="Eliminar">
+                    <i class="fa-regular fa-trash-can"></i>
+                </a>
+            </div>
+            <div class="container row">
+                <div *ngFor="let proyectos of proyectosLista" class="card col-12 col-md-6 col-lg-4">
+                    <div class="face face1">
+                        <div class="content">
+                            <img
+                                src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                            <h3 *ngIf="miPortfolio">{{proyectos.nombre}}</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB.
+                            </p>
+                            <a href="https://graceful-malasada-201f0b.netlify.app/" target="_blank">Juegar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div>
+    </div> -->
+</section>
+<!-- <div class="card"> -->
+<!-- tacho -->
+<!-- <div class="cont-top">
+                <a class="btn-elim" title="Eliminar">
+                    <i class="fa-regular fa-trash-can"></i>
+                </a>
+            </div>
 
-            <div class="face face1">
-                <div class="content">
-                    <img
-                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>Color<br> Game</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB.</p>
-                    <a href="https://graceful-malasada-201f0b.netlify.app/" target="_blank">Juegar</a>
-                </div>
-            </div>
-        </div>
-        <!-- To do list -->
-        <div class="card">
             <div class="face face1">
                 <div class="content">
                     <img
@@ -61,8 +77,14 @@
                 </div>
             </div>
         </div>
-        <!-- Weather channel-->
-        <div class="card">
+        <div class="card"> -->
+<!-- tacho -->
+<!-- <div class="cont-top">
+                <a class="btn-elim" title="Eliminar">
+                    <i class="fa-regular fa-trash-can"></i>
+                </a>
+            </div>
+
             <div class="face face1">
                 <div class="content">
                     <img
@@ -81,8 +103,14 @@
     </div><br>
 
     <div class="container">
-        <!-- Portfolio Plataforma5-->
-        <div class="card">
+        <div class="card"> -->
+<!-- tacho -->
+<!-- <div class="cont-top">
+                <a class="btn-elim" title="Eliminar">
+                    <i class="fa-regular fa-trash-can"></i>
+                </a>
+            </div>
+
             <div class="face face1">
                 <div class="content">
                     <img
@@ -97,8 +125,14 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio yoProgramo-->
-        <div class="card">
+        <div class="card"> -->
+<!-- tacho -->
+<!-- <div class="cont-top">
+                <a class="btn-elim" title="Eliminar">
+                    <i class="fa-regular fa-trash-can"></i>
+                </a>
+            </div>
+
             <div class="face face1">
                 <div class="content">
                     <img
@@ -112,9 +146,9 @@
                     <a href="#" target="_blank">Ver portfolio</a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </div> -->
+
+
 
 
 

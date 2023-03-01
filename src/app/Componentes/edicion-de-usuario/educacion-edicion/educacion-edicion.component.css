@@ -2,7 +2,7 @@
 .educacion {
     text-decoration: none;
     max-width: 200px;
-    margin: 50px;
+    margin: 50px auto;
     padding: 10px;
     color: white;
     border-radius: 10px;
@@ -20,10 +20,6 @@
     padding: 0px 10px;
 }
 
-/* .iconos {
-  margin-right: 300px;
-}
- */
 .form-educacion {
     appearance: none;
 }
@@ -32,8 +28,111 @@
 .form-educacion:checked~.form-edicion {
     height: 0px;
     display: none;
-  
+
 }
+
+/* formulario */
+.form-edicion {
+    text-align: center;
+
+    /*   margin:20px;
+   */
+    box-shadow:
+        5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
+        40px 63px 67px rgba(0, 0, 0, 0.08);
+    background-color: rgba(30, 143, 255, 0.226);
+    padding: 20px;
+    border-radius: 5px;
+    width: 75%;
+    /*  padding: 20px;
+    background-color: var(--shadow-3);
+    border-radius: 5px;
+    width: 70%;
+    */
+    margin: 20px auto;
+}
+
+.form-div {
+    /*     color:white;
+   */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 16px 0;
+}
+
+.form-div input[type="text"] {
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-div input[type="url"] {
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-div input[type="img"] {
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Boton aceptar */
+.button-aceptar input[type="submit"] {
+    margin: 10px;
+    padding: 8px 38px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(30, 143, 255, 0.671);
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.button-aceptar input[type="submit"]:hover {
+    background-color: rgba(30, 143, 255, 0.411);
+    color: white;
+}
+
+
+
+
+/* Tacho para eliminar cards*/
+.cont-top {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.cont-top .btn-elim {
+    width: 35px;
+    height: 35px;
+    margin: 0 7px;
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(-1px, 0px);
+    transition: all 0.2s ease;
+}
+
+.cont-top .btn-elim:hover {
+    transform: translate(-1px, -2px);
+    background-color: var(--dark-color);
+    color: var(--almost-white);
+}
+
+
+
 
 
 /* card educacion */

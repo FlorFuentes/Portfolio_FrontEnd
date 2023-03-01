@@ -2,27 +2,45 @@
 
 <section class="edu-sec d-flex flex-column justify-content-center">
   <h2 class="edu-title text-center">Educación</h2>
-  <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center">
-
-    <!-- Boton de editar.Quiero centrarlo y aca ya estoy dentro de la clase -->
-    <label class="educacion" for="efeducacion">Editar <i class="fa-solid fa-pen"></i></label>
-  </div>
-  <br />
+  <label class="educacion" for="efeducacion">Editar <i class="fa-solid fa-pen"></i></label>
+  <input name="efeducacion" id="efeducacion" class="form-educacion" type="checkbox" checked>
+  <!-- Formulario -->
+  <form class="form-edicion" id="educacion">
+    <div class="form-div">
+      <label for="img-diplo">Una imagen del diploma del curso : </label>
+      <input type="img" name="img-diplo" id="img-diplo" placeholder="./assets/img/cursos/SeProgramar.png">
+    </div>
+    <div class="form-div">
+      <label for="url-int">URL de la institucion : </label>
+      <input type="text" name="url-int" id="url-int" placeholder="https://graceful-malasada-201f0b.netlify.app/">
+    </div>
+    <div class="form-div">
+      <label for="title">Nombre del curso : </label>
+      <input type="text" name="url-int" id="url-int" placeholder="#SeProgramar">
+    </div>
+    <div class="button-aceptar text-center">
+      <input type="submit" value="Aceptar">
+    </div>
+  </form>
   <div class="card-container container-fluid row d-flex justify-content-around align-items-center">
-    <!--1ºDiploma  -->
-    <div class="card-1 col-12 col-sm-6 col-md-4">
+    <div *ngFor="let educacion of educacionLista" class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card ">
-        <div class="iconos">
-          <input name="efeducacion" id="efeducacion" class="form-educacion" type="checkbox" checked><i
-            class="fa-solid fa-pen dentroCard "></i><i class="fa-light fa-circle-check"></i><i class="fas fa-trash"></i>
+         <!-- TACHO
+          <div class="cont-top">
+            <a class="btn-elim" title="Eliminar">
+              <i class="fa-regular fa-trash-can"></i>
+          </a>
         </div>
-        <img src="./assets/img/cursos/SeProgramar.png" class="card-image" alt="certificadoSeProgramar" />
+      -->
+        <img  class="card-image" *ngIf="miPortfolio" [src]="educacion.imagen" alt="certificadoSeProgramar" />
         <div class="card-body text-center">
-          <p class="card-text">Se Programar</p>
+          <p class="card-text" *ngIf="miPortfolio">{{educacion.institucion}}</p>
         </div>
+        <a href="https://seprogramarsso.inti.gob.ar/auth/realms/master/protocol/saml/clients/mumuki?SAMLRequest=fZFNb8IwDIb%2FSm85tQkhGiOiSGhckNgFth12mdxiICIfXZxM%2B%2FlrYUhMm3a0%2Ffrxa3tG4GynFzkd%2FQbfM1IqFkQYkwn%2BIXjKDuMW44dp8XmzrtkxpY4054RdDIcIDmJlfDLVITQVRA49iQ9Q3oK1DbQnVix7qvEwIP8EEIXfjIhgHXEHlDDyXptCG%2Bw32hr0qS9ml0%2BGFatlzd4awLHYqaaUU7gvFYh92aidKlG1uJ8obKbTSS8lyrjylMCnmkkhZTmSpbh7EmMtpB6pV1a8YKSzV1kJVnw660kPc2uWo9cByJD24JB0avV28bjWvVDD9Wy3Ld3%2FPde12Hw2qPXZXZxf9prx29wl%2Bvmq%2BRc%3D&SigAlg=http%3A%2F%2Fwww.w3.org%2F2001%2F04%2Fxmldsig-more%23rsa-sha256&Signature=OUWkbXFXKkBXZsyek84eOzp2jW0dsQOZ35Ucj4Ai4Cs5B6FBxQtze6ctiJy8P8kIa%2B2%2FRpMVpEKjVRLF60ljNJQBP4MNG99HqkFxwXM5OA9twFGVWXlurDv3oPwjl3DmeI20n8lOa4ggCyZ3u17exQy1OtJE6%2F%2FOgYV%2FDZgzsEVXVTgnNuifipPSOSQVJGb3uw6LAydCa5Plv1jsCt36a4UQ%2BfdLbJZ6Su9Bqt%2BLUO9UlyZILFayCnebQqRRlK8%2BpAExJ2PVs0voMyKUO2PKDN7pgAQUhkVvWBW6D4oFTX0En5t0FZC20qfcm1yWcoit2jRqMz77K3S%2BrBvlVKxzUw%3D%3D"
+          class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
     </div>
-    <!--2ºDiploma -->
+<!-- 
     <div class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
         <img src="./assets/img/cursos/Plataforma5.jpg" class="card-image" alt="certificadoPlataforma5" />
@@ -33,7 +51,6 @@
           class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
     </div>
-    <!--3ºDiploma -->
     <div class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
         <img src="./assets/img/cursos/MuniPlataforma5.jpg" class="card-image" alt="certificadoMunibariloche" />
@@ -44,7 +61,6 @@
           target="_blank">Ver</a>
       </div>
     </div>
-    <!--4ºDiploma -->
     <div class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
         <img src="./assets/img/cursos/Grasshopper.jpg" class="card-image" alt="certificadoGrasshopper" />
@@ -54,7 +70,6 @@
         <a href="https://learn.grasshopper.app/" class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
     </div>
-    <!--5ºDiploma -->
     <div class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
         <img src="./assets/img/cursos/Digitaliza.jpg" class="card-image" alt="certificadoGoogleActivate" />
@@ -64,7 +79,6 @@
         <a href="https://formacionactivate.withgoogle.com/ia" class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
     </div>
-    <!--6ºDiploma -->
     <div class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
         <img src="./assets/img/cursos/CiberSeguridad.jpg" class="card-image" alt="certificadoGoogleActivate" />
@@ -74,8 +88,6 @@
         <a href="https://formacionactivate.withgoogle.com/ia" class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
     </div>
-
-    <!--7ºDiploma -->
     <div class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
         <img src="./assets/img/cursos/Accenture.jpg" class="card-image" alt="certificadoAccenture" />
@@ -84,6 +96,6 @@
         </div>
         <a href="https://www.accenture.com/ar-es" class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>

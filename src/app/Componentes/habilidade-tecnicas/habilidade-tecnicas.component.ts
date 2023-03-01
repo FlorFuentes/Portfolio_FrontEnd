@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 
 @Component({
@@ -6,9 +6,9 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
   templateUrl: './habilidade-tecnicas.component.html',
   styleUrls: ['./habilidade-tecnicas.component.css']
 })
-export class HabilidadeTecnicasComponent {
+export class HabilidadeTecnicasComponent implements OnInit{
   miPortfolio: any;
-  //Defino variable para recorrer el array de educacion
+  //Defino variable para recorrer el array de Habilidades
   habilidadLista: any;
   constructor(private datosPortfolio: MiServicioService) { }
 

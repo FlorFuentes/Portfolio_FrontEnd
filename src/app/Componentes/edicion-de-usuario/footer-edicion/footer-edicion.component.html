@@ -32,22 +32,21 @@
     </div>
 
     <div>
-        <p>¡Para contactarte conmigo podes seguirme en las redes!</p>
+        <p *ngIf="miPortfolio">{{miPortfolio.footer.frase}}</p>
     </div>
     <div class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
-        <a class="nav-link" title="GitHub" href="https://github.com/FlorFuentes" target="_blank">
+        <a *ngIf="miPortfolio" class="nav-link" title="GitHub" [href]="miPortfolio.githubURL"   target="_blank">
             <i class="fa-brands fa-github text-white"></i></a>
 
-        <a class="nav-link" title="Telegram" href="https://t.me/Flor_Fuentes_12" target="_blank"><i
+        <a *ngIf="miPortfolio" class="nav-link" title="Telegram" [href]="miPortfolio.telegramURL"  target="_blank"><i
                 class="fa-brands fa-telegram text-white"></i></a>
 
-        <a class="nav-link" title="Linkedin" href="https://www.linkedin.com/in/florencia-fuentes-52b841263/"
-            target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
+        <a *ngIf="miPortfolio" class="nav-link" title="Linkedin" [href]="miPortfolio.linkedinURL" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
     </div>
     <div class="boton-up">
         <a title="Volver al inicio" (click)="toInicio()"> <i class="fa-regular fa-circle-up text-white fa-2x"></i></a>
     </div>
-    <p class="disclaimer">Copyright © Todos los derechos reservados 05/2023</p>
+    <p  *ngIf="miPortfolio" class="disclaimer">{{miPortfolio.footer.txtCopyright}}</p>
 
 
 </footer>

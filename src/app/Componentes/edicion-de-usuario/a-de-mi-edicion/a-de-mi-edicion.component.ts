@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 
 @Component({
   selector: 'app-a-de-mi-edicion',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./a-de-mi-edicion.component.css']
 })
 export class ADeMiEdicionComponent {
+  miPortfolio: any;
+  constructor(private datosPortfolio: MiServicioService){ }
 
+  ngOnInit(): void {
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
+      this.miPortfolio = data;
+    });
+  }
 }

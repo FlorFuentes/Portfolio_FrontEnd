@@ -1,9 +1,9 @@
 <div id="proyectos"></div>
 <!-- DATA BINDING -->
 <section class="proyecto">
-    <h1 class="pro-title text-center" >Proyectos</h1>
-    <div  class="container col-12 col-sm-6 col-ms-4"><!-- le agregue esto y quedo todo junto  -->
-      <div *ngFor="let proyectos of proyectosLista" class="card">
+    <h1 class="pro-title text-center"id="proyectos" >Proyectos</h1>
+    <div class="container row">
+      <div *ngFor="let proyectos of proyectosLista" class="card col-12 col-md-6 col-lg-4" >
           <div class="face face1">
               <div class="content">
                 <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
@@ -17,6 +17,8 @@
               </div>
           </div>
       </div>
+    </div>
+</section> 
  
  
  
@@ -105,5 +107,4 @@
             </div>
         </div>
       </div> -->
-    </div>
-  </section> 
+   

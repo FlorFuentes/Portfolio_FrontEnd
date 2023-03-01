@@ -38,6 +38,10 @@ import { MiServicioService } from './servicios/mi-servicio.service';
 //Importamos nuestro HTTPClient
 import{ HttpClientModule} from "@angular/common/http";
 
+//Formulario Reactivo
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -68,7 +72,9 @@ import{ HttpClientModule} from "@angular/common/http";
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule   
   ],
   //Si lo creo de forma manual, no con  –module=app al crear el servicio,lo tengo que importar en el app.module.ts. providers. esta bien asi?
   providers: [MiServicioService], 

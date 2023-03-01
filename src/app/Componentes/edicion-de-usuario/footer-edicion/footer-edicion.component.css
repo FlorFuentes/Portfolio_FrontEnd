@@ -72,6 +72,8 @@ footer {
   }
   /* Derechos */
   .disclaimer {
+    margin:0 auto;
+
     padding: 20px;
     color: white;
   }

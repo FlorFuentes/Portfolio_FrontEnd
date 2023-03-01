@@ -2,8 +2,8 @@
   background-image: url("../../../assets/img/FondoBari.jpg");
   /*   opacity: 0.9;
    */
-  min-height: 75vh;
-  width: 100%;
+   min-height: 75vh;
+   width: 100%;
   position: relative;
   background-size: cover;
   --webkit-background-size: cover;
