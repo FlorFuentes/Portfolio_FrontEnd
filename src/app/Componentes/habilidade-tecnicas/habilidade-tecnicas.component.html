@@ -10,19 +10,77 @@
       <span class="fill-bar pseint"></span>
     </div>
  -->
-<section class="habilidades">
+<!-- <section class="habilidades">
   <h1 class="ski-title text-center" id="habilidadestecnicas">Habilidades Técnicas</h1>
 
   <div  class="container fondo-ski">
-    <div *ngFor="let habilidadesTecnicas of habilidadLista" class="skill">
-      <h3 *ngIf="miPortfolio">{{habilidadesTecnicas.nombre}}</h3>
-      <h4 *ngIf="miPortfolio">{{habilidadesTecnicas.porcentaje}}</h4>
+    <div *ngFor="let habilidades of habilidadLista" class="skill">
+      <h3 >{{habilidades.nombre}}</h3>
+      <h4 >{{habilidades.porcentaje}}</h4>
       <span class="skill-bar"></span>
       <span class="fill-bar pseint"></span>
     </div>
   </div>
+</section> -->
+
+
+
+<section class="container-fluid  d-flex flex-column justify-content-around align-items-center">
+  <h2 class="ski-title text-center" id="habilidadestecnicas">Habilidades Técnicas</h2>
+  <div class="progress-circle-container row fondo-ski ">
+
+    <div class="di-hab-individual d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-85">
+        <span >85</span>
+      </div>
+      <i class="fa-brands fa-html5 fa-2x"></i>
+    </div>
+    <div class="di-hab-individual  d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-85"><span>85</span></div>
+      <i class="fa-brands fa-css3-alt fa-2x"></i>
+    </div>
+    <div class="di-hab-individual  d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-80"><span>80</span></div>
+      <i class="fa-brands fa-bootstrap fa-2x"></i>
+    </div>
+    <div class="di-hab-individual container d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-30"><span>30</span></div>
+      <i class="fa-brands fa-square-js fa-2x"></i>
+    </div>
+    <div class="di-hab-individual container d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-10"><span>10</span></div>
+      <i class="devicon-typescript-plain fa-2x"></i>
+    </div>
+
+    <div class="di-hab-individual container d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-30"><span>30</span></div>
+      <i class="fa-brands fa-python fa-2x"></i>
+    </div>
+
+    <div class="di-hab-individual container d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-10"><span>10</span></div>
+      <i class="fa-brands fa-angular fa-2x"></i>
+    </div>
+    
+    <!-- BASES PERO QUEDA FEO -->
+    <!-- <div class="di-hab-individual container d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-10"><span>10</span></div>
+      <i class="fa-solid fa-database fa-2x"></i>
+    </div> -->
+
+    <div class="di-hab-individual container d-flex flex-column justify-content-center col-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-10"><span>10</span></div> 
+      <i class="fa-brands fa-git-alt fa-2x"></i>
+    </div>
+    <div class="di-hab-individual container d-flex flex-column justify-content-centercol-6 col-md-4 col-lg-3">
+      <div class="progress-circle progress-10"><span>10</span></div> 
+      <i class="fa-brands fa-github fa-2x"></i>
+    </div>
+
+  </div>
 </section>
- 
+
+
     <!-- <div class="skill">
       <h3>Html</h3>
       <h4>85%</h4>

@@ -73,46 +73,53 @@
             }
         ]
     },
-    "habilidadesTecnicas": {
-        "habilidad": [
+    "habilidadesTecnicas":[
             {
-                "nombre": "Pseint",
-                "porcentaje": "95%"
-            },
-            {
+                "idH":1,
                 "nombre": "Html",
                 "porcentaje": "85%"
             },
             {
+                "idH":2,
                 "nombre": "Css",
                 "porcentaje": "85%"
             },
             {
+                "idH":3,
                 "nombre": "Bootstrap",
                 "porcentaje": "80%"
             },
             {
+                "idH":4,
                 "nombre": "Javascript",
                 "porcentaje": "30%"
             },
             {
+                "idH":5,
                 "nombre": "Typescript",
                 "porcentaje": "10%"
             },
             {
+                "idH":6,
                 "nombre": "Python",
                 "porcentaje": "30%"
             },
             {
+                "idH":7,
+                "nombre": "Angular",
+                "porcentaje": "10%"
+            },
+            {
+                "idH":8,
                 "nombre": "Git",
                 "porcentaje": "10%"
             },
             {
-                "nombre": "Github",
+                "idH":9,
+                "nombre": "GitHub",
                 "porcentaje": "10%"
             }
-        ]
-    },
+        ],
     "proyectos": {
         "proyecto": [
             {
