@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+
 /* color navbar */
 .bg-celeste {
   background: rgba(30, 143, 255, 0.411);
@@ -36,6 +37,7 @@ body {
   -msn-background-size: cover;
   background-repeat: no-repeat;
 }
+
 /* Nombre mio en el banner*/
 h1.intro {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -43,6 +45,7 @@ h1.intro {
   padding-top: 15%;
   /* font-weight: bold; */
 }
+
 h2.intro {
   color: #ffffff;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -87,21 +90,25 @@ h2.intro {
   display: flex;
   justify-content: center;
 }
+
 .fa-solid.fa-shop {
   color: #ffffff;
   text-align: center;
   padding: 10px;
 }
+
 .fa-solid.fa-cart-shopping {
   color: #ffffff;
   text-align: center;
   padding: 10px;
 }
+
 .fa-solid.fa-person-running {
   color: #ffffff;
   text-align: center;
   padding: 10px;
 }
+
 .experiencia-cont {
   box-shadow: 1.5px 1.1px 1.2px rgba(0, 0, 0, 0.073),
     3.7px 2.7px 2.8px rgba(0, 0, 0, 0.105), 7px 5.1px 5.3px rgba(0, 0, 0, 0.13),
@@ -128,6 +135,7 @@ h2.intro {
   /*   font-family: "Vast Shadow";
  */
 }
+
 .experiencia-info {
   margin: 10px 0;
 }
@@ -163,25 +171,31 @@ h2.intro {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 .edu-sec {
   padding: 40px 20px;
 }
+
 .card-container {
   padding: 10px;
 }
+
 .card-1 {
   min-width: 320px;
   max-width: 380px;
   height: 390px;
   padding: 0;
 }
+
 .card {
   margin: 40px 10px;
   transition: all 0.2s ease;
 }
+
 .card:hover {
   transform: scale(1.05);
 }
+
 .card-image {
   width: 100%;
   height: 270px;
@@ -192,23 +206,6 @@ h2.intro {
 }
 
 /* Habilidades tecnicas */
-/* Habilidades tecnicas */
-.fondo-ski {
-  box-shadow: 1.5px 1.1px 1.2px rgba(0, 0, 0, 0.073),
-  3.7px 2.7px 2.8px rgba(0, 0, 0, 0.105), 7px 5.1px 5.3px rgba(0, 0, 0, 0.13),
-  12.5px 9.2px 9.4px rgba(0, 0, 0, 0.155),
-    23.4px 17.1px 17.5px rgba(0, 0, 0, 0.187),
-    56px 41px 42px rgba(0, 0, 0, 0.26);
-  /* margin-bottom: 20px;
-  max-width: 1000px; */
-  /* width: 90vw; */
-  border-radius: 16px;
-margin: 10px 100px 20px 100px;
-/*     min-width: 300px;
-*/    background: rgba(28, 134, 220, 0.312);
-  border-radius: 10px;
-  padding: 15px 30px;
-}
 
 .ski-title {
   text-align: left;
@@ -222,88 +219,16 @@ margin: 10px 100px 20px 100px;
     0 20px 20px rgba(0, 0, 0, 0.15);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  }
-  
+}
+
 .container h1 {
   font-family: "Vast Shadow";
   text-align: center;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.progress-circle {
-position: relative;
-display: inline-block;
-margin: 1rem auto;
-width: 120px;
-height: 120px;
-border-radius: 50%;
-background-color: #ebebeb;
-}
 
-.progress-circle:after {
-content: '';
-display: inline-block;
-width: 100%;
-height: 100%;
-border-radius: 50%;
--webkit-animation: colorload 2s;
-animation: colorload 2s;
-}
-
-.progress-circle span {
-font-size: 1rem;
-color: #8b8b8b;
-position: absolute;
-left: 50%;
-top: 50%;
-display: block;
-width: 90px;
-height: 90px;
-line-height: 90px;
-margin-left: -45px;
-margin-top: -45px;
-text-align: center;
-border-radius: 50%;
-background: #fff;
-z-index: 1;
-}
-
-.progress-circle span:after {
-content: "%";
-font-weight: 600;
-color: #8b8b8b;
-}
-
-.progress-circle.progress-10:after {
-background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(126deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
-}
-
-.progress-circle.progress-30:after {
-background-image: linear-gradient(90deg, #ebebeb 50%, transparent 50%, transparent), linear-gradient(198deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
-}
-
-.progress-circle.progress-80:after {
-background-image: linear-gradient(18deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
-}
-
-.progress-circle.progress-85:after {
-background-image: linear-gradient(36deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
-}
-
-.progress-circle.progress-95:after {
-background-image: linear-gradient(72deg, #66b8ff 50%, transparent 50%, transparent), linear-gradient(270deg, #66b8ff 50%, #ebebeb 50%, #ebebeb);
-}
-.di-hab-individual i {
-text-align: center;
-color: white;
-}
-i{
-/* si quiero sombra,pero es largo */
-/*  box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-border-radius: 20px; */
-color:white;
-}
-/* .container.fondo-ski {
+.container.fondo-ski {
   box-shadow: 1.5px 1.1px 1.2px rgba(0, 0, 0, 0.073),
     3.7px 2.7px 2.8px rgba(0, 0, 0, 0.105), 7px 5.1px 5.3px rgba(0, 0, 0, 0.13),
     12.5px 9.2px 9.4px rgba(0, 0, 0, 0.155),
@@ -316,26 +241,6 @@ color:white;
   background: #1c86dc70;
   border-radius: 10px;
   padding: 15px 30px;
-}
-.ski-title {
-  text-align: left;
-  font-weight: bold;
-  font-size: 3rem;
-  color: #000000;
-  text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa,
-    0 5px 0 #acacac, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.container h1 {
-  font-family: "Vast Shadow";
-  text-align: center;
-  font-weight: 600;
-  margin-bottom: 30px;
 }
 
 .container .skill {
@@ -372,10 +277,11 @@ color:white;
   border-radius: 15px;
   background: #0077b6;
 }
-.container .skill .pseint {
+
+/* .container .skill .pseint {
   animation: html 2s;
   width: 95%;
-}
+} */
 .container .skill .html {
   animation: html 2s;
   width: 85%;
@@ -385,10 +291,12 @@ color:white;
   animation: css 2s;
   width: 85%;
 }
+
 .container .skill .bootstrap {
   animation: javascript 2s;
   width: 80%;
 }
+
 .container .skill .javascript {
   animation: javascript 2s;
   width: 30%;
@@ -403,58 +311,75 @@ color:white;
   animation: react 2s;
   width: 30%;
 }
+
+.container .skill .angular {
+  animation: react 2s;
+  width: 10%;
+}
+
 .container .skill .git {
   animation: react 2s;
   width: 10%;
 }
+
 .container .skill .github {
   animation: react 2s;
   width: 10%;
 }
-@keyframes pseint {
+
+/* @keyframes pseint {
   from {
     width: 0;
   }
   to {
     width: 95%;
   }
-}
+} */
 @keyframes html {
   from {
     width: 0;
   }
+
   to {
     width: 85%;
   }
 }
+
 @keyframes css {
   from {
     width: 0;
   }
+
   to {
     width: 85%;
   }
 }
+
 @keyframes bootstrap {
   from {
     width: 0;
   }
+
   to {
     width: 80%;
   }
 }
+
 @keyframes javascript {
   from {
     width: 0;
   }
+
   to {
     width: 30%;
   }
 }
+
 @keyframes typescript {
   from {
     width: 0;
   }
+
   to {
     width: 10%;
   }
@@ -464,28 +389,43 @@ color:white;
   from {
     width: 0;
   }
+
   to {
     width: 30%;
   }
 }
+
+@keyframes angular {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+
 @keyframes git {
   from {
     width: 0;
   }
+
   to {
     width: 10%;
   }
 }
+
 @keyframes github {
   from {
     width: 0;
   }
+
   to {
     width: 10%;
   }
 }
- */
- /* card proyectos */
+
+/* card proyectos */
 .pro-title {
   padding: 20px;
   text-align: left;
@@ -506,6 +446,7 @@ color:white;
   margin: 40px 0;
   padding: 20px; */
 }
+
 .proyecto {
   display: flex;
   flex-direction: column;
@@ -521,7 +462,8 @@ color:white;
 }
 
 .proyecto .container .card {
-  /*   background-color: #277ef0ad; */ /* color al rededor de la card */
+  /*   background-color: #277ef0ad; */
+  /* color al rededor de la card */
   position: relative;
   cursor: pointer;
 }
@@ -611,7 +553,8 @@ footer {
   opacity: 0.9;
   background-image: url("../img/footer2.webp");
   filter: brightness(80%);
-  /*   background-image: url("../img/footer.jpg"); */ /* MONTAÑA B/N */
+  /*   background-image: url("../img/footer.jpg"); */
+  /* MONTAÑA B/N */
   min-height: 45vh;
   width: 100%;
   text-align: center;
@@ -620,22 +563,26 @@ footer {
   background-attachment: fixed;
   background-size: cover;
 }
+
 /*MOVIMIENTO ICONOS CUANDO PASO EL MOUSE */
 .fa-brands.fa-github:hover {
   --bs-text-opacity: 100%;
   transform: scale(1.3, 1.3);
   transition: all 0.5s ease;
 }
+
 .fa-brands.fa-telegram:hover {
   --bs-text-opacity: 1;
   transform: scale(1.3, 1.3);
   transition: all 0.5s ease;
 }
+
 .fa-brands.fa-linkedin:hover {
   --bs-text-opacity: 1;
   transform: scale(1.3, 1.3);
   transition: all 0.5s ease;
 }
+
 .fa-solid.fa-user-lock:hover {
   --bs-text-opacity: 1;
   transform: scale(1.3, 1.3);
@@ -646,14 +593,17 @@ footer {
 a.nav-link {
   padding: 10px 20px;
 }
+
 i.fa-brands {
   font-size: 23px;
 }
+
 /* Boton volver arriba */
 .boton-up {
   display: flex;
   justify-content: end;
 }
+
 .fa-regular.fa-circle-up {
   margin: 5px;
   min-height: 20px;
@@ -663,9 +613,11 @@ i.fa-brands {
   justify-content: end;
   align-items: center;
 }
+
 .boton-up a {
   text-decoration: none;
 }
+
 /* texto */
 footer div p {
   font-family: "Caramel", cursive;
@@ -673,9 +625,10 @@ footer div p {
   font-size: 2rem;
   color: white;
 }
+
 /* Derechos */
 .disclaimer {
-  margin:0 auto;
+  margin: 0 auto;
   padding: 20px;
   color: #ffffff;
 }
@@ -726,15 +679,18 @@ border: 1px solid rgba(255, 255, 255, 0.3); */
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .form-label {
   text-align: left;
 }
+
 .formulario-login h2 {
   padding: 4%;
   margin: 5px 0;
 
   /* color:white; */
 }
+
 /* Boton enviar */
 input[type="submit"] {
   outline: none;
@@ -751,11 +707,13 @@ input[type="submit"] {
   .formulario-login {
     min-width: 300px;
   }
+
   .formulario-login h2 {
     font-size: 1.3rem;
     margin: 20px 0;
   }
 }
+
 /* @media screen and (max-width: 500px) {
     .proyecto .container {
         display: flex;
