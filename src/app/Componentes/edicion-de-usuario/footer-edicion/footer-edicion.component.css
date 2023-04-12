@@ -1,134 +1,154 @@
 /* footer */
 footer {
-    /* -webkit-backdrop-filter: blur(5px);
+  /* -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px); */
-    opacity: 0.9;
-    background-image: url("../../../../assets/img/footer2.webp");
-    filter: brightness(80%);
-    /*   background-image: url("../img/footer.jpg"); */ /* MONTAÑA B/N */
-    min-height: 45vh;
-    width: 100%;
-    text-align: center;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-  /*MOVIMIENTO ICONOS CUANDO PASO EL MOUSE */
-  .fa-brands.fa-github:hover {
-    --bs-text-opacity: 100%;
-    transform: scale(1.3, 1.3);
-    transition: all 0.5s ease;
-  }
-  .fa-brands.fa-telegram:hover {
-    --bs-text-opacity: 1;
-    transform: scale(1.3, 1.3);
-    /*  color: #0088CC !important; */
-    transition: all 0.5s ease;
-  }
-  .fa-brands.fa-linkedin:hover {
-    --bs-text-opacity: 1;
-    transform: scale(1.3, 1.3);
-    /* color: #0e76a8!important ; */
-    transition: all 0.5s ease;
-  }
-  .fa-solid.fa-user-lock:hover {
-    --bs-text-opacity: 1;
-    transform: scale(1.3, 1.3);
-    transition: all 0.5s ease;
-  }
-  
-  /* Iconos */
-  a.nav-link {
-    padding: 10px 20px;
-  }
-  i.fa-brands {
-    font-size: 23px;
-  }
-  /* Boton volver arriba */
-  .boton-up {
-    cursor:pointer;
-    display: flex;
-    justify-content: end;
-  }
-  .fa-regular.fa-circle-up {
-    margin: 5px;
-    min-height: 20px;
-    /*   width: 94vw;
-   */
-    display: flex;
-    justify-content: end;
-    align-items: center;
-  }
-  .boton-up a {
-    text-decoration: none;
-  }
-  /* texto */
-  footer div p {
-    font-family: "Caramel", cursive;
-    padding: 20px;
-    font-size: 2rem;
-    color: white;
-  }
-  /* Derechos */
-  .disclaimer {
-    margin:0 auto;
-
-    padding: 20px;
-    color: white;
-  }
-/* Boton editar*/
-.edicion-footer{
-    text-decoration: none;
-    max-width: 200px;
-    padding:10px;
-    margin:50px auto;
-    color:white;
-    background-color: rgba(30, 143, 255, 0.671);
-    border-radius:10px;
-    cursor:pointer;
-    transition: all 0.2s ease-in-out
+  opacity: 0.9;
+  background-image: url("../../../../assets/img/footer2.webp");
+  filter: brightness(80%);
+  /*   background-image: url("../img/footer.jpg"); */
+  /* MONTAÑA B/N */
+  min-height: 45vh;
+  width: 100%;
+  text-align: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-.edicion-footer:hover {
-  background-color:  rgba(30, 143, 255, 0.411);
+
+/*MOVIMIENTO ICONOS CUANDO PASO EL MOUSE */
+.fa-brands.fa-github:hover {
+  --bs-text-opacity: 100%;
+  transform: scale(1.3, 1.3);
+  transition: all 0.5s ease;
+}
+
+.fa-brands.fa-telegram:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  /*  color: #0088CC !important; */
+  transition: all 0.5s ease;
+}
+
+.fa-brands.fa-linkedin:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  /* color: #0e76a8!important ; */
+  transition: all 0.5s ease;
+}
+
+.fa-solid.fa-user-lock:hover {
+  --bs-text-opacity: 1;
+  transform: scale(1.3, 1.3);
+  transition: all 0.5s ease;
+}
+
+/* Iconos */
+a.nav-link {
+  padding: 10px 20px;
+}
+
+i.fa-brands {
+  font-size: 23px;
+}
+
+/* Boton volver arriba */
+.boton-up {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-regular.fa-circle-up {
+  margin: 5px;
+  min-height: 20px;
+  /*   width: 94vw;
+   */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.boton-up a {
+  text-decoration: none;
+}
+
+/* texto */
+footer div p {
+  font-family: "Caramel", cursive;
+  padding: 20px;
+  font-size: 2rem;
   color: white;
 }
-.edicion-footer i{
+
+/* Derechos */
+.disclaimer {
+  margin: 0 auto;
+
+  padding: 20px;
+  color: white;
+}
+
+/* Boton editar*/
+.edicion-footer {
+  text-decoration: none;
+  max-width: 200px;
+  padding: 10px;
+  margin: 20px auto;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out
+}
+
+.edicion-footer:hover {
+  background-color: rgba(30, 143, 255, 0.411);
+  color: white;
+}
+
+.edicion-footer i {
   padding: 0px 10px;
 }
-.form-footer{
-    appearance: none;
+
+.form-footer {
+  appearance: none;
 }
+
 /* Para ocultar el formulario */
-.form-footer:checked ~ .form-edicion{
+.form-footer:checked~.form-edicion {
   height: 0px;
   display: none;
 }
+
 /* formulario */
-.form-edicion{
+.form-edicion {
   padding: 20px;
   background-color: var(--shadow-3);
   border-radius: 5px;
   width: 70%;
   margin: 0 auto;
 }
-.form-div{
-/*     color:white;
- */    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 16px 0;
+
+.form-div {
+  /*     color:white;
+ */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 16px 0;
 }
 
-.form-div input[type="text"]{
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
+.form-div input[type="text"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
 }
-.form-div input[type="url"]{
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
+
+.form-div input[type="url"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
 }
 
 /* Boton aceptar */
@@ -142,9 +162,84 @@ footer {
   transition: all 0.2s ease;
   text-align: center;
 }
+
 .button-aceptar input[type="submit"]:hover {
-  background-color:rgba(30, 143, 255, 0.411) ;
+  background-color: rgba(30, 143, 255, 0.411);
   color: white;
 }
 
-  
+/* Formulario agregar */
+.agregar-footer {
+  text-decoration: none;
+  max-width: 200px;
+  padding: 10px;
+  margin: 25px auto;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-foot {
+  appearance: none;
+
+}
+
+.agregar-footer i {
+  padding: 0px 10px;
+}
+
+/*Para ocultar el formulario */
+.form-foot:checked~.form-agre-footer {
+  height: 0px;
+  display: none;
+}
+
+/* formulario */
+.form-agre-footer {
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+label {
+  color: white;
+}
+
+.form-div input[type="text"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form-div input[type="url"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+/* Boton eliminar */
+.button-eliminar input[type="submit"] {
+  margin: 10px;
+  padding: 8px 28px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  transition: all 0.2s ease;
+  text-align: center;
+
+}
+
+.button-eliminar input[type="submit"]:hover {
+  background-color: rgba(30, 143, 255, 0.411);
+  color: white;
+}
+
+.button-eliminar i {
+  padding: 0px 10px;
+  color: white;
+}

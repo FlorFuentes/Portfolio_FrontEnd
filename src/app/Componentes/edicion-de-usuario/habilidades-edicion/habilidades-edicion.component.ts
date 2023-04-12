@@ -16,7 +16,7 @@ export class HabilidadesEdicionComponent {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
-      this.habilidadLista= data.habilidadesTecnicas.habilidad;
+      this.habilidadLista= data.habilidadesTecnicas;
     });
   }
 }

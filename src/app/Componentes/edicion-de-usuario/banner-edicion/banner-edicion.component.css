@@ -1,50 +1,59 @@
 /* Boton editar*/
-.ban{
-    text-decoration: none;
-    max-width: 200px;
-    padding:10px;
-    margin:100px;
-    color:white;
-    background-color: rgba(30, 143, 255, 0.671);
-    border-radius:10px;
-    cursor:pointer;
-    transition: all 0.2s ease-in-out
+.ban {
+  text-decoration: none;
+  max-width: 200px;
+  padding: 10px;
+  margin: 100px auto 10px auto;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
+
 .ban:hover {
-  background-color:  rgba(30, 143, 255, 0.411);
+  background-color: rgba(30, 143, 255, 0.411);
   color: white;
 }
-.ban i{
+
+.ban i {
   padding: 0px 10px;
 }
-.form-banner{
-    appearance: none;
+
+.form-banner {
+  appearance: none;
 }
+
 /* Para ocultar el  formulario */
-.form-banner:checked ~ .form-edicion{
+.form-banner:checked~.form-edicion {
   height: 0px;
   display: none;
 }
+
 /* formulario */
-.form-edicion{
-/*   background-color:rgba(30, 143, 255, 0.504);
- */  
+.form-edicion {
+  /*   background-color:rgba(30, 143, 255, 0.504);
+ */
   padding: 20px;
   border-radius: 5px;
   width: 70%;
 }
-.form-div{
-/*     color:white;
- */    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 16px 0;
+
+.form-div {
+  /*     color:white;
+ */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 16px 0;
 }
-.form-div input[type="text"]{
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
+
+.form-div input[type="text"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
 }
+
 /* Boton aceptar */
 .button-aceptar input[type="submit"] {
   margin: 10px;
@@ -56,34 +65,112 @@
   transition: all 0.2s ease;
   text-align: center;
 }
+
 .button-aceptar input[type="submit"]:hover {
-  background-color:rgba(30, 143, 255, 0.411) ;
+  background-color: rgba(30, 143, 255, 0.411);
+  color: white;
+}
+
+/* Formulario agregar */
+.ban-agregar {
+  text-decoration: none;
+  max-width: 200px;
+  padding: 10px;
+  margin: 25px;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-agregar {
+  appearance: none;
+
+}
+
+.ban-agregar i {
+  padding: 0px 10px;
+}
+
+/*Para ocultar el formulario */
+.form-agregar:checked~.formulario-agregar {
+  height: 0px;
+  display: none;
+}
+
+/* formulario */
+.formulario-agregar {
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+}
+
+label {
+  color: white;
+}
+
+.form-div {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 16px 0;
+}
+
+.form-div input[type="imagen"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+/* Boton eliminar */
+.button-eliminar input[type="submit"] {
+  margin: 10px;
+  padding: 8px 28px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  transition: all 0.2s ease;
+  text-align: center;
+
+}
+
+.button-eliminar input[type="submit"]:hover {
+  background-color: rgba(30, 143, 255, 0.411);
+  color: white;
+}
+
+.button-eliminar i {
+  padding: 0px 10px;
   color: white;
 }
 
 
-
 /* banner original */
 .banner {
-    background-image: url("../../../../assets/img/FondoBari.jpg");  
-    min-height: 75vh;
-    width: 100%;
-    position: relative;
-    background-size: cover;
-    --webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    -msn-background-size: cover;
-    background-repeat: no-repeat;
-  }
-  /* Nombre mio en el banner*/
-  h1.intro {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: white;
-    /* font-weight: bold; */
-  }
-  h2.intro {
-    color: white;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
-  
+  background-image: url("../../../../assets/img/FondoBari.jpg");
+  min-height: 75vh;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+  --webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Nombre mio en el banner*/
+h1.intro {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  /* font-weight: bold; */
+}
+
+h2.intro {
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

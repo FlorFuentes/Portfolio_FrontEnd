@@ -29,24 +29,58 @@
                 <input type="submit" value="Aceptar">
             </div>
         </form>
-    </div>
+        <!-- otro formulario -->
+        <div class="form-div-cont container d-flex flex-column justify-content-center">
 
+            <label class="agregar-footer" for="agre-footer">Agregar<i class="fa-solid fa-plus"></i></label>
+            <input name="agre-footer" id="agre-footer" class="form-foot" type="checkbox" checked>
+            <form class="form-agre-footer" id="footer">
+                <div class="form-div">
+                    <label for="Contacto">Agregue redes sociales :</label>
+                    <input type="text" id="Nombre" name="Nombre" placeholder="WhatsApp/Facebook/LinKedin/Instagram">
+                </div>
+                <!-- redes -->
+                <div class="form-div">
+                    <label for="Redes">gitHub (URL)</label>
+                    <input type="url" id="Redes" name="Redes" placeholder="https://www.github/perfil">
+                </div>
+
+                <div class="form-div">
+                    <label for="Redes">Telegram (URL)</label>
+                    <input type="url" id="Redes" name="Redes" placeholder="https://t.me/perfil">
+                </div>
+
+                <div class="form-div">
+                    <label for="Redes">Linkedin (URL)</label>
+                    <input type="url" id="Redes" name="Redes" placeholder="https://www.linkedin.com/perfil">
+                </div>
+
+                <div class="button-aceptar text-center">
+                    <input type="submit" value="Aceptar">
+                </div>
+            </form>
+            <div class="button-eliminar text-center">
+                <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
+            </div>
+        </div>
+    </div>
     <div>
         <p *ngIf="miPortfolio">{{miPortfolio.footer.frase}}</p>
     </div>
     <div class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
-        <a *ngIf="miPortfolio" class="nav-link" title="GitHub" [href]="miPortfolio.githubURL"   target="_blank">
+        <a *ngIf="miPortfolio" class="nav-link" title="GitHub" [href]="miPortfolio.githubURL" target="_blank">
             <i class="fa-brands fa-github text-white"></i></a>
 
-        <a *ngIf="miPortfolio" class="nav-link" title="Telegram" [href]="miPortfolio.telegramURL"  target="_blank"><i
+        <a *ngIf="miPortfolio" class="nav-link" title="Telegram" [href]="miPortfolio.telegramURL" target="_blank"><i
                 class="fa-brands fa-telegram text-white"></i></a>
 
-        <a *ngIf="miPortfolio" class="nav-link" title="Linkedin" [href]="miPortfolio.linkedinURL" target="_blank"><i class="fa-brands fa-linkedin text-white"></i></a>
+        <a *ngIf="miPortfolio" class="nav-link" title="Linkedin" [href]="miPortfolio.linkedinURL" target="_blank"><i
+                class="fa-brands fa-linkedin text-white"></i></a>
     </div>
     <div class="boton-up">
         <a title="Volver al inicio" (click)="toInicio()"> <i class="fa-regular fa-circle-up text-white fa-2x"></i></a>
     </div>
-    <p  *ngIf="miPortfolio" class="disclaimer">{{miPortfolio.footer.txtCopyright}}</p>
+    <p *ngIf="miPortfolio" class="disclaimer">{{miPortfolio.footer.txtCopyright}}</p>
 
 
 </footer>

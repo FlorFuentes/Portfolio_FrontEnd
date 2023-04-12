@@ -1,106 +1,184 @@
 /* Boton editar*/
-.acercademi{
+.acercademi {
   text-decoration: none;
   max-width: 200px;
-  padding:10px;
-  margin:20px;
-  color:white;
+  padding: 10px;
+  margin: 20px;
+  color: white;
   background-color: rgba(30, 143, 255, 0.671);
-  border-radius:10px;
-  cursor:pointer;
+  border-radius: 10px;
+  cursor: pointer;
   transition: all 0.2s ease-in-out
 }
+
 .acercademi:hover {
-background-color:  rgba(30, 143, 255, 0.555);
-color: white;
+  background-color: rgba(30, 143, 255, 0.555);
+  color: white;
 }
-.acercademi i{
-padding: 0px 10px;
+
+.acercademi i {
+  padding: 0px 10px;
 }
-.form-a-de-mi{
+
+
+.form-a-de-mi {
   appearance: none;
 }
-/*Para ocultar el formulario */
-.form-a-de-mi:checked ~ .form-edicion{
-height: 0px;
-display: none;
-}
-/* formulario */
-.form-edicion{
-  box-shadow:
-  5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
-  40px 63px 67px rgba(0, 0, 0, 0.08)
-;
-padding: 20px;
-background-color: rgba(30, 143, 255, 0.226);
 
-/* background-color: var(--shadow-3);
- */
-/* background-color: rgba(30, 143, 255, 0.301);
- */
-border-radius: 5px;
-width: 85%;
+/*Para ocultar el formulario */
+.form-a-de-mi:checked~.form-edicion {
+  height: 0px;
+  display: none;
 }
-.form-div{
-  color:black;
+
+/* formulario */
+.form-edicion {
+  box-shadow:
+    5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
+    40px 63px 67px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  background-color: rgba(30, 143, 255, 0.226);
+
+  /* background-color: var(--shadow-3);
+ */
+  /* background-color: rgba(30, 143, 255, 0.301);
+ */
+  border-radius: 5px;
+  width: 85%;
+}
+
+.form-div {
+  color: black;
   display: flex;
   flex-direction: column;
   text-align: left;
   margin: 16px 0;
 }
-.form-div input[type="imagen"]{
+
+.form-div input[type="imagen"] {
   margin-top: 5px;
   border-radius: 5px;
   outline: none;
 }
-#text-area{
+
+#text-area {
   border-radius: 5px;
 }
+
 /* Boton aceptar */
 .button-aceptar input[type="submit"] {
-margin: 10px;
-padding: 8px 38px;
-border: none;
-border-radius: 4px;
-color: white;
-background-color: rgba(30, 143, 255, 0.671);
-transition: all 0.2s ease;
-text-align: center;
+  margin: 10px;
+  padding: 8px 38px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  transition: all 0.2s ease;
+  text-align: center;
 }
+
 .button-aceptar input[type="submit"]:hover {
-background-color:rgba(30, 143, 255, 0.411) ;
-color: white;
+  background-color: rgba(30, 143, 255, 0.411);
+  color: white;
 }
+
+/* Formulario agregar */
+.form-a-de-mi-agregar {
+  appearance: none;
+
+}
+
+/*Para ocultar el formulario */
+.form-a-de-mi-agregar:checked~.form-agregar {
+  height: 0px;
+  display: none;
+}
+
+/* formulario */
+.form-agregar {
+  box-shadow:
+    5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
+    40px 63px 67px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  background-color: rgba(30, 143, 255, 0.226);
+  border-radius: 5px;
+  width:85%;
+}
+
+.form-div {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 16px 0;
+}
+
+.form-div input[type="imagen"] {
+  margin-top: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#text-area {
+  border-radius: 5px;
+}
+
+/* Boton eliminar */
+.button-eliminar input[type="submit"]{
+  margin: 10px;
+  padding: 8px 28px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: rgba(30, 143, 255, 0.671);
+  transition: all 0.2s ease;
+  text-align: center;
+
+}
+.button-eliminar input[type="submit"]:hover {
+  background-color: rgba(30, 143, 255, 0.411);
+  color: white;
+}
+/* .button-eliminar i{
+  padding: 0px 10px;
+  color:white;
+}
+ */
+
+
+
+
+
+
 
 /* Foto mia */
 .div-profile {
-    margin: 0 auto;
-  }
-  
-  .div-img-profile {
-    /* position: relative; */
-    min-height: 150px;
-  }
-  
-  /* Acerca de mi */
-  .div-p p {
-    /* margin: 5% 10% auto 35%; */
-    margin: 30px 40px;
-    font: small-caps 100%/200% serif;
-    font-size: 1.2rem;
-  }
-  
-  .fotoperfil {
-    /* margin: 0px 30px 30px 60px; */
-    height: 200px;
-    width: 200px;
-    padding: 5px;
-    /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
-    background-color: white;
-    /* background-color: rgb(14, 13, 13); */
-    /* position: absolute;
+  margin: 0 auto;
+}
+
+.div-img-profile {
+  /* position: relative; */
+  min-height: 150px;
+}
+
+/* Acerca de mi */
+.div-p p {
+  /* margin: 5% 10% auto 35%; */
+  margin: 30px 40px;
+  font: small-caps 100%/200% serif;
+  font-size: 1.2rem;
+}
+
+.fotoperfil {
+  /* margin: 0px 30px 30px 60px; */
+  height: 200px;
+  width: 200px;
+  padding: 5px;
+  /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
+  background-color: white;
+  /* background-color: rgb(14, 13, 13); */
+  /* position: absolute;
     top: -50px;
     left: 32%; */
-    transform: translateY(-50px);
-  }
-  
+  transform: translateY(-50px);
+}

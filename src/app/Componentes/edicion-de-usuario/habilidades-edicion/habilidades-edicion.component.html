@@ -8,22 +8,14 @@
       <input name="efhabilidades" id="efhabilidades" class="form-habilidades" type="checkbox" checked>
     
       <form class="form-edicion text-center" id="habilidades">
-        <div class="form-div">
-          <label for="pseint">PSeInt</label>
-          <input type="text" id="pseint" name="pseint"placeholder="Habilidad">
-        </div>
-        <!-- o pongo un div x cada parte o unifico como en el ejmplo de html -->
-        <div class="form-div">
-          <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="Porcentaje estimado">
-        </div>
+        
         <div class="form-div">
           <label for="html">Html</label>
           <input type="text" id="html" name="html"placeholder="Habilidad">
         </div>
         <div class="form-div">
           <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="Porcentaje estimado">
+          <input type="number" id="porc" name="porc"placeholder="85%">
         </div>
         <div class="form-div">
           <label for="css">Css</label>
@@ -31,7 +23,7 @@
         </div>
         <div class="form-div">
           <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="Porcentaje estimado">
+          <input type="number" id="porc" name="porc"placeholder="85%">
         </div>
         <div class="form-div">
           <label for="Boots">Bootstrap 5</label>
@@ -39,19 +31,58 @@
         </div>
         <div class="form-div">
           <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="Porcentaje estimado">
+          <input type="number" id="porc" name="porc"placeholder="80%">
         </div>
         <div class="button-aceptar text-center">
           <input type="submit" value="Aceptar">
         </div>
       </form>
+
+      <!-- Otro formulario-->
+      <label class="habiTecnicas" for="habi-agregar" >Agregar<i class="fa-solid fa-plus"></i></label>
+      <input name="habi-agregar" id="habi-agregar" class="form-habi-agre" type="checkbox" checked>
+    
+      <form class="form-habi-agregar text-center" id="habilidades">
+        
+        <div class="form-div">
+          <label for="html">Habilidad</label>
+          <input type="text" id="html" name="html"placeholder="Html">
+        </div>
+        <div class="form-div">
+          <label for="porc">Porcentaje estimado</label>
+          <input type="number" id="porc" name="porc"placeholder="%">
+        </div>
+        <div class="form-div">
+          <label for="css">Habilidad</label>
+          <input type="text" id="css" name="css"placeholder="Css">
+        </div>
+        <div class="form-div">
+          <label for="porc">Porcentaje estimado</label>
+          <input type="number" id="porc" name="porc"placeholder="%">
+        </div>
+        <div class="form-div">
+          <label for="Boots">Habilidad</label>
+          <input type="text" id="Boots" name="Boots"placeholder="Bootstrap 5">
+        </div>
+        <div class="form-div">
+          <label for="porc">Porcentaje estimado</label>
+          <input type="number" id="porc" name="porc"placeholder="%">
+        </div>
+        <div class="button-aceptar text-center">
+          <input type="submit" value="Aceptar">
+        </div>
+      </form>
+      <div class="button-eliminar text-center"> 
+        <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
+      </div>
       </div>
     <div class="container fondo-ski">
           <div *ngFor="let habilidadesTecnicas of habilidadLista" class="skill">
-            <h3 *ngIf="miPortfolio">{{habilidadesTecnicas.nombre}}</h3>
-            <h4 *ngIf="miPortfolio">{{habilidadesTecnicas.porcentaje}}</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar pseint"></span>
+            <h3>{{habilidadesTecnicas.nombre}}</h3>
+            <h4>{{habilidadesTecnicas.porcentaje}}</h4>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-label=habilidadesTecnicas.nombre [style.width]= habilidadesTecnicas.porcentaje aria-valuenow=habilidadesTecnicas.porcentaje aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
           <!-- <div class="skill">
               <h3>Html</h3>
