@@ -33,7 +33,7 @@ import { ProyectosEdicionComponent } from './Componentes/edicion-de-usuario/proy
 import { FooterEdicionComponent } from './Componentes/edicion-de-usuario/footer-edicion/footer-edicion.component';
 
 //mi_servicio
-import { MiServicioService } from './servicios/mi-servicio.service';
+//import { MiServicioService } from './servicios/mi-servicio.service';
 
 //Importamos nuestro HTTPClient
 import{ HttpClientModule} from "@angular/common/http";
@@ -77,7 +77,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule   
   ],
   //Si lo creo de forma manual, no con  –module=app al crear el servicio,lo tengo que importar en el app.module.ts. providers. esta bien asi?
-  providers: [MiServicioService], 
+  providers: [], //MiServicioService estaba adentro de los corchetes de providers 
   bootstrap: [AppComponent]
 })
 export class AppModule { }

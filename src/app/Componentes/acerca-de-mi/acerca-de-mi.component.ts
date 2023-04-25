@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { AcercaDeMiService } from 'src/app/servicios/acerca-de-mi.service';
 
 @Component({
   selector: 'app-acerca-de-mi',
@@ -8,10 +8,10 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 })
 export class AcercaDeMiComponent {
   miPortfolio: any;
-  constructor(private datosPortfolio: MiServicioService){ }
+  constructor(private datosPortfolio: AcercaDeMiService){ }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosAcercaDeMi().subscribe(data => {
       this.miPortfolio = data;
     });
   }

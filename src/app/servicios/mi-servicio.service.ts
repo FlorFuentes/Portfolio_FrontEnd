@@ -1,15 +1,39 @@
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Banner } from '../Model/banner';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MiServicioService {
 
-  constructor(private http: HttpClient) { }
+  private json = './assets/data/data.json';
+  private ProyectoArgPrograma = 'http://localhost:8080';//Saque el (/banner/)
 
-  obtenerDatos(): Observable<any> {
-    return this.http.get('./assets/data/data.json');
+  httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
+  constructor(private http:HttpClient) { }
+
+  //Ver Banner
+  public obtenerDatosBanner(): Observable<Banner[]>{
+
+    return this.http.get<Banner[]>("/banner/ver") 
   }
+
+  //Editar Banner
+  public editarBanner(banner: Banner): Observable<Banner>{
+    
+    console.log(banner);
+    
+   
+    return this.http.put<Banner>('/banner/editar', banner);
+  }
+
+   obtenerDatos(): Observable<any> {
+    return this.http.get('./assets/data/data.json');
+  } 
+  
 }

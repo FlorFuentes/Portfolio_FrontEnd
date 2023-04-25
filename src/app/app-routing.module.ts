@@ -5,13 +5,17 @@ import { LoginfondoComponent } from './Componentes/Login/loginfondo/loginfondo.c
 /* import { LoginnavComponent } from './Componentes/Login/loginnav/loginnav.component'; */
 import { NavbarComponent } from './Componentes/navbar/navbar.component';
 import { RegistroFondoComponent } from './Componentes/Registro/registro-fondo/registro-fondo.component';
+
+//Cargamos los formularios
 import { EdicionDeUsuarioComponent } from './Componentes/edicion-de-usuario/edicion-de-usuario.component';
+
+
 const routes: Routes = [
   { path: "",redirectTo:'/inicio', pathMatch: 'full'},
   { path:'inicio',component:NavbarComponent},
   { path: 'login', component:LoginfondoComponent}, 
   { path: 'registro', component:RegistroFondoComponent},
-  { path: 'edicion-de-usuario',component:EdicionDeUsuarioComponent}
+  { path: 'edicion-de-usuario',component:EdicionDeUsuarioComponent},
 ];
 
 @NgModule({

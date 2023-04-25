@@ -2,69 +2,82 @@
 <!-- <i class="fa-solid fa-pen"></i> -->
 <div id="inicio"></div>
 <section class="banner" id="inicio">
-    <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center">
-        <!-- boton para editar banner -->
-        <label class="ban" for="efbanner">Editar<i class="fa-solid fa-pen"></i></label>
-        <input name="efbanner" id="efbanner" class="form-banner" type="checkbox" checked>
+  <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center">
+    <!-- boton para editar banner -->
+    <label class="ban" for="efbanner">Editar<i class="fa-solid fa-pen"></i></label>
+    <input name="efbanner" id="efbanner" class="form-banner" type="checkbox" checked>
 
-        <!-- Formulario edicion -->
-        <form class="form-edicion" id="banner">
-            <div class="form-div">
-                <label for="Nombre">Edite el Nombre y Apellido</label>
-                <input type="text" id="Nombre" name="Nombre" placeholder="Florencia Fuentes">
-            </div>
-            <div class="form-div">
-                <label for="title">Edite el Titulo</label>
-                <input type="text" id="title" name="title" placeholder="Desarrollador Full Stack Jr.">
-            </div>
-            <div class="form-div"> 
-                
-                <label for="img-banner">Edite la imagen para el banner</label>
-                <input type="text" id="img-banner" name="img-banner" placeholder="../../../../assets/img/FondoBari.jpg">
-            </div>
-            <div class="button-aceptar text-center">
-                <input type="submit" value="Aceptar">
-            </div>
+    <!-- Formulario edicion -->
+    <form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="form-edicion" id="banner">
+      <div class="form-div">
+        <label for="nombre">Edite el Nombre y Apellido</label>
+        <input type="text" id="nombre" formControlName="nombre" placeholder="Florencia Fuentes">
+      </div>
+      <div class="form-div">
+        <label for="titulo">Edite el Titulo</label>
+        <input type="text" id="titulo" formControlName="titulo" placeholder="Desarrollador Full Stack Jr.">
+      </div>
+      <div class="form-div">
 
-        </form>
+        <label for="imagen">Edite la imagen para el banner</label>
+        <input type="text" id="imagen" formControlName="imagen" placeholder="../../../../assets/img/FondoBari.jpg">
+      </div>
+      <div class="button-aceptar text-center">
+        <input type="submit" value="Aceptar">
+      </div>
 
 
-        <!-- Otro formulario -->
-<!--         <div class="banner-agregar d-flex flex-column justify-content-center align-items-center">
- -->            <label class="ban-agregar" for="agregar">Agregar<i class="fa-solid fa-plus"></i></label>
-            <input name="agregar" id="agregar" class="form-agregar" type="checkbox" checked>
+    </form>
 
-            <form class="formulario-agregar">
-              <div class="form-div">
-                <label for="agregar-nom-ape">Agregue Nombre y Apellido</label>
-                <input type="imagen" id="agregar-nom-ape" name="agregar-nom-ape" placeholder="Juan Perez">
-              </div>
 
-              <div class="form-div">
-                <label for="title-agregar">Agregue el Titulo</label>
-                <input type="text" id="title-agregar" name="title-agregar" placeholder="Desarrollador web">
-              </div>
-            
+    <!-- Otro formulario -->
+    <!--         <div class="banner-agregar d-flex flex-column justify-content-center align-items-center">
+ -->
+     <!-- <label class="ban-agregar" for="agregar">Agregar<i class="fa-solid fa-plus"></i></label>
+     <input name="agregar" id="agregar" class="form-agregar" type="checkbox" checked>
 
-              <div class="form-div">
-                <label for="agregar-img-banner">Agregue una imagen para el banner</label>
-                <input type="text" id="agregar-img-banner" name="agregar-img-banner" placeholder="../../../../assets/img/FondoBari.jpg">
-            
-              </div>
+    <form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="formulario-agregar">
+      <div class="form-div">
+        <label for="agregar-nom-ape">Agregue Nombre y Apellido</label>
+        <input type="imagen" id="agregar-nom-ape" formControlName="agregar-nom-ape" placeholder="Juan Perez">
+      </div>
 
-              <div class="button-aceptar text-center">
-                <input type="submit" value="Aceptar">
-              </div>
+      <div class="form-div">
+        <label for="title-agregar">Agregue el Titulo</label>
+        <input type="text" id="title-agregar" formControlName="title-agregar" placeholder="Desarrollador web">
+      </div>
 
-              
-            </form>
-            <div class="button-eliminar text-center">
-                <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
-            </div>
-          </div>
+
+      <div class="form-div">
+        <label for="agregar-img-banner">Agregue una imagen para el banner</label>
+        <input type="text" id="agregar-img-banner" formControlName="agregar-img-banner"
+          placeholder="../../../../assets/img/FondoBari.jpg">
+
+      </div>
+
+      <div class="button-aceptar text-center">
+        <input type="submit" value="Aceptar">
+      </div>
+
+
+    </form> -->
+
+    
+    <div class="button-eliminar text-center">
+      <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
+    </div>
+  </div>
 
   <!--   </div> -->
-    <h1 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.nombre}}</h1>
+  <!--  ESTO ESTABA ANTES,OSEA APLIQUE UN NGfOR PARA LA LISTA
+     <h1 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.nombre}}</h1>
     <br />
-    <h2 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.descripcion}}</h2>
+    <h2 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.descripcion}}</h2> -->
+
+  <div *ngFor="let banner of miPortfolio">
+      <img class="banner" *ngIf="miPortfolio" [src]="banner.imagen" alt="">
+      <h1 *ngIf="miPortfolio" class="text-center intro">{{banner.nombre}}</h1>
+      <h2 *ngIf="miPortfolio" class="text-center intro">{{banner.titulo}}</h2>
+  </div>
+
 </section>
