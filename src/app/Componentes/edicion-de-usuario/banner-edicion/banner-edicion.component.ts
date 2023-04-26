@@ -11,25 +11,13 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 })
 export class BannerEdicionComponent {
 
-  //miPortfolio: any;
+ 
 
   miPortfolio: Banner[] = [];
-  //constructor(private datosPortfolio: MiServicioService) { }
+  constructor(private datosPortfolio: MiServicioService) { }
 
-  formBanner: FormGroup;
 
-  constructor(private fb: FormBuilder,
-              private datosPortfolio: MiServicioService,
-              private activatedRoute:ActivatedRoute,
-              private router: Router) {
 
-    this.formBanner = this.fb.group({
-      id: [''],
-      nombre: [''],
-      titulo: [''],
-      imagen: ['']
-    });
-  }
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatosBanner().subscribe(data => {
       this.miPortfolio = data;
@@ -37,7 +25,7 @@ export class BannerEdicionComponent {
   }
 
   //Boton aceptar
-  onSubmitBanner() {
+  /* onSubmitBanner() {
 
     const banner: Banner = {
       id: this.formBanner.value.id,
@@ -54,5 +42,6 @@ export class BannerEdicionComponent {
 
   }
 
-}
+  */
+} 
 

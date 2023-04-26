@@ -8,7 +8,8 @@ import { RegistroFondoComponent } from './Componentes/Registro/registro-fondo/re
 
 //Cargamos los formularios
 import { EdicionDeUsuarioComponent } from './Componentes/edicion-de-usuario/edicion-de-usuario.component';
-
+import { BannerEdicionComponent } from './Componentes/edicion-de-usuario/banner-edicion/banner-edicion.component';
+import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-edicion/editarbanner/editarbanner.component';
 
 const routes: Routes = [
   { path: "",redirectTo:'/inicio', pathMatch: 'full'},
@@ -16,6 +17,9 @@ const routes: Routes = [
   { path: 'login', component:LoginfondoComponent}, 
   { path: 'registro', component:RegistroFondoComponent},
   { path: 'edicion-de-usuario',component:EdicionDeUsuarioComponent},
+
+  //Chequear si acepta la ruta
+  {path: 'banner/editar/:id', component:EditarbannerComponent}
 ];
 
 @NgModule({

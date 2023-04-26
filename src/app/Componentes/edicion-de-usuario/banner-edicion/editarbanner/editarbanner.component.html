@@ -1,0 +1,19 @@
+<!-- Formulario edicion -->
+<form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="form-edicion" id="banner">
+    <div class="form-div">
+      <label for="nombre">Edite el Nombre y Apellido</label>
+      <input type="text" id="nombre" formControlName="nombre" placeholder="Florencia Fuentes">
+    </div>
+    <div class="form-div">
+      <label for="titulo">Edite el Titulo</label>
+      <input type="text" id="titulo" formControlName="titulo" placeholder="Desarrollador Full Stack Jr.">
+    </div>
+    <div class="form-div">
+
+      <label for="imagen">Edite la imagen para el banner</label>
+      <input type="text" id="imagen" formControlName="imagen" placeholder="../../../../assets/img/FondoBari.jpg">
+    </div>
+    <div class="button-aceptar text-center">
+      <input type="submit" value="Aceptar">
+    </div>
+  </form>

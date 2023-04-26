@@ -9,7 +9,7 @@ import { Banner } from '../Model/banner';
 export class MiServicioService {
 
   private json = './assets/data/data.json';
-  private ProyectoArgPrograma = 'http://localhost:8080';//Saque el (/banner/)
+  private ProyectoArgPrograma = 'http://localhost:8080';//Saque el (/banner/) xq tp funciona
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })

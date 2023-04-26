@@ -2,13 +2,14 @@
 <!-- <i class="fa-solid fa-pen"></i> -->
 <div id="inicio"></div>
 <section class="banner" id="inicio">
-  <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center">
-    <!-- boton para editar banner -->
-    <label class="ban" for="efbanner">Editar<i class="fa-solid fa-pen"></i></label>
-    <input name="efbanner" id="efbanner" class="form-banner" type="checkbox" checked>
+  <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center" *ngFor="let banner of miPortfolio">
 
+    <!-- boton para editar banner -->
+    <label class="ban" for="efbanner" routerLink="/banner/editar/{{banner.id}}" >Editar<i class="fa-solid fa-pen"></i></label>
+<!-- ESTE NO SIRVE <input name="efbanner" id="efbanner" class="form-banner" type="checkbox" checked>
+ -->
     <!-- Formulario edicion -->
-    <form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="form-edicion" id="banner">
+    <!-- <form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="form-edicion" id="banner">
       <div class="form-div">
         <label for="nombre">Edite el Nombre y Apellido</label>
         <input type="text" id="nombre" formControlName="nombre" placeholder="Florencia Fuentes">
@@ -25,9 +26,7 @@
       <div class="button-aceptar text-center">
         <input type="submit" value="Aceptar">
       </div>
-
-
-    </form>
+    </form> -->
 
 
     <!-- Otro formulario -->

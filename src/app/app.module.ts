@@ -40,6 +40,7 @@ import{ HttpClientModule} from "@angular/common/http";
 
 //Formulario Reactivo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-edicion/editarbanner/editarbanner.component';
 
 
 @NgModule({
@@ -68,6 +69,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HabilidadesEdicionComponent,
     ProyectosEdicionComponent,
     FooterEdicionComponent,
+    EditarbannerComponent,
   ],
   imports: [
     BrowserModule,

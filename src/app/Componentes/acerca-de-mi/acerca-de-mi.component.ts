@@ -11,7 +11,7 @@ export class AcercaDeMiComponent {
   constructor(private datosPortfolio: AcercaDeMiService){ }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatosAcercaDeMi().subscribe(data => {
+    this.datosPortfolio.obtenerDatos().subscribe(data => {
       this.miPortfolio = data;
     });
   }
