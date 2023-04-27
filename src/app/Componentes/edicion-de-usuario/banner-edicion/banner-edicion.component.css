@@ -30,47 +30,6 @@
   display: none;
 }
 
-/* formulario */
-.form-edicion {
-  /*   background-color:rgba(30, 143, 255, 0.504);
- */
-  padding: 20px;
-  border-radius: 5px;
-  width: 70%;
-}
-
-.form-div {
-  /*     color:white;
- */
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 16px 0;
-}
-
-.form-div input[type="text"] {
-  margin-top: 5px;
-  border-radius: 5px;
-  outline: none;
-}
-
-/* Boton aceptar */
-.button-aceptar input[type="submit"] {
-  margin: 10px;
-  padding: 8px 38px;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  background-color: rgba(30, 143, 255, 0.671);
-  transition: all 0.2s ease;
-  text-align: center;
-}
-
-.button-aceptar input[type="submit"]:hover {
-  background-color: rgba(30, 143, 255, 0.411);
-  color: white;
-}
-
 /* Formulario agregar */
 .ban-agregar {
   text-decoration: none;

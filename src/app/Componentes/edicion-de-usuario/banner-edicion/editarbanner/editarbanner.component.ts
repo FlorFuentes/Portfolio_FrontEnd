@@ -28,8 +28,16 @@ this.formBanner = this.fb.group({
   });
 }
 ngOnInit(): void {
+  const bannerId= this.activatedRoute.snapshot.params['id'];
     this.datosPortfolio.obtenerDatosBanner().subscribe(data => {
     this.miPortfolio = data;
+
+    const element= this.miPortfolio.find(item => item.id === parseInt(bannerId));
+    this.formBanner.patchValue({
+      id:element?.id,
+      nombre: element?.titulo,
+      imagen: element?.imagen
+    })
   });
 }
 
@@ -47,6 +55,8 @@ onSubmitBanner() {
   this.datosPortfolio.editarBanner(banner).subscribe(() => {
 
 });
+    alert("Formulario enviado correctamente! Click en 'Aceptar' para volver al inicio.");
+    this.router.navigate(['edicion-de-usuario']);
 }
 
 }

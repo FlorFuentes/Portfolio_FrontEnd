@@ -11,7 +11,7 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 })
 export class BannerEdicionComponent {
 
- 
+
 
   miPortfolio: Banner[] = [];
   constructor(private datosPortfolio: MiServicioService) { }
@@ -24,6 +24,16 @@ export class BannerEdicionComponent {
     });
   }
 
+  onDelete(id: any) {
+    /* alert("eliminado" + id); */
+    let elim = confirm("Desea eliminar ete elemento?");
+    if (elim == true) {
+      this.datosPortfolio.borrarBanner(id).subscribe(() => {
+        alert("Elemento eliminado correctamente!");
+        location.reload();
+      })
+    }
+  }
   //Boton aceptar
   /* onSubmitBanner() {
 
@@ -43,5 +53,5 @@ export class BannerEdicionComponent {
   }
 
   */
-} 
+}
 

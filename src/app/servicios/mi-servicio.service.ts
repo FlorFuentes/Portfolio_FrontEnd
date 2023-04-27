@@ -20,7 +20,7 @@ export class MiServicioService {
   //Ver Banner
   public obtenerDatosBanner(): Observable<Banner[]>{
 
-    return this.http.get<Banner[]>("/banner/ver") 
+    return this.http.get<Banner[]>(this.ProyectoArgPrograma + "/banner/ver");
   }
 
   //Editar Banner
@@ -29,11 +29,16 @@ export class MiServicioService {
     console.log(banner);
     
    
-    return this.http.put<Banner>('/banner/editar', banner);
+    return this.http.put<Banner>(this.ProyectoArgPrograma + "/banner/editar/", banner, this.httpOptions);  
   }
 
-   obtenerDatos(): Observable<any> {
+    obtenerDatos(): Observable<any> {
     return this.http.get('./assets/data/data.json');
   } 
+
+  //Eliminar Banner
+  public borrarBanner(id:number): Observable<any>{
+    return this.http.delete<any>("/banner/delete" + id.toString());
+  }
   
 }
