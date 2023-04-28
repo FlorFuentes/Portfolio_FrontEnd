@@ -17,13 +17,13 @@ export class MiServicioService {
 
   constructor(private http:HttpClient) { }
 
-  //Ver Banner
+  /*------------------------------- Ver Banner -------------------------------*/
   public obtenerDatosBanner(): Observable<Banner[]>{
 
     return this.http.get<Banner[]>(this.ProyectoArgPrograma + "/banner/ver");
   }
 
-  //Editar Banner
+  /* -------------------------------Editar Banner------------------------------- */
   public editarBanner(banner: Banner): Observable<Banner>{
     
     console.log(banner);
@@ -36,9 +36,9 @@ export class MiServicioService {
     return this.http.get('./assets/data/data.json');
   } 
 
-  //Eliminar Banner
-  public borrarBanner(id:number): Observable<any>{
-    return this.http.delete<any>("/banner/delete" + id.toString());
+  /*------------------------------- Eliminar Banner------------------------------- */
+  /* public borrarBanner(id:number): Observable<any>{
+    return this.http.delete<any>(this.ProyectoArgPrograma + "/banner/delete/" +id);
   }
-  
+   */
 }

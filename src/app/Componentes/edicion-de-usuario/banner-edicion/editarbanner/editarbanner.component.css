@@ -1,3 +1,18 @@
+.fondo-form{
+  
+  background-image: url("../../../../../assets/img/FondoBari.jpg");
+  /*   opacity: 0.9;
+   */
+   min-height: 100vh;
+   width: 100%;
+  position: relative;
+  background-size: cover;
+  --webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -msn-background-size: cover;
+  background-repeat: no-repeat;
+}
 /* formulario */
 .form-edicion {
     /*   background-color:rgba(30, 143, 255, 0.504);
@@ -21,6 +36,10 @@
     border-radius: 5px;
     outline: none;
   }
+  label {
+    color: white;
+  }
+  
   
   /* Boton aceptar */
   .button-aceptar input[type="submit"] {

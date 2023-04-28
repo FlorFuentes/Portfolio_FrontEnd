@@ -58,7 +58,7 @@
   display: none;
 }
 
-/* formulario */
+/*-------------------------------formulario-------------------------------*/
 .formulario-agregar {
   padding: 20px;
   border-radius: 5px;
@@ -84,8 +84,8 @@ label {
 }
 
 
-/* Boton eliminar */
-.button-eliminar input[type="submit"] {
+/*-------------------------------Boton eliminar------------------------------- */
+/* .button-eliminar  {
   margin: 10px;
   padding: 8px 28px;
   border: none;
@@ -94,10 +94,10 @@ label {
   background-color: rgba(30, 143, 255, 0.671);
   transition: all 0.2s ease;
   text-align: center;
-
+  cursor: pointer;
 }
 
-.button-eliminar input[type="submit"]:hover {
+.button-eliminar:hover {
   background-color: rgba(30, 143, 255, 0.411);
   color: white;
 }
@@ -106,7 +106,7 @@ label {
   padding: 0px 10px;
   color: white;
 }
-
+ */
 
 /* banner original */
 .banner {

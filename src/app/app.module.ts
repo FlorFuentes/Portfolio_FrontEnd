@@ -41,6 +41,7 @@ import{ HttpClientModule} from "@angular/common/http";
 //Formulario Reactivo
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-edicion/editarbanner/editarbanner.component';
+import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de-mi-edicion/editar-acerca-de-mi/editar-acerca-de-mi.component';
 
 
 @NgModule({
@@ -70,6 +71,7 @@ import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-e
     ProyectosEdicionComponent,
     FooterEdicionComponent,
     EditarbannerComponent,
+    EditarAcercaDeMiComponent,
   ],
   imports: [
     BrowserModule,
