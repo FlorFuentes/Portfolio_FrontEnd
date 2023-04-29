@@ -7,6 +7,8 @@ import { Banner } from '../Model/banner';
   providedIn: 'root'
 })
 export class MiServicioService {
+/*   obtenerDatosAcercaDeMi() {
+    throw new Error('Method not implemented.'); */
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';//Saque el (/banner/) xq tp funciona

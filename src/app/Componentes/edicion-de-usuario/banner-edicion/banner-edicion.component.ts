@@ -11,8 +11,6 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 })
 export class BannerEdicionComponent {
 
-
-
   miPortfolio: Banner[] = [];
   constructor(private datosPortfolio: MiServicioService) { }
 

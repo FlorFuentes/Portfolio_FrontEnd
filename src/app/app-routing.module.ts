@@ -10,6 +10,7 @@ import { RegistroFondoComponent } from './Componentes/Registro/registro-fondo/re
 import { EdicionDeUsuarioComponent } from './Componentes/edicion-de-usuario/edicion-de-usuario.component';
 import { BannerEdicionComponent } from './Componentes/edicion-de-usuario/banner-edicion/banner-edicion.component';
 import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-edicion/editarbanner/editarbanner.component';
+import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de-mi-edicion/editar-acerca-de-mi/editar-acerca-de-mi.component';
 
 const routes: Routes = [
   { path: "",redirectTo:'/inicio', pathMatch: 'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'edicion-de-usuario',component:EdicionDeUsuarioComponent},
 
   //Chequear si acepta la ruta
-  {path: 'banner/editar/:id', component:EditarbannerComponent}
+  {path: 'banner/editar/:id', component:EditarbannerComponent},
+  {path:'acercaDeMi/editar/:id',component:EditarAcercaDeMiComponent}
 ];
 
 @NgModule({

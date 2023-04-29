@@ -3,17 +3,17 @@
 <section class="presentacion">
   <div class="container-fluid div-profile row d-flex flex-column flex-md-row">
     <div class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
-      <img *ngIf="miPortfolio" [src]="miPortfolio.acercaDeMi.imagenPerfil" alt="fotoPerfil"
-        class="fotoperfil rounded-circle img-fluid perfil" />
+<!--       <img *ngIf="miPortfolio" [src]="miPortfolio.acercaDeMi.imagenPerfil" alt="fotoPerfil"
+         class="fotoperfil rounded-circle img-fluid perfil" />-->
     </div>
     <!-- Acerca de mi -->
     <div class="container text-center row d-flex justify-content-center col-12 col-md-8">
       <div class="col-12 text-center div-p">
         <!-- Formulario edicion -->
-        <div class="acercademi-edicion d-flex flex-column justify-content-center align-items-center">
-          <label class="acercademi" for="efa-de-mi">Editar<i class="fa-solid fa-pen"></i></label>
-          <input name="efa-de-mi" id="efa-de-mi" class="form-a-de-mi" type="checkbox" checked>
-          <form class="form-edicion" id="presentacion">
+        <div class="acercademi-edicion d-flex flex-column justify-content-center align-items-center" *ngFor="let acercaDeMi of miPortfolio">
+          <label class="acercademi" for="efa-de-mi" routerLink="/acercaDeMi/editar{{acercaDeMi.id}}" >Editar<i class="fa-solid fa-pen"></i></label>
+<!--           <input name="efa-de-mi" id="efa-de-mi" class="form-a-de-mi" type="checkbox" checked>
+ -->          <!-- <form class="form-edicion" id="presentacion">
             <div class="form-div">
               <label for="fotoPerfil">Foto de perfil</label>
               <input type="imagen" id="fotoPerfil" name="fotoPerfil"
@@ -29,10 +29,10 @@
             <div class="button-aceptar text-center">
               <input type="submit" value="Aceptar">
             </div>
-          </form>
+          </form> -->
 
           <!-- Otro formulario -->
-            <label class="acercademi" for="efa-de-mi-agregar">Agregar<i class="fa-solid fa-plus"></i></label>
+            <!-- <label class="acercademi" for="efa-de-mi-agregar">Agregar<i class="fa-solid fa-plus"></i></label>
             <input name="efa-de-mi-agregar" id="efa-de-mi-agregar" class="form-a-de-mi-agregar" type="checkbox" checked>
 
             <form class="form-agregar">
@@ -51,8 +51,9 @@
                 <input type="submit" value="Aceptar">
               </div>
             </form>
+            -->
             <div class="button-eliminar text-center">
-              <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
+              <a (click)="onDelete(acercaDeMi.id)"> Eliminar <i class="fa-solid fa-trash-can"></i> </a>  
             </div>
           
 
@@ -61,8 +62,8 @@
 
 
         </div>
-        <p *ngIf="miPortfolio">{{miPortfolio.acercaDeMi.sobremi}}
-        </p>
+<!--          <p *ngIf="miPortfolio">{{miPortfolio.acercaDeMi.sobremi}}</p>
+ -->        
       </div>
 
 

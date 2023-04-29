@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { AcercaDeMi } from 'src/app/Model/acerca-de-mi';
+import { AcercaDeMiService } from 'src/app/servicios/acerca-de-mi.service';
 
 @Component({
   selector: 'app-a-de-mi-edicion',
@@ -7,12 +8,47 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
   styleUrls: ['./a-de-mi-edicion.component.css']
 })
 export class ADeMiEdicionComponent {
-  miPortfolio: any;
-  constructor(private datosPortfolio: MiServicioService){ }
+  //miPortfolio: any;
+
+  miPortfolio: AcercaDeMi[] = [];
+
+  constructor(private datosPortfolio: AcercaDeMiService){ }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosAcercaDeMi().subscribe(data => {
       this.miPortfolio = data;
     });
   }
+  onDelete(id: any) {
+     let elim = confirm("Desea eliminar este elemento?");
+    if (elim == true) {
+      this.datosPortfolio.borrarAcercaDeMi(id).subscribe(() => {
+        alert("Elemento eliminado correctamente!");
+        location.reload();
+      })
+    }
+  } 
+/*
+  */
+
+  //Boton aceptar
+  /* onSubmitBanner() {
+
+    const banner: Banner = {
+      id: this.formBanner.value.id,
+      nombre: this.formBanner.value.nombre,
+      titulo: this.formBanner.value.titulo,
+      imagen: this.formBanner.value.imagen,
+    };
+    console.log(banner);
+
+    this.datosPortfolio.editarBanner(banner).subscribe(() => {
+
+    });
+
+
+  }
+
+  */
+  
 }

@@ -1,1 +1,20 @@
-<p>editar-acerca-de-mi works!</p>
+<div class="fondo-form d-flex flex-column justify-content-center align-items-center" *ngFor="let acercaDeMi of miPortfolio">
+
+<form [formGroup]="formAcercaDeMi" (ngSubmit)="onSubmitAcercaDeMi()"  class="form-edicion" id="presentacion">
+    <div class="form-div">
+      <label for="fotoPerfil">Foto de perfil</label>
+      <input type="imagen" id="fotoPerfil" formControlName="fotoPerfil"
+        placeholder="../../../../assets/img/FB_IMG_1428285724958.jpg">
+    </div>
+
+    <div class="form-div">
+      <label for="text-area">Descripcion</label>
+      <textarea formControlName="text-area" id="text-area" cols="30" rows="5"
+        placeholder="Una de mis grandes pasiones es el desarrollo de paginas web.Siempre me gusto este hermoso mundo de la programación..."></textarea>
+    </div>
+
+    <div class="button-aceptar text-center">
+      <input type="submit" value="Aceptar">
+    </div>
+  </form>
+</div>
