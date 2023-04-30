@@ -3,15 +3,14 @@
 <section class="presentacion">
   <div class="container-fluid div-profile row d-flex flex-column flex-md-row">
     <div class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
-<!--       <img *ngIf="miPortfolio" [src]="miPortfolio.acercaDeMi.imagenPerfil" alt="fotoPerfil"
-         class="fotoperfil rounded-circle img-fluid perfil" />-->
+      <img  [src]="miPortfolio[0].fotoPerfil" alt="fotoPerfil" class="fotoperfil rounded-circle img-fluid perfil" />
     </div>
     <!-- Acerca de mi -->
     <div class="container text-center row d-flex justify-content-center col-12 col-md-8">
       <div class="col-12 text-center div-p">
         <!-- Formulario edicion -->
         <div class="acercademi-edicion d-flex flex-column justify-content-center align-items-center" *ngFor="let acercaDeMi of miPortfolio">
-          <label class="acercademi" for="efa-de-mi" routerLink="/acercaDeMi/editar{{acercaDeMi.id}}" >Editar<i class="fa-solid fa-pen"></i></label>
+          <label class="acercademi" for="efa-de-mi" routerLink="/acercaDeMi/editar/{{acercaDeMi.id}}" >Editar<i class="fa-solid fa-pen"></i></label>
 <!--           <input name="efa-de-mi" id="efa-de-mi" class="form-a-de-mi" type="checkbox" checked>
  -->          <!-- <form class="form-edicion" id="presentacion">
             <div class="form-div">
@@ -62,8 +61,9 @@
 
 
         </div>
-<!--          <p *ngIf="miPortfolio">{{miPortfolio.acercaDeMi.sobremi}}</p>
- -->        
+        
+        <p >{{miPortfolio[0].sobreMi}}</p>
+         
       </div>
 
 

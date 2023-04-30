@@ -7,8 +7,6 @@ import { Banner } from '../Model/banner';
   providedIn: 'root'
 })
 export class MiServicioService {
-/*   obtenerDatosAcercaDeMi() {
-    throw new Error('Method not implemented.'); */
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';//Saque el (/banner/) xq tp funciona
@@ -35,7 +33,7 @@ export class MiServicioService {
   }
 
     obtenerDatos(): Observable<any> {
-    return this.http.get('./assets/data/data.json');
+    return this.http.get(this.ProyectoArgPrograma + "/banner/ver", this.httpOptions);
   } 
 
   /*------------------------------- Eliminar Banner------------------------------- */

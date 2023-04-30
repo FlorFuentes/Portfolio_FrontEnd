@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AcercaDeMi } from 'src/app/Model/acerca-de-mi';
 import { AcercaDeMiService } from 'src/app/servicios/acerca-de-mi.service';
 
 @Component({
@@ -6,12 +7,13 @@ import { AcercaDeMiService } from 'src/app/servicios/acerca-de-mi.service';
   templateUrl: './acerca-de-mi.component.html',
   styleUrls: ['./acerca-de-mi.component.css']
 })
-export class AcercaDeMiComponent {
-  miPortfolio: any;
+export class AcercaDeMiComponent{
+  miPortfolio: AcercaDeMi[]=[];
+
   constructor(private datosPortfolio: AcercaDeMiService){ }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosAcercaDeMi().subscribe(data => {
       this.miPortfolio = data;
     });
   }

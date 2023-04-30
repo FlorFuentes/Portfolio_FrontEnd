@@ -18,13 +18,13 @@ export class AcercaDeMiService {
   //miPortfolio: any;
 
 //Metodos que tambien tengo en el Backend van aca
-  constructor(private http: HttpClient) { }
+  constructor(private http:HttpClient) { }
 
     /*------------------------------- Ver AcercaDeMi -------------------------------*/
 
   public obtenerDatosAcercaDeMi(): Observable<AcercaDeMi[]>{
 
-    return this.http.get<AcercaDeMi[]>( this.ProyectoArgPrograma + "/acercaDeMi/ver") 
+    return this.http.get<AcercaDeMi[]>( this.ProyectoArgPrograma + "/acercaDeMi/ver");
   }
   /* -------------------------------Editar AcercaDeMi------------------------------- */
 
@@ -37,12 +37,12 @@ export class AcercaDeMiService {
   }
 
   obtenerDatos(): Observable<any> {
-    return this.http.get('./assets/data/data.json');
+    return this.http.get(this.ProyectoArgPrograma + "/acercaDeMi/ver",this.httpOptions);
   }
   
   /*------------------------------- Eliminar AcercaDeMi------------------------------- */
    public borrarAcercaDeMi(id:number): Observable<any>{
-    return this.http.delete<any>(this.ProyectoArgPrograma + "/AcercaDeMi/delete/" +id);
+    return this.http.delete<any>(this.ProyectoArgPrograma + "/acercaDeMi/delete/" +id);
   }
    
 

@@ -16,9 +16,9 @@ export class EditarAcercaDeMiComponent implements OnInit {
   formAcercaDeMi: FormGroup;
 
   constructor(private fb: FormBuilder,
-    private datosPortfolio: AcercaDeMiService,
-    private activatedRoute: ActivatedRoute,
-    private router: Router) {
+              private datosPortfolio: AcercaDeMiService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
 
     this.formAcercaDeMi = this.fb.group({
       id: [''],
@@ -32,6 +32,7 @@ export class EditarAcercaDeMiComponent implements OnInit {
       this.miPortfolio = data;
 
       const element = this.miPortfolio.find(item => item.id === parseInt(AcercaDeMiId));
+      console.log(element)
       this.formAcercaDeMi.patchValue({
         id: element?.id,
         fotoPerfil: element?.fotoPerfil,
@@ -48,7 +49,7 @@ export class EditarAcercaDeMiComponent implements OnInit {
       fotoPerfil:this.formAcercaDeMi.value.fotoPerfil,
       sobreMi: this.formAcercaDeMi.value.sobreMi,
     };
-    console.log(AcercaDeMi);
+    console.log(acerDeMi);
 
     this.datosPortfolio.editarAcercaDeMi(acerDeMi).subscribe(() => {
 

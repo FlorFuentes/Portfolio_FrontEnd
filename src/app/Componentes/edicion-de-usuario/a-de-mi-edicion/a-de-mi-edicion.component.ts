@@ -32,23 +32,21 @@ export class ADeMiEdicionComponent {
   */
 
   //Boton aceptar
-  /* onSubmitBanner() {
+   /* onSubmitAcercaDeMi() {
 
-    const banner: Banner = {
-      id: this.formBanner.value.id,
-      nombre: this.formBanner.value.nombre,
-      titulo: this.formBanner.value.titulo,
-      imagen: this.formBanner.value.imagen,
+    const acer: AcercaDeMi = {
+      id: this.formAcercaDeMi.value.id;
+      fotoPerfil: this.formAcercaDeMi.value.fotoPerfil;
+      sobreMi: this.formAcercaDeMi.value.sobreMi;
     };
-    console.log(banner);
+    console.log(acer);
 
-    this.datosPortfolio.editarBanner(banner).subscribe(() => {
+    this.datosPortfolio.editarAcercaDeMi(acer).subscribe(() => {
 
     });
 
 
   }
-
-  */
+ */
   
 }

@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
 import { Banner } from 'src/app/Model/banner';
 import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 
@@ -34,9 +32,10 @@ export class BannerEdicionComponent {
   } 
   */
 
-  //Boton aceptar
-  /* onSubmitBanner() {
-
+ //Boton aceptar
+ /* 
+  onSubmitBanner() {
+    
     const banner: Banner = {
       id: this.formBanner.value.id,
       nombre: this.formBanner.value.nombre,

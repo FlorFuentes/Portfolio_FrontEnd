@@ -2,10 +2,8 @@
 
 <section class="presentacion">
     <div class="container-fluid div-profile row d-flex flex-column flex-md-row">
-      <div class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
-      <img *ngIf="miPortfolio"
-        [src]="miPortfolio.acercaDeMi.fotoPerfil"
-        alt="fotoPerfil"
+      <div *ngFor="let acercaDeMi of miPortfolio" class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
+      <img [src]="miPortfolio[0].fotoPerfil" alt="fotoPerfil"
         class="fotoperfil rounded-circle img-fluid perfil"
       />
       </div>
@@ -13,7 +11,7 @@
 <!-- Acerca de mi -->
       <div class="container text-center row d-flex justify-content-center col-12 col-md-8">
           <div class="col-12 text-center div-p">
-            <p *ngIf="miPortfolio" >{{miPortfolio.acercaDeMi.sobremi}}
+            <p>{{miPortfolio[0].sobreMi}}
             </p>
           </div>
         </div>

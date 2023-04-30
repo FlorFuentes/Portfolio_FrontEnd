@@ -1,8 +1,8 @@
 <!-- Boton que vuelve arriba -->
 <div id="inicio"></div>
 
-<section class="banner" id="inicio">
-    <h1 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.nombre}}</h1>
+<section *ngFor="let ban of miPortfolio" class="banner" id="inicio">
+    <h1 class="text-center intro">{{miPortfolio[0].nombre}}</h1>
     <br />
-    <h2 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.descripcion}}</h2>
+    <h2 class="text-center intro">{{miPortfolio[0].titulo}}</h2>
 </section>

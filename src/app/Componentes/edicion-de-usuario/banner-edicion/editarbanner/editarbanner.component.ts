@@ -35,7 +35,8 @@ ngOnInit(): void {
     const element= this.miPortfolio.find(item => item.id === parseInt(bannerId));
     this.formBanner.patchValue({
       id:element?.id,
-      nombre: element?.titulo,
+      nombre: element?.nombre,
+      titulo:element?.titulo,
       imagen: element?.imagen
     })
   });
