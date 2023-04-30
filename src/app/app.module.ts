@@ -42,6 +42,8 @@ import{ HttpClientModule} from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-edicion/editarbanner/editarbanner.component';
 import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de-mi-edicion/editar-acerca-de-mi/editar-acerca-de-mi.component';
+import { EditarExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/editar-experiencia/editar-experiencia.component';
+import { CrearExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/crear-experiencia/crear-experiencia.component';
 
 
 @NgModule({
@@ -72,6 +74,8 @@ import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de
     FooterEdicionComponent,
     EditarbannerComponent,
     EditarAcercaDeMiComponent,
+    EditarExperienciaComponent,
+    CrearExperienciaComponent,
   ],
   imports: [
     BrowserModule,

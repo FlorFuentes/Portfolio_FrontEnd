@@ -11,6 +11,7 @@ import { EdicionDeUsuarioComponent } from './Componentes/edicion-de-usuario/edic
 import { BannerEdicionComponent } from './Componentes/edicion-de-usuario/banner-edicion/banner-edicion.component';
 import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-edicion/editarbanner/editarbanner.component';
 import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de-mi-edicion/editar-acerca-de-mi/editar-acerca-de-mi.component';
+import { EditarExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/editar-experiencia/editar-experiencia.component';
 
 const routes: Routes = [
   { path: "",redirectTo:'/inicio', pathMatch: 'full'},
@@ -21,7 +22,8 @@ const routes: Routes = [
 
   //Chequear si acepta la ruta
   {path: 'banner/editar/:id', component:EditarbannerComponent},
-  {path:'acercaDeMi/editar/:id',component:EditarAcercaDeMiComponent}
+  {path:'acercaDeMi/editar/:id',component:EditarAcercaDeMiComponent},
+  {path: 'experiencia/editar/:id', component:EditarExperienciaComponent}
 ];
 
 @NgModule({

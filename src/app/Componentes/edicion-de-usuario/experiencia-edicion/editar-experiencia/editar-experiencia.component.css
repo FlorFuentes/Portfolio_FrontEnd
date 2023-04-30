@@ -1,0 +1,46 @@
+
+/* formulario */
+.form-edicion {
+    margin: 20px;
+    box-shadow:
+        5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
+        40px 63px 67px rgba(0, 0, 0, 0.08);
+    background-color: rgba(30, 143, 255, 0.471);
+    padding: 20px;
+    border-radius: 5px;
+    width: 98%;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 16px 0;
+}
+
+.form-div input[type="text"] {
+    margin-top: 5px;
+    border-radius: 5px;
+    outline: none;
+}
+
+#text-area {
+    border-radius: 5px;
+}
+
+/* Boton aceptar */
+.button-aceptar input[type="submit"] {
+    margin: 10px;
+    padding: 8px 38px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(30, 143, 255, 0.671);
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.button-aceptar input[type="submit"]:hover {
+    background-color: rgba(30, 143, 255, 0.411);
+    color: white;
+}

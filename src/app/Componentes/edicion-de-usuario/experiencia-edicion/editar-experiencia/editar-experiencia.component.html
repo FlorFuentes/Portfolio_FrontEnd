@@ -1,0 +1,17 @@
+<!-- Formulario de edicion -->
+<div class=" fondo-form d-flex flex-column justify-content-center align-items-center">
+    
+    <form [formGroup]="formExpe" (ngSubmit)="onSubmitExperiencia()" class="form-edicion" id="experiencia">
+        <div class="form-div">
+            <label for="puesto">Edite Nombre del puesto y periodo de tiempo</label>
+            <input type="text" id="puesto" formControlName="puesto" placeholder="Encargada de ventas en kiosco de stella (2006-2010)">
+        </div>
+        <div class="form-div">
+            <label for="text-area">Edite la Descripcion</label>
+            <textarea formControlName="descripcion" id="text-area" cols="30" rows="8" placeholder="Armado de stock y reposición de mercaderia..." ></textarea>
+        </div> 
+        <div class="button-aceptar text-center">
+            <input type="submit" value="Aceptar">
+        </div>
+    </form>
+</div>

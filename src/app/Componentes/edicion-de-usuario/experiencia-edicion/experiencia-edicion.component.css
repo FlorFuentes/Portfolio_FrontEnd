@@ -73,7 +73,66 @@
     font-style: initial;
 }
 
-/* Boton editar*/
+
+
+/* cont-top corresponden a los iconos para editar y eliminar los elementos */
+.cont-top {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.cont-top .edit i{
+  color:white;
+}
+
+.cont-top .edit {
+  width: 35px;
+  height: 35px;
+  margin: 0 7px;
+  font-size: 1.1rem;
+  color: var(--almost-white);
+  border: 2px solid var(--almost-white);
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translate(5px, 14px);
+  transition: all 0.2s ease; 
+}
+
+.cont-top .edit:hover {
+  transform: translate(5px, 12px);
+  background-color: var(--almost-white);
+  color: var(--dark-color);
+}
+
+.cont-top .plus-button {
+  transform: translate(-30px, -14px);
+  font-size: 1.5rem;
+}
+
+.cont-top .plus-button:hover {
+  transform: translate(-30px, -16px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Boton Agregar*/
 .expe-edicion{
     text-decoration: none;
     max-width: 200px;
@@ -93,61 +152,17 @@
   padding: 0px 10px;
 }
 
-
+/* 
 .form-experiencia{
     appearance: none;
-}
+} */
 /* Para ocultar el formulario */
-.form-experiencia:checked ~ .form-edicion{
+/* .form-experiencia:checked ~ .form-edicion{
   height: 0px;
   display: none;
 }
-/* formulario */
-.form-edicion{
-    margin:20px;
-  box-shadow:
-    5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
-    40px 63px 67px rgba(0, 0, 0, 0.08)
-  ;
-  background-color: rgba(30, 143, 255, 0.226);
-  padding: 20px;
-  border-radius: 5px;
-  width: 98%;
-}
-.form-div{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 16px 0;
-}
-.form-div input[type="text"]{
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-}
-#text-area{
-    border-radius:5px;
-}
 
-/* Boton aceptar */
-.button-aceptar input[type="submit"] {
-    margin: 10px;
-    padding: 8px 38px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: rgba(30, 143, 255, 0.671);
-    transition: all 0.2s ease;
-    text-align: center;
-  }
-  .button-aceptar input[type="submit"]:hover {
-    background-color:rgba(30, 143, 255, 0.411) ;
-    color: white;
-  }
-
-
-
-
+ */
  /* Otro formulario */
  .exp {
     text-decoration: none;

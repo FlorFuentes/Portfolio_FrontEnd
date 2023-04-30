@@ -20,15 +20,6 @@
   padding: 0px 10px;
 }
 
-.form-banner {
-  appearance: none;
-}
-
-/* Para ocultar el  formulario */
-.form-banner:checked~.form-edicion {
-  height: 0px;
-  display: none;
-}
 
 /* Formulario agregar */
 .ban-agregar {
@@ -111,7 +102,7 @@ label {
 /* banner original */
 .banner {
   background-image: url("../../../../assets/img/FondoBari.jpg");
-  min-height: 75vh;
+  min-height: 25vh;
   width: 100%;
   position: relative;
   background-size: cover;

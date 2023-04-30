@@ -1,31 +1,20 @@
 <div id="experiencia"></div>
 
 <section class="experiencia ">
-    <div class="container d-flex flex-column ">
+    <div class="container d-flex flex-column " *ngFor="let ex of miPortfolio">
         <h2 class="experiencia-title text-center "> Experiencia</h2>
         
-        <!-- Formulario de edicion -->
-        <div class="d-flex flex-column justify-content-center align-items-center">
-            <label class="expe-edicion " for="efexperiencia" >Editar <i class="fa-solid fa-pen"></i></label>
-            <input name="efexperiencia" id="efexperiencia" class="form-experiencia" type="checkbox" checked>
-            
-            <form class="form-edicion" id="experiencia">
-                <div class="form-div">
-                    <label for="puesto">Edite Nombre del puesto y periodo de tiempo</label>
-                    <input type="text" id="puesto" name="puesto" placeholder="Encargada de ventas en kiosco de stella (2006-2010)">
-                </div>
-                <div class="form-div">
-                    <label for="text-area">Edite la Descripcion</label>
-                    <textarea name="text-area" id="text-area" cols="30" rows="8" placeholder="Armado de stock y reposición de mercaderia..." ></textarea>
-                </div> 
-                <div class="button-aceptar text-center">
-                    <input type="submit" value="Aceptar">
-                </div>
-            </form>
-        </div>
+         <label class="expe-edicion " for="efexperiencia" routerLink="/experiencia/editar/{{ex.id}}" >Agregar <i class="fa-solid fa-plus"></i></label>
+        <!--          
+        <input name="efexperiencia" id="efexperiencia" class="form-experiencia" type="checkbox" checked>
+         -->   
+        
+         
+
+
 
         <!-- Otro formulario -->
-          <div class="exp-agregar d-flex flex-column justify-content-center align-items-center">
+         <!--  <div class="exp-agregar d-flex flex-column justify-content-center align-items-center">
             <label class="exp" for="expe-agregar">Agregar<i class="fa-solid fa-plus"></i></label>
             <input name="expe-agregar" id="expe-agregar" class="form-expe-agre" type="checkbox" checked>
 
@@ -45,51 +34,35 @@
                 <input type="submit" value="Aceptar">
               </div>
             </form>
-            <div class="button-eliminar text-center">
-              <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
+          -->   
+            <!-- <div class="button-eliminar text-center">
+                <a   (click)="onDelete(ex.id)"> Eliminar
+                <i class="fa-solid fa-trash-can"></i>
+                </a>  
             </div>
-          </div>
+ -->
 
-
-
-
+            
         
-        <div *ngFor="let experiencia of experienciaLista" class="experiencia-cont row   d-flex justify-content-center">
+        <div *ngFor="let exp of miPortfolio" class="experiencia-cont row   d-flex justify-content-center">
+
+             <div class="cont-top">
+                    <a class="edit" title="Eliminar" (click)="onDelete(ex.id)">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </a>
+                    <a class="edit" title="Editar" routerLink="/experiencia/editar/{{ex.id}}">
+                      <i class="fa-solid fa-pen"></i>
+                    </a>
+             </div>
             <i class="fa-solid fa-shop fa-4x"></i>
             <div class="experiencia-info d-flex flex-column col-12">
-                <h3 *ngIf="miPortfolio">{{experiencia.puestoYperiodo}}</h3><br>
-                <h5 *ngIf="miPortfolio">{{experiencia.ubicacion}}</h5>
-                <p *ngIf="miPortfolio"> {{experiencia.descripcion}}</p>
+
+               
+        
+                <h3 >{{exp.fecha}}</h3><br>
+                <h5 >{{exp.puesto}}</h5>
+                <p  > {{exp.descripcion}}</p>
             </div>
         </div>
-        <!-- <div class="experiencia-cont row   d-flex justify-content-center">
-            <i class="fa-solid fa-cart-shopping fa-4x"></i>
-            <div class="experiencia-info d-flex flex-column col-12">
-                <h3>Cajera en supermercado UNO (2010-2015)</h3>
-                <h5>Av. Bustillos km 12,700. San Carlos de Bariloche</h5>
-                <p><strong> Las labores en que me desarrolle fueron:</strong>
-                    <br>Cajera y cobranza de rapi pago
-                    <br>Reposición de mercadera
-                    <br>Control de vencimientos
-                    <br>Sector de fiambreria
-                    <br>Descarga de mercaderia y control de pedidos
-                </p>
-            </div>
-        </div>
-        <div class="experiencia-cont row   d-flex justify-content-center">
-            <i class="fa-solid fa-person-running fa-4x"></i>
-            <div class="experiencia-info d-flex flex-column col-12">
-                <h3>Instructora de Taekwondo (2017-∞)</h3>
-                <h5>Av. Bustillos km 12,000 - Luelmo 43,Club Nahuel Huapi. San Carlos de Bariloche</h5>
-                <p>Comencé a entrenar taekwondo en 2011. En ese instante, las ganas que desde muy chica me acompañaron
-                    por empezar un arte marcial, se habían transformado en lo que serían mis primeros pasos en este
-                    hermoso camino. <br> En el año 2017 luego de seis años de mucho crecimiento tanto personal, como
-                    técnico, me presente a el tan ansiado examen para I Dan.<br>El año 2018 culminé con éxito el Curso
-                    de formación Integral y comencé a dar clases a mi primer grupo de alumnos. Actualmente formo parte
-                    del grupo de instructores EITB-AMASTKD coordinando actividades que requieren una mayor
-                    responsabilidad dentro de mi escuela. </p>
-            </div>
-        </div>
-    -->   
     </div>
 </section>
