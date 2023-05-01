@@ -3,8 +3,12 @@
     
     <form [formGroup]="formExpe" (ngSubmit)="onSubmitExperiencia()" class="form-edicion" id="experiencia">
         <div class="form-div">
-            <label for="puesto">Edite Nombre del puesto y periodo de tiempo</label>
-            <input type="text" id="puesto" formControlName="puesto" placeholder="Encargada de ventas en kiosco de stella (2006-2010)">
+            <label for="puesto">Edite el puesto </label>
+            <input type="text" id="puesto" formControlName="puesto" placeholder="Encargada de ventas en kiosco de stella">
+        </div>
+        <div class="form-div">
+            <label for="fecha">Edite la fecha </label>
+            <input type="text" id="fecha" formControlName="fecha" placeholder="(2006-2010)">
         </div>
         <div class="form-div">
             <label for="text-area">Edite la Descripcion</label>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { Experiencia } from 'src/app/Model/experiencia';
+import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 
 @Component({
   selector: 'app-experiencia',
@@ -7,16 +8,16 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent {
-  miPortfolio: any;
+  miPortfolio: Experiencia[]=[];
   //Defino variable para recorrer el array de educacion
-  experienciaLista: any;
-  constructor(private datosPortfolio: MiServicioService) { }
+  //experienciaLista: any;
+  constructor(private datosPortfolio: ExperienciaService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.obtenerDatos().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
-      this.experienciaLista = data.experiencia;
+      //this.experienciaLista = data.experiencia;
     });
   }
 

@@ -1,51 +1,10 @@
 <div id="experiencia"></div>
 
 <section class="experiencia ">
-    <div class="container d-flex flex-column " *ngFor="let ex of miPortfolio">
+    <div class="container d-flex flex-column " >
         <h2 class="experiencia-title text-center "> Experiencia</h2>
-        
-         <label class="expe-edicion " for="efexperiencia" routerLink="/experiencia/editar/{{ex.id}}" >Agregar <i class="fa-solid fa-plus"></i></label>
-        <!--          
-        <input name="efexperiencia" id="efexperiencia" class="form-experiencia" type="checkbox" checked>
-         -->   
-        
-         
-
-
-
-        <!-- Otro formulario -->
-         <!--  <div class="exp-agregar d-flex flex-column justify-content-center align-items-center">
-            <label class="exp" for="expe-agregar">Agregar<i class="fa-solid fa-plus"></i></label>
-            <input name="expe-agregar" id="expe-agregar" class="form-expe-agre" type="checkbox" checked>
-
-            <form class="form-expe-agregar">
-              <div class="form-div">
-                <label for="expe-puesto">Agregue Nombre del puesto y periodo de tiempo</label>
-                <input type="text" id="expe-puesto" name="expe-puesto" placeholder="Desarrolador web(2018-2020)">
-              </div>
-
-              <div class="form-div">
-                <label for="text-area">Agregue una descripcion</label>
-                <textarea name="text-area" id="text-area" cols="30" rows="5"
-                  placeholder="Armado de pagina web con html,css y javascript"></textarea>
-              </div>
-
-              <div class="button-aceptar text-center">
-                <input type="submit" value="Aceptar">
-              </div>
-            </form>
-          -->   
-            <!-- <div class="button-eliminar text-center">
-                <a   (click)="onDelete(ex.id)"> Eliminar
-                <i class="fa-solid fa-trash-can"></i>
-                </a>  
-            </div>
- -->
-
-            
-        
-        <div *ngFor="let exp of miPortfolio" class="experiencia-cont row   d-flex justify-content-center">
-
+         <label class="expe-edicion text-center d-flex"  for="efexperiencia" routerLink="/experiencia/new" >Nueva Experiencia<i class="fa-solid fa-plus"></i></label>
+          <div *ngFor="let ex of miPortfolio" class=" experiencia-cont row  d-flex justify-content-center">
              <div class="cont-top">
                     <a class="edit" title="Eliminar" (click)="onDelete(ex.id)">
                       <i class="fa-regular fa-trash-can"></i>
@@ -55,14 +14,11 @@
                     </a>
              </div>
             <i class="fa-solid fa-shop fa-4x"></i>
-            <div class="experiencia-info d-flex flex-column col-12">
-
-               
-        
-                <h3 >{{exp.fecha}}</h3><br>
-                <h5 >{{exp.puesto}}</h5>
-                <p  > {{exp.descripcion}}</p>
+            <div class="experiencia-info d-flex flex-column col-12">        
+                <h3 *ngIf="miPortfolio">{{ex.puesto}}</h3><br>
+                <h5 *ngIf="miPortfolio">{{ex.fecha}}</h5>
+                <p *ngIf="miPortfolio" >{{ex.descripcion}}</p>
             </div>
-        </div>
+          </div>
     </div>
 </section>

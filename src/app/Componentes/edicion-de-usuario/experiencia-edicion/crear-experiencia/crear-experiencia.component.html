@@ -1,1 +1,22 @@
-<p>crear-experiencia works!</p>
+<div class="exp-agregar d-flex flex-column justify-content-center align-items-center">
+    <form [formGroup]="formExpAgregar" (ngSubmit)="onSubmitExperiencia()" class="form-expe-agregar">
+        <div class="form-div">
+        <label for="puesto">Agregue Nombre del puesto </label>
+        <input type="text" id="puesto" formControlName="puesto" placeholder="Desarrolador web">
+        </div>
+        <div class="form-div">
+            <label for="fecha">Agregue fecha (periodo de tiempo)</label>
+            <input type="text" id="fecha" formControlName="fecha" placeholder="(2018-2020)">
+        </div>
+
+        <div class="form-div">
+        <label for="text-area">Agregue una descripcion</label>
+        <textarea  formControlName="descripcion" id="text-area" cols="30" rows="5"
+            placeholder="Armado de pagina web con html,css y javascript"></textarea>
+        </div>
+
+        <div class="button-aceptar text-center">
+        <input type="submit" value="Aceptar">
+        </div>
+    </form>
+</div>

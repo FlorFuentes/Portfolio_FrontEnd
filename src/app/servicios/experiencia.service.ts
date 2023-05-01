@@ -35,6 +35,11 @@ export class ExperienciaService {
     return this.http.get(this.ProyectoArgPrograma + "/experiencia/ver", this.httpOptions);
   }
 
+  /*------------------------------- Agregar Experiencia------------------------------- */
+
+  public agregarExperiencia(expe: Experiencia): Observable<Experiencia> {
+    return this.http.post<Experiencia>(this.ProyectoArgPrograma + `/experiencia/new`, expe, this.httpOptions);
+  }
 
   /*------------------------------- Eliminar Experiencia------------------------------- */
   public borrarExperiencia(id:number): Observable<any>{

@@ -75,7 +75,7 @@
 
 
 
-/* cont-top corresponden a los iconos para editar y eliminar los elementos */
+/*  iconos editar y eliminar  */
 .cont-top {
   width: 100%;
   display: flex;
@@ -120,18 +120,6 @@
   transform: translate(-30px, -16px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Boton Agregar*/
 .expe-edicion{
     text-decoration: none;
@@ -151,96 +139,4 @@
 .expe-edicion i{
   padding: 0px 10px;
 }
-
-/* 
-.form-experiencia{
-    appearance: none;
-} */
-/* Para ocultar el formulario */
-/* .form-experiencia:checked ~ .form-edicion{
-  height: 0px;
-  display: none;
-}
-
- */
- /* Otro formulario */
- .exp {
-    text-decoration: none;
-    max-width: 200px;
-    padding: 10px;
-    margin: 20px;
-    color: white;
-    background-color: rgba(30, 143, 255, 0.671);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out
-  }
-  .exp:hover {
-    background-color: rgba(30, 143, 255, 0.555);
-    color: white;
-  }
-  .exp i {
-    padding: 0px 10px;
-  }
-  
- .form-expe-agre {
-    appearance: none;
-  
-  }
-  
-  /*Para ocultar el formulario */
-  .form-expe-agre:checked~.form-expe-agregar {
-    height: 0px;
-    display: none;
-  }
-
-  /* formulario */
-.form-expe-agregar {
-    box-shadow:
-      5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
-      40px 63px 67px rgba(0, 0, 0, 0.08);
-    padding: 20px;
-    background-color: rgba(30, 143, 255, 0.226);
-    border-radius: 5px;
-    width: 85%;
-  }
-  
-  .form-div {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 16px 0;
-  }
-  
-  .form-div input[type="text"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  #text-area {
-    border-radius: 5px;
-  }
-  
-  
-  /* Boton eliminar */
-.button-eliminar input[type="submit"]{
-    margin: 10px;
-    padding: 8px 28px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: rgba(30, 143, 255, 0.671);
-    transition: all 0.2s ease;
-    text-align: center;
-  
-  }
-  .button-eliminar input[type="submit"]:hover {
-    background-color: rgba(30, 143, 255, 0.411);
-    color: white;
-  }
  
-  
-  
-  
