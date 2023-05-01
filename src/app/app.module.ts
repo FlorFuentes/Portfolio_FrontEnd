@@ -44,6 +44,8 @@ import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-e
 import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de-mi-edicion/editar-acerca-de-mi/editar-acerca-de-mi.component';
 import { EditarExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/editar-experiencia/editar-experiencia.component';
 import { CrearExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/crear-experiencia/crear-experiencia.component';
+import { EditarEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/editar-educacion/editar-educacion.component';
+import { CrearEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/crear-educacion/crear-educacion.component';
 
 
 @NgModule({
@@ -76,6 +78,8 @@ import { CrearExperienciaComponent } from './Componentes/edicion-de-usuario/expe
     EditarAcercaDeMiComponent,
     EditarExperienciaComponent,
     CrearExperienciaComponent,
+    EditarEducacionComponent,
+    CrearEducacionComponent,
   ],
   imports: [
     BrowserModule,

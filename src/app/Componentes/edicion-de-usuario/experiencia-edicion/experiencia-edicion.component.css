@@ -125,7 +125,7 @@
     text-decoration: none;
     max-width: 200px;
     padding:10px;
-    margin:20px;
+    margin:100px auto 10px auto;
     color:white;
     border-radius:10px;
     background-color: rgba(30, 143, 255, 0.671);

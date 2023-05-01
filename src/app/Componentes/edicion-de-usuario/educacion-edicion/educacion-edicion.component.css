@@ -1,4 +1,4 @@
-/* Boton editar*/
+/* Boton agregar*/
 .educacion {
     text-decoration: none;
     max-width: 200px;
@@ -24,209 +24,51 @@
     appearance: none;
 }
 
-/* Ocultamos formulario */
-.form-educacion:checked~.form-edicion {
-    height: 0px;
-    display: none;
 
-}
-
-/* formulario */
-.form-edicion {
-    text-align: center;
-
-    /*   margin:20px;
-   */
-    box-shadow:
-        5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
-        40px 63px 67px rgba(0, 0, 0, 0.08);
-    background-color: rgba(30, 143, 255, 0.226);
-    padding: 20px;
-    border-radius: 5px;
-    width: 75%;
-    /*  padding: 20px;
-    background-color: var(--shadow-3);
-    border-radius: 5px;
-    width: 70%;
-    */
-    margin: 20px auto;
-}
-
-.form-div {
-    /*     color:white;
-   */
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 16px 0;
-}
-
-.form-div input[type="text"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-}
-
-.form-div input[type="url"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-}
-
-.form-div input[type="img"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-}
-
-/* Boton aceptar */
-.button-aceptar input[type="submit"] {
-    margin: 10px;
-    padding: 8px 38px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: rgba(30, 143, 255, 0.671);
-    transition: all 0.2s ease;
-    text-align: center;
-}
-
-.button-aceptar input[type="submit"]:hover {
-    background-color: rgba(30, 143, 255, 0.411);
-    color: white;
-}
-
-
-/* Otro formulario */
-
-.form-edu-agregar {
-    appearance: none;
-}
-
-/* Ocultamos formulario */
-.form-edu-agregar:checked~.form-agregar {
-    height: 0px;
-    display: none;
-
-}
-
-/* formulario */
-.form-agregar{
-    text-align: center;
-    box-shadow:
-        5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
-        40px 63px 67px rgba(0, 0, 0, 0.08);
-    background-color: rgba(30, 143, 255, 0.226);
-    padding: 20px;
-    border-radius: 5px;
-    width: 75%;
-    
-    margin: 20px auto;
-}
-
-.form-div {
-    /*     color:white;
-   */
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin: 16px 0;
-}
-
-.form-div input[type="text"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-}
-
-/* .form-div input[type="url"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-} */
-
-.form-div input[type="img"] {
-    margin-top: 5px;
-    border-radius: 5px;
-    outline: none;
-}
-
-/* Boton aceptar */
-.button-aceptar input[type="submit"] {
-    margin: 10px;
-    padding: 8px 38px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    background-color: rgba(30, 143, 255, 0.671);
-    transition: all 0.2s ease;
-    text-align: center;
-}
-
-.button-aceptar input[type="submit"]:hover {
-    background-color: rgba(30, 143, 255, 0.411);
-    color: white;
-}
-
-/* Boton eliminar */
-.button-eliminar input[type="submit"]{
-  margin: 10px;
-  padding: 8px 28px;
-  border: none;
-  border-radius: 4px;
-  color: white;
-  background-color: rgba(30, 143, 255, 0.671);
-  transition: all 0.2s ease;
-  text-align: center;
-
-}
-.button-eliminar input[type="submit"]:hover {
-  background-color: rgba(30, 143, 255, 0.411);
-  color: white;
-}
-/* .button-eliminar i{
-  padding: 0px 10px;
-  color:white;
-}
- */
-
-
-
-
-/* Tacho para eliminar cards*/
-/* .cont-top {
+/*  iconos editar y eliminar  */
+.cont-top {
     width: 100%;
     display: flex;
     justify-content: right;
-}
-
-.cont-top .btn-elim {
+  }
+  
+  .cont-top .edit i{
+    color:rgba(30, 143, 255, 0.952);
+  }
+  
+  .cont-top .edit {
     width: 35px;
     height: 35px;
     margin: 0 7px;
     font-size: 1.1rem;
-    color: var(--dark-color);
-    border: 2px solid var(--dark-color);
+    color: var(--almost-white);
+    border: 2px solid var(--almost-white);
     border-radius: 50%;
     text-decoration: none;
     cursor: pointer;
-
+  
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    transform: translate(-1px, 0px);
-    transition: all 0.2s ease;
-}
-
-.cont-top .btn-elim:hover {
-    transform: translate(-1px, -2px);
-    background-color: var(--dark-color);
-    color: var(--almost-white);
-} */
-
-
-
+  
+    transform: translate(5px, 14px);
+    transition: all 0.2s ease; 
+  }
+  
+  .cont-top .edit:hover {
+    transform: translate(5px, 12px);
+    background-color: var(--almost-white);
+    color: var(--dark-color);
+  }
+  
+  .cont-top .plus-button {
+    transform: translate(-30px, -14px);
+    font-size: 1.5rem;
+  }
+  
+  .cont-top .plus-button:hover {
+    transform: translate(-30px, -16px);
+  }
+  
 
 
 /* card educacion */

@@ -1,0 +1,17 @@
+<form [formGroup]="formEduAgregar" (ngSubmit)="onSubmitEducacion()" class="form-agregar" id="educacion">
+    <div class="form-div">
+      <label for="imgDiploma">Agregue una imagen del diploma: </label>
+      <input type="img" formControlName="imgDiploma" id="img-diplo" placeholder="./assets/img/cursos/SeProgramar.png">
+    </div>
+    <div class="form-div">
+      <label for="institucion">Agregue URL de la institucion : </label>
+      <input type="text" formControlName="institucion" id="url-int" placeholder="https://graceful-malasada-201f0b.netlify.app/">
+    </div>
+    <div class="form-div">
+      <label for="descripcion">Agregue nombre del curso : </label>
+      <input type="text" formControlName="descripcion" id="url-int" placeholder="#SeProgramar">
+    </div>
+    <div class="button-aceptar text-center">
+      <input type="submit" value="Aceptar">
+    </div>
+</form>

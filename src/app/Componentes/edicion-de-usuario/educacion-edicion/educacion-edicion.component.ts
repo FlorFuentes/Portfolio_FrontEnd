@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { Educacion } from 'src/app/Model/educacion';
+import { EducacionService } from 'src/app/servicios/educacion.service';
 
 @Component({
   selector: 'app-educacion-edicion',
@@ -7,16 +8,29 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
   styleUrls: ['./educacion-edicion.component.css']
 })
 export class EducacionEdicionComponent {
-  miPortfolio: any;
+  miPortfolio: Educacion[]=[];
   //Defino variable para recorrer el array de educacion
-  educacionLista: any;
-  constructor(private datosPortfolio: MiServicioService) { }
+  //educacionLista: any;
+  constructor(private datosPortfolio: EducacionService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosEducacion().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
-      this.educacionLista= data.educacion.certificado;
+      //this.educacionLista= data.educacion.certificado;
     });
   }
+  onDelete(id: any) {
+    let elim = confirm("Desea eliminar este elemento?");
+   if (elim == true) {
+     this.datosPortfolio.borrarEducacion(id).subscribe(() => {
+       alert("Elemento eliminado correctamente!");
+       location.reload();
+     })
+   }
+ }
+
+
+
+
 }

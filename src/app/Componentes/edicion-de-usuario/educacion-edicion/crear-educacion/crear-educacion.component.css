@@ -1,17 +1,20 @@
-
 /* formulario */
-.form-edicion {
-    margin: 90px auto;
+.form-agregar{
+    text-align: center;
     box-shadow:
         5px 7.9px 8.4px rgba(0, 0, 0, 0.16),
         40px 63px 67px rgba(0, 0, 0, 0.08);
     background-color: rgba(30, 143, 255, 0.471);
     padding: 20px;
     border-radius: 5px;
-    width: 98%;
+    width: 75%;
+    
+    margin: 90px auto;
 }
 
 .form-div {
+    /*     color:white;
+   */
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -24,8 +27,10 @@
     outline: none;
 }
 
-#text-area {
+.form-div input[type="img"] {
+    margin-top: 5px;
     border-radius: 5px;
+    outline: none;
 }
 
 /* Boton aceptar */
@@ -44,3 +49,4 @@
     background-color: rgba(30, 143, 255, 0.411);
     color: white;
 }
+

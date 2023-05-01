@@ -2,66 +2,19 @@
 
 <section class="edu-sec d-flex flex-column justify-content-center">
   <h2 class="edu-title text-center">Educación</h2>
-  <label class="educacion" for="efeducacion">Editar <i class="fa-solid fa-pen"></i></label>
-  <input name="efeducacion" id="efeducacion" class="form-educacion" type="checkbox" checked>
-  <!-- Formulario -->
-  <form class="form-edicion" id="educacion">
-    <div class="form-div">
-      <label for="img-diplo">Imagen del diploma </label>
-      <input type="img" name="img-diplo" id="img-diplo" placeholder="./assets/img/cursos/SeProgramar.png">
-    </div>
-    <div class="form-div">
-      <label for="url-int">URL de la institucion </label>
-      <input type="text" name="url-int" id="url-int" placeholder="https://graceful-malasada-201f0b.netlify.app/">
-    </div>
-    <div class="form-div">
-      <label for="title">Nombre del curso </label>
-      <input type="text" name="url-int" id="url-int" placeholder="#SeProgramar">
-    </div>
-    <div class="button-aceptar text-center">
-      <input type="submit" value="Aceptar">
-    </div>
-  </form>
-
-
-  <!-- Otro formulario -->
-  <label class="educacion" for="edu-agregar">Agregar <i class="fa-solid fa-plus"></i></label>
-  <input name="edu-agregar" id="edu-agregar" class="form-edu-agregar" type="checkbox" checked>
-
-  <form class="form-agregar" id="educacion">
-    <div class="form-div">
-      <label for="img-diplo">Agregue una imagen del diploma: </label>
-      <input type="img" name="img-diplo" id="img-diplo" placeholder="./assets/img/cursos/SeProgramar.png">
-    </div>
-    <div class="form-div">
-      <label for="url-int">Agregar URL de la institucion : </label>
-      <input type="text" name="url-int" id="url-int" placeholder="https://graceful-malasada-201f0b.netlify.app/">
-    </div>
-    <div class="form-div">
-      <label for="title">Agregar nombre del curso : </label>
-      <input type="text" name="url-int" id="url-int" placeholder="#SeProgramar">
-    </div>
-    <div class="button-aceptar text-center">
-      <input type="submit" value="Aceptar">
-    </div>
-  </form>
-  <div class="button-eliminar text-center">
-    <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
-  </div>
-
-
-
+  <label class="educacion" for="efeducacion" routerLink="/educacion/new">Nueva Educacion <i class="fa-solid fa-plus"></i></label>
   <div class="card-container container-fluid row d-flex justify-content-around align-items-center">
-    <div *ngFor="let educacion of educacionLista" class="card-1 col-12 col-sm-6 col-md-4">
+    <div *ngFor="let educacion of miPortfolio" class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card ">
-        <!-- TACHO
-          <div class="cont-top">
-            <a class="btn-elim" title="Eliminar">
-              <i class="fa-regular fa-trash-can"></i>
+        <div class="cont-top">
+          <a class="edit" title="Eliminar" (click)="onDelete(educacion.id)">
+            <i class="fa-regular fa-trash-can"></i>
           </a>
-        </div>
-      -->
-        <img class="card-image" *ngIf="miPortfolio" [src]="educacion.imagen" alt="certificadoSeProgramar" />
+          <a class="edit" title="Editar" routerLink="/educacion/editar/{{educacion.id}}">
+            <i class="fa-solid fa-pen"></i>
+          </a>
+        </div>        
+        <img class="card-image" *ngIf="miPortfolio" [src]="educacion.imgDiploma" alt="certificadoSeProgramar" />
         <div class="card-body text-center">
           <p class="card-text" *ngIf="miPortfolio">{{educacion.institucion}}</p>
         </div>
@@ -69,62 +22,5 @@
           class="card-link btn btn-primary" target="_blank">Ver</a>
       </div>
     </div>
-    <!-- 
-    <div class="card-1 col-12 col-sm-6 col-md-4">
-      <div class="card">
-        <img src="./assets/img/cursos/Plataforma5.jpg" class="card-image" alt="certificadoPlataforma5" />
-        <div class="card-body text-center">
-          <p class="card-text">Plataforma5</p>
-        </div>
-        <a href="https://www.plataforma5.la/?gclid=Cj0KCQiAyracBhDoARIsACGFcS4xh5JEHIF0-t9HFsIN2oFYbvv04f7Wovg3cAJs0dj4gBFeQHtd-44aAnNZEALw_wcB"
-          class="card-link btn btn-primary" target="_blank">Ver</a>
-      </div>
-    </div>
-    <div class="card-1 col-12 col-sm-6 col-md-4">
-      <div class="card">
-        <img src="./assets/img/cursos/MuniPlataforma5.jpg" class="card-image" alt="certificadoMunibariloche" />
-        <div class="card-body text-center">
-          <p class="card-text">Municipalidad de San Carlos de Bariloche</p>
-        </div>
-        <a href="http://sistemasenlaweb.com.ar/portalweb/cursos" class="card-link btn btn-primary"
-          target="_blank">Ver</a>
-      </div>
-    </div>
-    <div class="card-1 col-12 col-sm-6 col-md-4">
-      <div class="card">
-        <img src="./assets/img/cursos/Grasshopper.jpg" class="card-image" alt="certificadoGrasshopper" />
-        <div class="card-body text-center">
-          <p class="card-text">Grasshopper</p>
-        </div>
-        <a href="https://learn.grasshopper.app/" class="card-link btn btn-primary" target="_blank">Ver</a>
-      </div>
-    </div>
-    <div class="card-1 col-12 col-sm-6 col-md-4">
-      <div class="card">
-        <img src="./assets/img/cursos/Digitaliza.jpg" class="card-image" alt="certificadoGoogleActivate" />
-        <div class="card-body text-center">
-          <p class="card-text">Google Activate</p>
-        </div>
-        <a href="https://formacionactivate.withgoogle.com/ia" class="card-link btn btn-primary" target="_blank">Ver</a>
-      </div>
-    </div>
-    <div class="card-1 col-12 col-sm-6 col-md-4">
-      <div class="card">
-        <img src="./assets/img/cursos/CiberSeguridad.jpg" class="card-image" alt="certificadoGoogleActivate" />
-        <div class="card-body text-center">
-          <p class="card-text">Google Activate</p>
-        </div>
-        <a href="https://formacionactivate.withgoogle.com/ia" class="card-link btn btn-primary" target="_blank">Ver</a>
-      </div>
-    </div>
-    <div class="card-1 col-12 col-sm-6 col-md-4">
-      <div class="card">
-        <img src="./assets/img/cursos/Accenture.jpg" class="card-image" alt="certificadoAccenture" />
-        <div class="card-body text-center">
-          <p class="card-text">Accenture</p>
-        </div>
-        <a href="https://www.accenture.com/ar-es" class="card-link btn btn-primary" target="_blank">Ver</a>
-      </div>
-    </div> -->
   </div>
 </section>

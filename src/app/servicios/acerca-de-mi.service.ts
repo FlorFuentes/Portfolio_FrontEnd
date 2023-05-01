@@ -36,9 +36,7 @@ export class AcercaDeMiService {
     return this.http.put<AcercaDeMi>(this.ProyectoArgPrograma + "/acercaDeMi/editar/", acerDeMi, this.httpOptions);
   }
 
-  obtenerDatos(): Observable<any> {
-    return this.http.get(this.ProyectoArgPrograma + "/acercaDeMi/ver",this.httpOptions);
-  }
+  
   
   /*------------------------------- Eliminar AcercaDeMi------------------------------- */
    public borrarAcercaDeMi(id:number): Observable<any>{

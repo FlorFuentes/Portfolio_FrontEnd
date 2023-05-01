@@ -3,9 +3,9 @@
 <section class="edu-sec d-flex flex-column justify-content-center">
   <h2 class="edu-title text-center">Educación</h2><br />
   <div class="card-container container-fluid row d-flex justify-content-around align-items-center">
-    <div *ngFor="let educacion of educacionLista" class="card-1 col-12 col-sm-6 col-md-4">
+    <div *ngFor="let educacion of miPortfolio" class="card-1 col-12 col-sm-6 col-md-4">
       <div class="card">
-        <img class="card-image" *ngIf="miPortfolio" [src]="educacion.imagen" alt="certificadoSeProgramar" />
+        <img class="card-image" *ngIf="miPortfolio" [src]="educacion.imgDiploma" alt="certificadoSeProgramar" />
         <div class="card-body text-center">
           <p class="card-text" *ngIf="miPortfolio">{{educacion.institucion}}</p>
         </div>

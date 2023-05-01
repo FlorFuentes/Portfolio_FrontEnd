@@ -14,7 +14,7 @@ export class ExperienciaComponent {
   constructor(private datosPortfolio: ExperienciaService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosExperiencia().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
       //this.experienciaLista = data.experiencia;

@@ -13,6 +13,8 @@ import { EditarbannerComponent } from './Componentes/edicion-de-usuario/banner-e
 import { EditarAcercaDeMiComponent } from './Componentes/edicion-de-usuario/a-de-mi-edicion/editar-acerca-de-mi/editar-acerca-de-mi.component';
 import { EditarExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/editar-experiencia/editar-experiencia.component';
 import { CrearExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/crear-experiencia/crear-experiencia.component';
+import { CrearEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/crear-educacion/crear-educacion.component';
+import { EditarEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/editar-educacion/editar-educacion.component';
 
 const routes: Routes = [
   { path: "",redirectTo:'/inicio', pathMatch: 'full'},
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path: 'banner/editar/:id', component:EditarbannerComponent},
   {path:'acercaDeMi/editar/:id',component:EditarAcercaDeMiComponent},
   {path: 'experiencia/new',component:CrearExperienciaComponent},
-  {path: 'experiencia/editar/:id', component:EditarExperienciaComponent}
+  {path: 'experiencia/editar/:id', component:EditarExperienciaComponent},
+  {path: 'educacion/new',component:CrearEducacionComponent},
+  {path: 'educacion/editar/:id',component: EditarEducacionComponent}
 ];
 
 @NgModule({

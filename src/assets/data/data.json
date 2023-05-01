@@ -35,44 +35,44 @@
             {
                 "idC": "1",
                 "institucion": "Argentina programa",
-                "titulo": "#SeProgramar-junio de 2022",
-                "imagen": "./assets/img/cursos/SeProgramar.png"
+                "descripcion": "#SeProgramar-junio de 2022",
+                "imgDiploma": "./assets/img/cursos/SeProgramar.png"
             },
             {
                 "idC": "2",
                 "institucion": "Plataforma5",
-                "titulo": "curso introductorio de progrmacion,con conocimientos en HTML,CSS y JAVASCRIPT-Agosto 2022",
-                "imagen": "./assets/img/cursos/Plataforma5.jpg"
+                "descripcion": "curso introductorio de progrmacion,con conocimientos en HTML,CSS y JAVASCRIPT-Agosto 2022",
+                "imgDiploma": "./assets/img/cursos/Plataforma5.jpg"
             },
             {
                 "idC": "3",
                 "institucion": "Municipalidad de San Carlos de Bariloche",
-                "titulo": "Avalado por el Ministerio de Desarrollo Productivo de la Nacioncurso y la Municipalidad de San Carlos de Bariloche.Curso introductorio de progrmacion,con conocimientos en HTML,CSS y JAVASCRIPT-Agosto 2022",
-                "imagen": "./assets/img/cursos/MuniPlataforma5.jpg"
+                "descripcion": "Avalado por el Ministerio de Desarrollo Productivo de la Nacioncurso y la Municipalidad de San Carlos de Bariloche.Curso introductorio de progrmacion,con conocimientos en HTML,CSS y JAVASCRIPT-Agosto 2022",
+                "imgDiploma": "./assets/img/cursos/MuniPlataforma5.jpg"
             },
             {
                 "idC": "4",
                 "institucion": "Grasshopper",
-                "titulo": "fundamentos de la codificacion",
-                "imagen": "./assets/img/cursos/Grasshopper.jpg"
+                "descripcion": "fundamentos de la codificacion",
+                "imgDiploma": "./assets/img/cursos/Grasshopper.jpg"
             },
             {
                 "idC": "5",
                 "institucion": "Google Activate",
-                "titulo": "digitaliza paso a paso tu negocio con google My Business y YouTube-Noviembre 2021",
-                "imagen": "./assets/img/cursos/Digitaliza.jpg"
+                "descripcion": "digitaliza paso a paso tu negocio con google My Business y YouTube-Noviembre 2021",
+                "imgDiploma": "./assets/img/cursos/Digitaliza.jpg"
             },
             {
                 "idC": "6",
                 "institucion": "Google Activate",
-                "titulo": "ciberseguridad en el teletrabajo-Noviembre 2021",
-                "imagen": "./assets/img/cursos/CiberSeguridad.jpg"
+                "descripcion": "ciberseguridad en el teletrabajo-Noviembre 2021",
+                "imgDiploma": "./assets/img/cursos/CiberSeguridad.jpg"
             },
             {
                 "idC": "7",
                 "institucion": "Accenture",
-                "titulo": "autoconfianza-autonocimiento-junior,intermedio,avanzado y Master- Octubre 2022",
-                "imagen": "./assets/img/cursos/Accenture.jpg"
+                "descripcion": "autoconfianza-autonocimiento-junior,intermedio,avanzado y Master- Octubre 2022",
+                "imgDiploma": "./assets/img/cursos/Accenture.jpg"
             }
         ]
     },

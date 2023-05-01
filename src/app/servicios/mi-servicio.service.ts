@@ -31,7 +31,7 @@ export class MiServicioService {
    
     return this.http.put<Banner>(this.ProyectoArgPrograma + "/banner/editar/", banner, this.httpOptions);  
   }
-
+//SACAR DESPUES DE QUE CADA UNO TENGA SU SERVICIO
     obtenerDatos(): Observable<any> {
     return this.http.get(this.ProyectoArgPrograma + "/banner/ver", this.httpOptions);
   } 
