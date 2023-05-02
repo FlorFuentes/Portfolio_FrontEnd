@@ -10,7 +10,7 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
 export class EducacionComponent implements OnInit {
   miPortfolio: Educacion[]= [];
   //Defino variable para recorrer el array de educacion
-  educacionLista: any;
+  //educacionLista: any;
   constructor(private datosPortfolio: EducacionService) { }
 
   ngOnInit(): void {

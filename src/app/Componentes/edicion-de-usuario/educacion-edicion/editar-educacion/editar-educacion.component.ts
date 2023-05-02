@@ -10,60 +10,60 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
   styleUrls: ['./editar-educacion.component.css']
 })
 export class EditarEducacionComponent {
-  miPortfolio: Educacion[]= [];
+  miPortfolio: Educacion[] = [];
 
   formEdu: FormGroup;
- 
+
   constructor(private fb: FormBuilder,
     private datosPortfolio: EducacionService,
-    private activatedRoute:ActivatedRoute,
-    private router: Router){
-this.formEdu= this.fb.group({
-id:[''], 
-institucion:[''],
-descripcion:[''],
-imgDiploma:[''],
-})
-}
-
-
-ngOnInit(): void {
-  
-  const eduId = this.activatedRoute.snapshot.params['id'];
-   
-  this.datosPortfolio.obtenerDatosEducacion().subscribe(data =>{
-    this.miPortfolio=data;
-
-    const element= this.miPortfolio.find(item => item.id === parseInt(eduId));
-    this.formEdu.patchValue({
-      id: element?.id,
-      institucion: element?.institucion,
-      descripcion: element?.descripcion,
-      imgDiploma: element?.imgDiploma
-
+    private activatedRoute: ActivatedRoute,
+    private router: Router) {
+    this.formEdu = this.fb.group({
+      id: [''],
+      institucion: [''],
+      descripcion: [''],
+      imgDiploma: [''],
     })
-  })
-}
+  }
 
 
-//Boton aceptar
-onSubmitEducacion() {
+  ngOnInit(): void {
 
-  const edu: Educacion = {
-    id: parseInt(this.activatedRoute.snapshot.params['id']),    
-    institucion: this.formEdu.value.institucion,
-    descripcion: this.formEdu.value.descripcion,
-    imgDiploma: this.formEdu.value.imgDiploma,
+    const eduId = this.activatedRoute.snapshot.params['id'];
 
-  };
+    this.datosPortfolio.obtenerDatosEducacion().subscribe(data => {
+      this.miPortfolio = data;
+
+      const element = this.miPortfolio.find(item => item.id === parseInt(eduId));
+      this.formEdu.patchValue({
+        id: element?.id,
+        institucion: element?.institucion,
+        descripcion: element?.descripcion,
+        imgDiploma: element?.imgDiploma
+
+      })
+    })
+  }
+
+
+  //Boton aceptar
+  onSubmitEducacion() {
+
+    const edu: Educacion = {
+      id: parseInt(this.activatedRoute.snapshot.params['id']),
+      institucion: this.formEdu.value.institucion,
+      descripcion: this.formEdu.value.descripcion,
+      imgDiploma: this.formEdu.value.imgDiploma,
+
+    };
     console.log(edu);
 
-  this.datosPortfolio.editarEducacion(edu).subscribe(() => {
+    this.datosPortfolio.editarEducacion(edu).subscribe(() => {
 
-});
+    });
     alert("Formulario enviado correctamente! Click en 'Aceptar' para volver al inicio.");
     this.router.navigate(['edicion-de-usuario']);
-}
+  }
 
 
 

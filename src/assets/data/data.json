@@ -126,29 +126,29 @@
     "proyectos": {
         "proyecto": [
             {
-                "nombre": "color game",
+                "titulo": "color game",
                 "descripcion": "Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB",
-                "paginaURL": "https://graceful-malasada-201f0b.netlify.app/"
+                "link": "https://graceful-malasada-201f0b.netlify.app/"
             },
             {
-                "nombre": "to do list",
+                "titulo": "to do list",
                 "descripcion": "Una lista ordenada de tareas para realizar,utilizando la manipulación del DOM",
-                "paginaURL": "https://silly-gecko-9fd65b.netlify.app/"
+                "link": "https://silly-gecko-9fd65b.netlify.app/"
             },
             {
-                "nombre": "weather channel",
+                "titulo": "weather channel",
                 "descripcion": "Sitio para mostrar las condiciones climaticas de cada ciudad,utilizando API,jQuery,AJAX y JSON",
-                "paginaURL": "https://superlative-queijadas-b0b14b.netlify.app/"
+                "link": "https://superlative-queijadas-b0b14b.netlify.app/"
             },
             {
-                "nombre": "plataforma5",
+                "titulo": "plataforma5",
                 "descripcion": "Implementando los conocimientos en html,css,bootstrap y javascript",
-                "paginaURL": "https://gorgeous-seahorse-4ac653.netlify.app/#porfolio"
+                "link": "https://gorgeous-seahorse-4ac653.netlify.app/#porfolio"
             },
             {
-                "nombre": "yoProgramo",
+                "titulo": "yoProgramo",
                 "descripcion": "Portfolio web personal.Cuenta con arquitectura web distribuida.Front End(Angular),Back End(Sprint Boot) y Bases de datos(MySQL)",
-                "paginaURL": "index.html"
+                "link": "index.html"
             }
         ]
     },

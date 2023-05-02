@@ -17,7 +17,7 @@ export class ExperienciaService {
 
   constructor(private http:HttpClient) { }
 
-    /*------------------------------- Ver Experiencia -------------------------------*/
+  /*------------------------------- Ver Experiencia -------------------------------*/
 
   public obtenerDatosExperiencia(): Observable<Experiencia[]>{
     return this.http.get<Experiencia[]>(this.ProyectoArgPrograma + "/experiencia/ver");

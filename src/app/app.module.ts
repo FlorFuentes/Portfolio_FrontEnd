@@ -46,6 +46,10 @@ import { EditarExperienciaComponent } from './Componentes/edicion-de-usuario/exp
 import { CrearExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/crear-experiencia/crear-experiencia.component';
 import { EditarEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/editar-educacion/editar-educacion.component';
 import { CrearEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/crear-educacion/crear-educacion.component';
+import { EditarHabilidadesComponent } from './Componentes/edicion-de-usuario/habilidades-edicion/editar-habilidades/editar-habilidades.component';
+import { CrearHabilidadesComponent } from './Componentes/edicion-de-usuario/habilidades-edicion/crear-habilidades/crear-habilidades.component';
+import { EditarProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/editar-proyectos/editar-proyectos.component';
+import { CrearProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/crear-proyectos/crear-proyectos.component';
 
 
 @NgModule({
@@ -80,6 +84,10 @@ import { CrearEducacionComponent } from './Componentes/edicion-de-usuario/educac
     CrearExperienciaComponent,
     EditarEducacionComponent,
     CrearEducacionComponent,
+    EditarHabilidadesComponent,
+    CrearHabilidadesComponent,
+    EditarProyectosComponent,
+    CrearProyectosComponent,
   ],
   imports: [
     BrowserModule,

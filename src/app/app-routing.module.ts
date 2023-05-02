@@ -15,6 +15,9 @@ import { EditarExperienciaComponent } from './Componentes/edicion-de-usuario/exp
 import { CrearExperienciaComponent } from './Componentes/edicion-de-usuario/experiencia-edicion/crear-experiencia/crear-experiencia.component';
 import { CrearEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/crear-educacion/crear-educacion.component';
 import { EditarEducacionComponent } from './Componentes/edicion-de-usuario/educacion-edicion/editar-educacion/editar-educacion.component';
+import { CrearProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/crear-proyectos/crear-proyectos.component';
+import { EditarProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/editar-proyectos/editar-proyectos.component';
+
 
 const routes: Routes = [
   { path: "",redirectTo:'/inicio', pathMatch: 'full'},
@@ -29,7 +32,11 @@ const routes: Routes = [
   {path: 'experiencia/new',component:CrearExperienciaComponent},
   {path: 'experiencia/editar/:id', component:EditarExperienciaComponent},
   {path: 'educacion/new',component:CrearEducacionComponent},
-  {path: 'educacion/editar/:id',component: EditarEducacionComponent}
+  {path: 'educacion/editar/:id',component: EditarEducacionComponent},
+  //aca la ruta de habilidades
+
+  {path: 'proyectos/new',component:CrearProyectosComponent},
+  {path: 'proyectos/editar/:id',component:EditarProyectosComponent}
 ];
 
 @NgModule({

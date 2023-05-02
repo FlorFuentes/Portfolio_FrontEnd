@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { Habilidades } from 'src/app/Model/habilidades';
+import { HabilidadesService } from 'src/app/servicios/habilidades.service';
 
 @Component({
   selector: 'app-habilidade-tecnicas',
@@ -7,16 +8,14 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
   styleUrls: ['./habilidade-tecnicas.component.css']
 })
 export class HabilidadeTecnicasComponent implements OnInit{
-  miPortfolio: any;
-  //Defino variable para recorrer el array de Habilidades
-  habilidadLista: any; 
-  constructor(private datosPortfolio: MiServicioService) { }
+  miPortfolio: Habilidades[]=[];
+  
+  constructor(private datosPortfolio: HabilidadesService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosHabilidades().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
-      this.habilidadLista=data.habilidadesTecnicas
     });
   }
 }

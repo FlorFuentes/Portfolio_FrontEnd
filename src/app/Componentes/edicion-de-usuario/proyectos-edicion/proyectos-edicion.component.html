@@ -2,74 +2,40 @@
 
 <section class="proyecto">
     <h1 class="pro-title text-center">Proyectos</h1>
-    <label class="proyectos text-center" for="efproyectos">Editar <i class="fa-solid fa-pen"></i></label>
-    <input name="efproyectos" id="efproyectos" class="form-proyectos" type="checkbox" checked>
-    <!-- Formulario -->
-    <form class="form-edicion" id="proyecto">
-
-        <div class="form-div">
-            <label for="title">Título del proyecto : </label>
-            <input type="text" name="title" id="title" placeholder="Color game">
-        </div>
-        <div class="form-div">
-            <label for="url">URL del proyecto : </label>
-            <input type="text" name="url" id="url" placeholder="https://graceful-malasada-201f0b.netlify.app/">
-        </div>
-
-        <div class="form-div">
-            <label for="desc-proy-id">Descripcion del proyecto : </label>
-            <textarea name="desc-proy-id" id="desc-proy-id" cols="30" rows="2"
-                placeholder="¿De que se trata tu proyecto?"></textarea>
-        </div>
-        <div class="button-aceptar text-center">
-            <input type="submit" value="Aceptar">
-        </div>
-    </form>
+    <label class="proyectos text-center" for="efproyectos" routerLink="/proyectos/new">Nuevo Proyecto  <i class="fa-solid fa-pen"></i></label>
+<!--     <input name="efproyectos" id="efproyectos" class="form-proyectos" type="checkbox" checked>
+ -->    <!-- Formulario -->
+    <!--  -->
     <!-- Otro formulario -->
-    <label class="proyectos text-center" for="proyec-agregar">Agregar <i class="fa-solid fa-pen"></i></label>
+   <!--  <label class="proyectos text-center" for="proyec-agregar">Agregar <i class="fa-solid fa-pen"></i></label>
     <input name="proyec-agregar" id="proyec-agregar" class="form-proyectos-agre" type="checkbox" checked>
-    <!-- Formulario -->
-    <form class="form-pro-agregar" id="proye">
-
-        <div class="form-div">
-            <label for="title">Agregue Título del proyecto : </label>
-            <input type="text" name="title" id="title" placeholder="Color game">
-        </div>
-        <div class="form-div">
-            <label for="url">Agregue URL del proyecto : </label>
-            <input type="text" name="url" id="url" placeholder="https://graceful-malasada-201f0b.netlify.app/">
-        </div>
-
-        <div class="form-div">
-            <label for="desc-proy-id">Agregue una pequeña descripcion del proyecto : </label>
-            <textarea name="desc-proy-id" id="desc-proy-id" cols="30" rows="2"
-                placeholder="¿De que se trata tu proyecto?"></textarea>
-        </div>
-        <div class="button-aceptar text-center">
-            <input type="submit" value="Aceptar">
-        </div>
-    </form>
-    <div class="button-eliminar text-center">
-        <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
-    </div>
-
-    <!-- <div class="container">
-        <div class="card"> -->
-    <!-- tacho -->
-
+    --> <!-- Formulario -->
+    <!--  -->
+    
     <div class="container row">
-        <div *ngFor="let proyectos of proyectosLista" class="card col-12 col-md-6 col-lg-4">
+        
+        <div *ngFor="let proyectos of miPortfolio" class="card col-12 col-md-6 col-lg-4">
+            
+            <div class="cont-top">
+                <a class="edit" title="Eliminar" (click)="onDelete(proyectos.id)">
+                  <i class="fa-regular fa-trash-can"></i>
+                </a>
+                <a class="edit" title="Editar" routerLink="/proyectos/editar/{{proyectos.id}}">
+                  <i class="fa-solid fa-pen"></i>
+                </a>
+             </div> 
+        
+            
+            
             <div class="face face1">
                 <div class="content">
-                    <img
-                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3 *ngIf="miPortfolio">{{proyectos.nombre}}</h3>
+                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                    <h3 *ngIf="miPortfolio">{{proyectos.titulo}}</h3>
                 </div>
             </div>
             <div class="face face2">
                 <div class="content">
-                    <p>Un juego divertido donde el usuario deberá adivinar un color a partir de su código RGB.
-                    </p>
+                    <p *ngIf="miPortfolio">{{proyectos.descripcion}}</p>
                     <a href="https://graceful-malasada-201f0b.netlify.app/" target="_blank">Juegar</a>
                 </div>
             </div>
@@ -78,103 +44,5 @@
     <!-- </div>
     </div> -->
 </section>
-<!-- <div class="card"> -->
-<!-- tacho -->
-<!-- <div class="cont-top">
-                <a class="btn-elim" title="Eliminar">
-                    <i class="fa-regular fa-trash-can"></i>
-                </a>
-            </div>
-
-            <div class="face face1">
-                <div class="content">
-                    <img
-                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>To do list</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Una lista ordenada de tareas para realizar,utilizando la manipulación del DOM</p>
-                    <a href="https://silly-gecko-9fd65b.netlify.app/" target="_blank">Ver lista</a>
-                </div>
-            </div>
-        </div>
-        <div class="card"> -->
-<!-- tacho -->
-<!-- <div class="cont-top">
-                <a class="btn-elim" title="Eliminar">
-                    <i class="fa-regular fa-trash-can"></i>
-                </a>
-            </div>
-
-            <div class="face face1">
-                <div class="content">
-                    <img
-                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>Weather<br> Channel</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Sitio para mostrar las condiciones climaticas de cada ciudad,utilizando API,jQuery,AJAX y JSON
-                    </p>
-                    <a href="https://superlative-queijadas-b0b14b.netlify.app/" target="_blank">Consultar pronostico</a>
-                </div>
-            </div>
-        </div>
-    </div><br>
-
-    <div class="container">
-        <div class="card"> -->
-<!-- tacho -->
-<!-- <div class="cont-top">
-                <a class="btn-elim" title="Eliminar">
-                    <i class="fa-regular fa-trash-can"></i>
-                </a>
-            </div>
-
-            <div class="face face1">
-                <div class="content">
-                    <img
-                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
-                    <h3>Plataforma5</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Implementando los conocimientos en html,css,bootstrap y javascript.</p>
-                    <a href="https://gorgeous-seahorse-4ac653.netlify.app/#porfolio" target="_blank">Ver portfolio</a>
-                </div>
-            </div>
-        </div>
-        <div class="card"> -->
-<!-- tacho -->
-<!-- <div class="cont-top">
-                <a class="btn-elim" title="Eliminar">
-                    <i class="fa-regular fa-trash-can"></i>
-                </a>
-            </div>
-
-            <div class="face face1">
-                <div class="content">
-                    <img
-                        src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true">
-                    <h3>YoProgramo</h3>
-                </div>
-            </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Implementando los conocimientos en html,css,bootstrap y javascript .</p>
-                    <a href="#" target="_blank">Ver portfolio</a>
-                </div>
-            </div>
-        </div> -->
-
-
-
-
-
-
 
 <br><br>
