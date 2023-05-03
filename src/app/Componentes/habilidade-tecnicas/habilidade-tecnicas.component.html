@@ -9,12 +9,30 @@
       <h4 >{{habilidadesTecnicas.porcentaje}}</h4>
 
       <div class="progress">
-        <div class="progress-bar" role="progressbar" aria-label=habilidadesTecnicas.nombre [style.width]= habilidadesTecnicas.porcentaje aria-valuenow=habilidadesTecnicas.porcentaje aria-valuemin="0" aria-valuemax="100"></div>
-      </div>
+        <div class="progress-bar" role="progressbar" style="width: {{habilidadesTecnicas.porcentaje}}%;" aria-valuenow="habilidadesTecnicas" aria-valuemin="0" aria-valuemax="100">{{habilidadesTecnicas.porcentaje}}</div>
+    </div>
+
+    
+      <!-- <div class="progress">
+        <div class="progress-bar" role="progressbar"  style="width: {{habilidadesTecnicas.porcentaje}}%",  aria-valuenow="habilidadesTecnicas" aria-valuemin="0" aria-valuemax="100">{{habilidadesTecnicas.porcentaje}}</div>
+      </div> -->
     </div>
   </div>
-</section> 
+</section>
 
+               
+<!-- <div class="progreso">
+  <li *ngFor="let aptitud of miPorfolio">
+  <div class="caja">
+                  <h2>{{aptitud.descripcion}}</h2>
+                  
+                  <div class="btn-edit">
+                  <a href="#" class="btn-right"> <i class="bi bi-pencil-square" ></i></a>
+                  </div>
+  </div>
+  </li>
+</div>
+ -->
    <!-- <section class="habilidades">
       <h1 class="ski-title text-center" id="habilidadestecnicas">Habilidades Técnicas</h1>
       <div class="container fondo-ski">

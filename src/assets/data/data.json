@@ -153,10 +153,9 @@
         ]
     },
     "footer": {
-        "frase": "¡Para contactarte conmigo podes seguirme en las redes!",
-        "githubURL": "https://github.com/FlorFuentes",
+        "link": "https://github.com/FlorFuentes",
         "telegramURL": "https://t.me/Flor_Fuentes_12",
         "linkedinURL": "https://www.linkedin.com/in/florencia-fuentes-52b841263/",
-        "txtCopyright": "Copyright © Creada por Florencia Fuentes 05/2023"
+        "nombre": "Copyright © Creada por Florencia Fuentes 05/2023"
     }
 }

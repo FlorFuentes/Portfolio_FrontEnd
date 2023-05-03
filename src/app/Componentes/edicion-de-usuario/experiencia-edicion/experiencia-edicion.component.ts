@@ -35,7 +35,7 @@ export class ExperienciaEdicionComponent {
 //Boton aceptar
  
   /* 
-  onSubmitBanner() {
+  onSubmitExperiencia() {
     
     const exp: Experiencia = {
       id: this.formExperiencia.value.id,

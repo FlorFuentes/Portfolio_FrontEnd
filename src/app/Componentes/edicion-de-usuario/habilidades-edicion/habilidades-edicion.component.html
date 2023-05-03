@@ -4,134 +4,30 @@
     <h1 class="ski-title text-center" >Habilidades Técnicas</h1>
     <div class="d-flex flex-column justify-content-center align-items-center">
       <!-- boton para editar-->
-      <label class="habiTecnicas" for="efhabilidades" >Editar <i class="fa-solid fa-pen"></i></label>
-      <input name="efhabilidades" id="efhabilidades" class="form-habilidades" type="checkbox" checked>
-    
-      <form class="form-edicion text-center" id="habilidades">
+      <label class="habiTecnicas" for="efhabilidades" routerLink="/habilidades/new">Nueva Habilidad <i class="fa-solid fa-pen"></i></label>      </div>
+      
         
-        <div class="form-div">
-          <label for="html">Html</label>
-          <input type="text" id="html" name="html"placeholder="Habilidad">
+        
+      <div *ngFor="let Habilidades of miPortfolio" class="container fondo-ski">
+        <div  class="cont-top">
+          <a class="edit" title="Eliminar" (click)="onDelete(Habilidades.id)">
+            <i class="fa-regular fa-trash-can"></i>
+          </a>
+          <a class="edit" title="Editar" routerLink="/habilidades/editar/{{Habilidades.id}}">
+            <i class="fa-solid fa-pen"></i>
+          </a>
         </div>
-        <div class="form-div">
-          <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="85%">
-        </div>
-        <div class="form-div">
-          <label for="css">Css</label>
-          <input type="text" id="css" name="css"placeholder="Habilidad">
-        </div>
-        <div class="form-div">
-          <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="85%">
-        </div>
-        <div class="form-div">
-          <label for="Boots">Bootstrap 5</label>
-          <input type="text" id="Boots" name="Boots"placeholder="Habilidad">
-        </div>
-        <div class="form-div">
-          <label for="porc">%</label>
-          <input type="number" id="porc" name="porc"placeholder="80%">
-        </div>
-        <div class="button-aceptar text-center">
-          <input type="submit" value="Aceptar">
-        </div>
-      </form>
 
-      <!-- Otro formulario-->
-      <label class="habiTecnicas" for="habi-agregar" >Agregar<i class="fa-solid fa-plus"></i></label>
-      <input name="habi-agregar" id="habi-agregar" class="form-habi-agre" type="checkbox" checked>
-    
-      <form class="form-habi-agregar text-center" id="habilidades">
-        
-        <div class="form-div">
-          <label for="html">Habilidad</label>
-          <input type="text" id="html" name="html"placeholder="Html">
-        </div>
-        <div class="form-div">
-          <label for="porc">Porcentaje estimado</label>
-          <input type="number" id="porc" name="porc"placeholder="%">
-        </div>
-        <div class="form-div">
-          <label for="css">Habilidad</label>
-          <input type="text" id="css" name="css"placeholder="Css">
-        </div>
-        <div class="form-div">
-          <label for="porc">Porcentaje estimado</label>
-          <input type="number" id="porc" name="porc"placeholder="%">
-        </div>
-        <div class="form-div">
-          <label for="Boots">Habilidad</label>
-          <input type="text" id="Boots" name="Boots"placeholder="Bootstrap 5">
-        </div>
-        <div class="form-div">
-          <label for="porc">Porcentaje estimado</label>
-          <input type="number" id="porc" name="porc"placeholder="%">
-        </div>
-        <div class="button-aceptar text-center">
-          <input type="submit" value="Aceptar">
-        </div>
-      </form>
-      <div class="button-eliminar text-center"> 
-        <input type="submit" value="Eliminar"><!-- <i class="fa-solid fa-trash-can"></i> -->
-      </div>
-      </div>
-    <div class="container fondo-ski">
-          <div *ngFor="let habilidadesTecnicas of habilidadLista" class="skill">
+          <div *ngFor="let habilidadesTecnicas of miPortfolio" class="skill">
+            
+
             <h3>{{habilidadesTecnicas.nombre}}</h3>
             <h4>{{habilidadesTecnicas.porcentaje}}</h4>
             <div class="progress">
-              <div class="progress-bar" role="progressbar" aria-label=habilidadesTecnicas.nombre [style.width]= habilidadesTecnicas.porcentaje aria-valuenow=habilidadesTecnicas.porcentaje aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar" role="progressbar" style="width: {{habilidadesTecnicas.porcentaje}}%;" aria-valuenow="habilidadesTecnicas" aria-valuemin="0" aria-valuemax="100">{{habilidadesTecnicas.porcentaje}}</div>
             </div>
           </div>
-          <!-- <div class="skill">
-              <h3>Html</h3>
-              <h4>85%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar html"></span>
-          </div>
-          <div class="skill">
-              <h3>Css</h3>
-              <h4>85%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar css"></span>
-          </div>
-          <div class="skill">
-            <h3>Bootstrap 5</h3>
-            <h4>80%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar bootstrap"></span>
-          </div>
-          <div class="skill">
-              <h3>JavaScript</h3>
-              <h4>30%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar javascript"></span>
-          </div>
-          <div class="skill">
-              <h3>TypeScript</h3>
-              <h4>10%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar typescript"></span>
-          </div>
-          <div class="skill">
-            <h3>Python</h3>
-            <h4>30%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar python"></span>
-          </div>
-          <div class="skill">
-              <h3>Git</h3>
-              <h4>10%</h4>
-              <span class="skill-bar"></span>
-              <span class="fill-bar git"></span>
-          </div>
-          <div class="skill">
-            <h3>GitHub</h3>
-            <h4>10%</h4>
-            <span class="skill-bar"></span>
-            <span class="fill-bar github"></span>
-        </div> -->
+          
       </div>
 
 </section>

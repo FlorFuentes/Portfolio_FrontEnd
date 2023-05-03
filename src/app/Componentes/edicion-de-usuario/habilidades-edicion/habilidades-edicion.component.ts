@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { Habilidades } from 'src/app/Model/habilidades';
+import { HabilidadesService } from 'src/app/servicios/habilidades.service';
 
 @Component({
   selector: 'app-habilidades-edicion',
@@ -7,16 +8,27 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
   styleUrls: ['./habilidades-edicion.component.css']
 })
 export class HabilidadesEdicionComponent {
-  miPortfolio: any;
+  miPortfolio: Habilidades[]=[];
   //Defino variable para recorrer el array de Habilidades
-  habilidadLista: any;
-  constructor(private datosPortfolio: MiServicioService) { }
+  //habilidadLista: any;
+  constructor(private datosPortfolio: HabilidadesService) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.obtenerDatos().subscribe(data => {
+    this.datosPortfolio.obtenerDatosHabilidades().subscribe(data => {
       console.log(data);
       this.miPortfolio = data;
-      this.habilidadLista= data.habilidadesTecnicas;
+      //this.habilidadLista= data.habilidadesTecnicas;
     });
   }
+
+  onDelete(id: any) {
+    let elim = confirm("Desea eliminar este elemento?");
+   if (elim == true) {
+     this.datosPortfolio.borrarHabilidades(id).subscribe(() => {
+       alert("Elemento eliminado correctamente!");
+       location.reload();
+     })
+   }
+ } 
+ 
 }

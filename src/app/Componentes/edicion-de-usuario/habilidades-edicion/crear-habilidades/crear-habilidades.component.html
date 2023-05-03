@@ -1,1 +1,31 @@
-<p>crear-habilidades works!</p>
+<form [formGroup]="formHabiAgregar" (ngSubmit)="onSubmitHabilidades()" class="form-habi-agregar text-center" id="habilidades">
+        
+    <div class="form-div">
+      <label for="html">Habilidad</label>
+      <input type="text" id="html" formControlName="nombre"placeholder="Html">
+    </div>
+    <div class="form-div">
+      <label for="porc">Porcentaje estimado</label>
+      <input type="number" id="porc" formControlName="porcentaje"placeholder="%">
+    </div>
+    <!-- 
+    <div class="form-div">
+      <label for="nombre">Habilidad</label>
+      <input type="text" id="css" formControlName="nombre"placeholder="Css">
+    </div>
+    <div class="form-div">
+      <label for="porcentaje">Porcentaje estimado</label>
+      <input type="number" id="porc" formControlName="porcentaje"placeholder="%">
+    </div>
+    <div class="form-div">
+      <label for="nombre">Habilidad</label>
+      <input type="text" id="Boots" formControlName="nombre"placeholder="Bootstrap 5">
+    </div>
+    <div class="form-div">
+      <label for="porc">Porcentaje estimado</label>
+      <input type="number" id="porc" formControlName="porcentaje"placeholder="%">
+    </div> -->
+    <div class="button-aceptar text-center">
+      <input type="submit" value="Aceptar">
+    </div>
+  </form>

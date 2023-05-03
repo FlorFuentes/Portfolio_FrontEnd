@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
+import { Footer } from 'src/app/Model/footer';
+import { FooterService } from 'src/app/servicios/footer.service';
 
 @Component({
   selector: 'app-footer-edicion',
@@ -8,12 +9,12 @@ import { MiServicioService } from 'src/app/servicios/mi-servicio.service';
 })
 export class FooterEdicionComponent {
   //Data Binding
-  miPortfolio: any;
+  miPortfolio: Footer[]=[];
 
-  constructor(private datosPortfolio: MiServicioService) { }
+  constructor(private datosPortfolio: FooterService) { }
 
  ngOnInit(): void {
-   this.datosPortfolio.obtenerDatos().subscribe(data => {
+   this.datosPortfolio.obtenerDatosFooter().subscribe(data => {
      this.miPortfolio = data;
    });
  }
@@ -22,4 +23,6 @@ export class FooterEdicionComponent {
 toInicio(){
   document.getElementById("inicio")?.scrollIntoView({behavior:"smooth"});
  }
+
+ 
 }

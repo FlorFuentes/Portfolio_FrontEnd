@@ -1,1 +1,30 @@
-<p>editar-habilidades works!</p>
+<form [formGroup]="formHabi" (ngSubmit)="onSubmitHabilidades()" class="form-edicion text-center" id="habilidades">
+        
+    <div class="form-div">
+      <label for="html">Html</label>
+      <input type="text" id="html" formControlName="nombre"placeholder="Habilidad">
+    </div>
+    <div class="form-div">
+      <label for="porcentaje">%</label>
+      <input type="number" id="porc" formControlName="porcentaje"placeholder="85%">
+    </div>
+    <div class="form-div">
+      <label for="css">Css</label>
+      <input type="text" id="css" formControlName="nombre"placeholder="Habilidad">
+    </div>
+    <div class="form-div">
+      <label for="porcentaje">%</label>
+      <input type="number" id="porc" formControlName="porcentaje"placeholder="85%">
+    </div>
+    <div class="form-div">
+      <label for="Boots">Bootstrap 5</label>
+      <input type="text" id="Boots" formControlName="nombre"placeholder="Habilidad">
+    </div>
+    <div class="form-div">
+      <label for="porcentaje">%</label>
+      <input type="number" id="porc" formControlName="porcentaje"placeholder="80%">
+    </div>
+    <div class="button-aceptar text-center">
+      <input type="submit" value="Aceptar">
+    </div>
+  </form>

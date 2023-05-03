@@ -1,0 +1,24 @@
+<form [formGroup]="formFoo" (ngSubmit)="onSubmitFooter()"  class="form-edicion" id="footer">
+    <div class="form-div">
+        <label for="nombre">Podes contactarte conmigo a :</label>
+        <input type="text" id="Nombre" formControlName="nombre" placeholder="WhatsApp/Facebook/LinKedin/Instagram">
+    </div>
+    <div class="form-div">
+        <label for="link">gitHub (URL)</label>
+        <input type="url" id="Redes" formControlName="link" placeholder="https://www.github/perfil">
+    </div>
+
+    <div class="form-div">
+        <label for="link">Telegram (URL)</label>
+        <input type="url" id="Redes" formControlNamee="link" placeholder="https://t.me/perfil">
+    </div>
+
+    <div class="form-div">
+        <label for="link">Linkedin (URL)</label>
+        <input type="url" id="Redes" formControlName="link" placeholder="https://www.linkedin.com/perfil">
+    </div>
+
+    <div class="button-aceptar text-center">
+        <input type="submit" value="Aceptar">
+    </div>
+</form>

@@ -50,6 +50,7 @@ import { EditarHabilidadesComponent } from './Componentes/edicion-de-usuario/hab
 import { CrearHabilidadesComponent } from './Componentes/edicion-de-usuario/habilidades-edicion/crear-habilidades/crear-habilidades.component';
 import { EditarProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/editar-proyectos/editar-proyectos.component';
 import { CrearProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/crear-proyectos/crear-proyectos.component';
+import { EditarFooterComponent } from './Componentes/edicion-de-usuario/footer-edicion/editar-footer/editar-footer.component';
 
 
 @NgModule({
@@ -88,6 +89,7 @@ import { CrearProyectosComponent } from './Componentes/edicion-de-usuario/proyec
     CrearHabilidadesComponent,
     EditarProyectosComponent,
     CrearProyectosComponent,
+    EditarFooterComponent,
   ],
   imports: [
     BrowserModule,
