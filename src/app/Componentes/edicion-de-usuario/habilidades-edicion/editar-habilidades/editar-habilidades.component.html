@@ -1,14 +1,14 @@
 <form [formGroup]="formHabi" (ngSubmit)="onSubmitHabilidades()" class="form-edicion text-center" id="habilidades">
         
     <div class="form-div">
-      <label for="html">Html</label>
+      <label for="html">Habilidad</label>
       <input type="text" id="html" formControlName="nombre"placeholder="Habilidad">
     </div>
     <div class="form-div">
-      <label for="porcentaje">%</label>
+      <label for="porcentaje">Porcentaje</label>
       <input type="number" id="porc" formControlName="porcentaje"placeholder="85%">
     </div>
-    <div class="form-div">
+    <!-- <div class="form-div">
       <label for="css">Css</label>
       <input type="text" id="css" formControlName="nombre"placeholder="Habilidad">
     </div>
@@ -23,7 +23,7 @@
     <div class="form-div">
       <label for="porcentaje">%</label>
       <input type="number" id="porc" formControlName="porcentaje"placeholder="80%">
-    </div>
+    </div> -->
     <div class="button-aceptar text-center">
       <input type="submit" value="Aceptar">
     </div>

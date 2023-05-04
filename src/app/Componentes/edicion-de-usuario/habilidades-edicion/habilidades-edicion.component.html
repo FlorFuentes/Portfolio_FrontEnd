@@ -1,33 +1,33 @@
 <div id="habilidadestecnicas"></div>
 
 <section class="habilidades">
-    <h1 class="ski-title text-center" >Habilidades Técnicas</h1>
-    <div class="d-flex flex-column justify-content-center align-items-center">
-      <!-- boton para editar-->
-      <label class="habiTecnicas" for="efhabilidades" routerLink="/habilidades/new">Nueva Habilidad <i class="fa-solid fa-pen"></i></label>      </div>
-      
-        
-        
-      <div *ngFor="let Habilidades of miPortfolio" class="container fondo-ski">
-        <div  class="cont-top">
-          <a class="edit" title="Eliminar" (click)="onDelete(Habilidades.id)">
-            <i class="fa-regular fa-trash-can"></i>
-          </a>
-          <a class="edit" title="Editar" routerLink="/habilidades/editar/{{Habilidades.id}}">
-            <i class="fa-solid fa-pen"></i>
-          </a>
+  <h1 class="ski-title text-center">Habilidades Técnicas</h1>
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <!-- boton para editar-->
+    <label class="habiTecnicas" for="efhabilidades" routerLink="/habilidades/new">Nueva Habilidad <i
+        class="fa-solid fa-pen"></i></label>
+  </div>
+
+
+
+  <div class="container fondo-ski ">
+    <div *ngFor="let habilidadesTecnicas of miPortfolio" class="skill">
+      <div class="cont-top">
+        <a class="edit" title="Eliminar" (click)="onDelete(habilidadesTecnicas.id)">
+          <i class="fa-regular fa-trash-can"></i>
+        </a>
+        <a class="edit" title="Editar" routerLink="/habilidades/editar/{{habilidadesTecnicas.id}}">
+          <i class="fa-solid fa-pen"></i>
+        </a>
+      </div>
+      <h3>{{habilidadesTecnicas.nombre}}</h3>
+      <h4>{{habilidadesTecnicas.porcentaje}}</h4>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: {{habilidadesTecnicas.porcentaje}}%;"
+          aria-valuenow="habilidadesTecnicas" aria-valuemin="0" aria-valuemax="100">{{habilidadesTecnicas.porcentaje}}
         </div>
-
-          <div *ngFor="let habilidadesTecnicas of miPortfolio" class="skill">
-            
-
-            <h3>{{habilidadesTecnicas.nombre}}</h3>
-            <h4>{{habilidadesTecnicas.porcentaje}}</h4>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: {{habilidadesTecnicas.porcentaje}}%;" aria-valuenow="habilidadesTecnicas" aria-valuemin="0" aria-valuemax="100">{{habilidadesTecnicas.porcentaje}}</div>
-            </div>
-          </div>
-          
       </div>
 
+    </div>
+  </div>
 </section>

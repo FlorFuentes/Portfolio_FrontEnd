@@ -1,5 +1,6 @@
 export class Footer {
     public id?:number;
-    public link!:String;
-    public nombre!: String
+    public github!:String;
+    public telegrema!: String;
+    public linkedin!:String
 }

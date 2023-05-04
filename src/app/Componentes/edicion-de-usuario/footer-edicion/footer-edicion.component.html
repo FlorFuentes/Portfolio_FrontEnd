@@ -1,24 +1,24 @@
 <div id="redes"></div>
 <footer class="footer">
+    <p class="texto">¡Para contactarte conmigo podes seguirme en las redes!</p>
+
     <!-- boton para editar footer -->
     <div *ngFor="let red of miPortfolio" class="form-div-cont container d-flex flex-column justify-content-center">
         <label class="edicion-footer" for="effooter"  routerLink="/redes/editar/{{red.id}}">Editar<i class="fa-solid fa-pen"></i></label>
     </div>
-    <div *ngFor="let red of miPortfolio">
-        <p *ngIf="miPortfolio">{{red.nombre}}</p>
-    </div>
+    
     <div *ngFor="let red of miPortfolio" class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
-        <a *ngIf="miPortfolio" class="nav-link" title="GitHub" [href]="red.link" target="_blank">
+        <a *ngIf="miPortfolio" class="nav-link" title="GitHub" [href]="red.github" target="_blank">
             <i class="fa-brands fa-github text-white"></i></a>
 
-        <a *ngIf="miPortfolio" class="nav-link" title="Telegram" [href]="red.link" target="_blank"><i
+        <a *ngIf="miPortfolio" class="nav-link" title="Telegram" [href]="red.telegrema" target="_blank"><i
                 class="fa-brands fa-telegram text-white"></i></a>
 
-        <a *ngIf="miPortfolio" class="nav-link" title="Linkedin" [href]="red.link" target="_blank"><i
+        <a *ngIf="miPortfolio" class="nav-link" title="Linkedin" [href]="red.linkedin" target="_blank"><i
                 class="fa-brands fa-linkedin text-white"></i></a>
     </div>
     <div class="boton-up">
         <a title="Volver al inicio" (click)="toInicio()"> <i class="fa-regular fa-circle-up text-white fa-2x"></i></a>
     </div>
-    <p class="disclaimer">¡Para contctarte conmigo podes seguirme en las redes!</p>
+    <p class="disclaimer">Copyright © Creada por Florencia Fuentes 05/2023</p>
 </footer>

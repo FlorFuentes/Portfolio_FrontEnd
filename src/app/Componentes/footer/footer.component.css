@@ -64,7 +64,7 @@ footer {
     text-decoration: none;
   }
   /* texto */
-  footer div p {
+  .texto {
     font-family: "Caramel", cursive;
     padding: 20px;
     font-size: 2rem;

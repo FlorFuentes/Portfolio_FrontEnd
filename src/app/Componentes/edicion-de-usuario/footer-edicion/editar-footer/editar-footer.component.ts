@@ -20,8 +20,9 @@ export class EditarFooterComponent {
     private router: Router) {
     this.formFoo = this.fb.group({
       id: [''],
-      link: [''],
-      nombre: [''],
+      github: [''],
+      telegrema: [''],
+      linkedin: [''],
     })
   }
 
@@ -35,8 +36,9 @@ export class EditarFooterComponent {
       const element = this.miPortfolio.find(item => item.id === parseInt(fooId));
       this.formFoo.patchValue({
         id: element?.id,
-        link: element?.link,
-        nombre: element?.nombre,
+        github: element?.github,
+        telegrema: element?.telegrema,
+        linkedin: element?.linkedin
 
       })
     })
@@ -48,8 +50,9 @@ export class EditarFooterComponent {
 
     const foo: Footer = {
       id: parseInt(this.activatedRoute.snapshot.params['id']),
-      link: this.formFoo.value.link,
-      nombre: this.formFoo.value.nombre,
+      github: this.formFoo.value.github,
+      telegrema: this.formFoo.value.telegrema,
+      linkedin: this.formFoo.value.linkedin
 
     };
     console.log(foo);
