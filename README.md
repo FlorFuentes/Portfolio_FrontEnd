@@ -1,27 +1,16 @@
-# PortfolioApp
+Repositorio para el Front End dinamico, utilizando angular en mi Portfolio.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
+Esta web tiene una pagina principal donde podras ver un poquito de mi. Cuenta con varias seccion,una de ellas es acerca de mi, donde en unas pocas lineas te cuento mis pasiones. Las otras secciones son: Experiencia laboral,Educacion que contiene cards,Habilidades tecnicas,proyecto que hice al dia de la fecha,organizado en cards y una ultima seccion de footer donde ahi podras encontrar mi redes sociales para comunicarte conmigo.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La segunda pagina de mi portfolio es el login,que se encuenta en la navbar a la derecha,ahi hay un icono donde podras iniciar sesion.Si no tenes cuenta,podras crearte una. Esa parte lleva al 3er Index.html que es el de registro,donde podras crearte una cuenta. Una vez iniciada la sesion, el usuario podra navegar en la web haciendo modificaciones,editar y eliminar parte de ella.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Hay un componente llamado "edicion-de-usuario",alli encontraras cada parte de la pagina por separado como en el inicio,por componentes,donde el usuario que ingresa va a poder ver,editar,agregar y eliminar algunas partes del portfolio. 
 
-## Build
+Las secciones que se editan son: TODAS.
+Las secciones que se agregar son: Experiencia,Educacion,Habilidades Tecnicas y Proyectos.
+Las secciones que se eliminan son: Experiencia,Educacion,Habilidades Tecnicas y Proyectos.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Muchas gracias por visitar mi repositorio y navegar en mi web!

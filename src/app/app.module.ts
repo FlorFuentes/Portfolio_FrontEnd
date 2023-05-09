@@ -51,6 +51,9 @@ import { CrearHabilidadesComponent } from './Componentes/edicion-de-usuario/habi
 import { EditarProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/editar-proyectos/editar-proyectos.component';
 import { CrearProyectosComponent } from './Componentes/edicion-de-usuario/proyectos-edicion/crear-proyectos/crear-proyectos.component';
 import { EditarFooterComponent } from './Componentes/edicion-de-usuario/footer-edicion/editar-footer/editar-footer.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
 
 
 @NgModule({
@@ -96,7 +99,9 @@ import { EditarFooterComponent } from './Componentes/edicion-de-usuario/footer-e
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule   
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())   
   ],
   //Si lo creo de forma manual, no con  –module=app al crear el servicio,lo tengo que importar en el app.module.ts. providers. esta bien asi?
   providers: [], //MiServicioService estaba adentro de los corchetes de providers 

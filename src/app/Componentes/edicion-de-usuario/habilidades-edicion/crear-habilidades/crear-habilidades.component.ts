@@ -33,7 +33,7 @@ export class CrearHabilidadesComponent {
     onSubmitHabilidades() {
   
       const habi: Habilidades = {
-        id: parseInt(this.activatedRoute.snapshot.params['id']),
+        //id: parseInt(this.activatedRoute.snapshot.params['id']),
         nombre: this.formHabiAgregar.value.nombre,
         porcentaje: this.formHabiAgregar.value.porcentaje,
       };
