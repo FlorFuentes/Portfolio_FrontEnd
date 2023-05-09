@@ -43,7 +43,7 @@ export class NavEdicionComponent {
     this.loginService.logout()
       .then(() => {
         alert("Sesion cerrada correctamente!")
-        this.router.navigate(['banner'])
+        this.router.navigate(['login'])
       })
       .catch(error => console.log(error))
   }

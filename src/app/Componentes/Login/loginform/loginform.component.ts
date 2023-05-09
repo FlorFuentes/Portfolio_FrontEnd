@@ -25,8 +25,8 @@ export class LoginformComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
-   }
+
+  }
 
 
   //Obtenemos los datos
@@ -53,7 +53,8 @@ export class LoginformComponent implements OnInit {
         console.log(response)
         this.router.navigate(['edicion-de-usuario']);
       })
-      .catch(error => console.log(error));
+      .catch(error => console.log(error))
+
   }
 
 

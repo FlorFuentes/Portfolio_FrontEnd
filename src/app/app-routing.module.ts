@@ -21,28 +21,27 @@ import { EditarFooterComponent } from './Componentes/edicion-de-usuario/footer-e
 import { CrearHabilidadesComponent } from './Componentes/edicion-de-usuario/habilidades-edicion/crear-habilidades/crear-habilidades.component';
 import { EditarHabilidadesComponent } from './Componentes/edicion-de-usuario/habilidades-edicion/editar-habilidades/editar-habilidades.component';
 
-
+//Para protejer las rutas
+import { canActivate, redirectUnauthorizedTo } from '@angular/fire/auth-guard';
 const routes: Routes = [
-  { path: "",redirectTo:'/inicio', pathMatch: 'full'},
-  { path:'inicio',component:NavbarComponent},
-  { path: 'login', component:LoginfondoComponent}, 
-  { path: 'registro', component:RegistroFondoComponent},
-  { path: 'edicion-de-usuario',component:EdicionDeUsuarioComponent},
+  { path: "", redirectTo: '/inicio', pathMatch: 'full' },
+  { path: 'inicio', component: NavbarComponent },
+  { path: 'login', component: LoginfondoComponent },
+  { path: 'registro', component: RegistroFondoComponent },
+  { path: 'edicion-de-usuario', component: EdicionDeUsuarioComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
 
   //Chequear si acepta la ruta
-  {path: 'banner/editar/:id', component:EditarbannerComponent},
-  {path:'acercaDeMi/editar/:id',component:EditarAcercaDeMiComponent},
-  {path: 'experiencia/new',component:CrearExperienciaComponent},
-  {path: 'experiencia/editar/:id', component:EditarExperienciaComponent},
-  {path: 'educacion/new',component:CrearEducacionComponent},
-  {path: 'educacion/editar/:id',component: EditarEducacionComponent},
-  {path:'habilidades/new',component: CrearHabilidadesComponent},
-  {path: 'habilidades/editar/:id',component: EditarHabilidadesComponent},
-  //aca la ruta de habilidades
-
-  {path: 'proyectos/new',component:CrearProyectosComponent},
-  {path: 'proyectos/editar/:id',component:EditarProyectosComponent},
-  {path: 'redes/editar/:id',component:EditarFooterComponent }
+  { path: 'banner/editar/:id', component: EditarbannerComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'acercaDeMi/editar/:id', component: EditarAcercaDeMiComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'experiencia/new', component: CrearExperienciaComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'experiencia/editar/:id', component: EditarExperienciaComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'educacion/new', component: CrearEducacionComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'educacion/editar/:id', component: EditarEducacionComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'habilidades/new', component: CrearHabilidadesComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'habilidades/editar/:id', component: EditarHabilidadesComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'proyectos/new', component: CrearProyectosComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'proyectos/editar/:id', component: EditarProyectosComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) },
+  { path: 'redes/editar/:id', component: EditarFooterComponent, ...canActivate(() => redirectUnauthorizedTo(['login'])) }
 ];
 
 @NgModule({
