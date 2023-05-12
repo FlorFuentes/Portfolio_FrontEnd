@@ -7,9 +7,6 @@
     <label class="habiTecnicas" for="efhabilidades" routerLink="/habilidades/new">Nueva Habilidad <i
         class="fa-solid fa-pen"></i></label>
   </div>
-
-
-
   <div class="container fondo-ski ">
     <div *ngFor="let habilidadesTecnicas of miPortfolio" class="skill">
       <div class="cont-top">
@@ -27,7 +24,6 @@
           aria-valuenow="habilidadesTecnicas" aria-valuemin="0" aria-valuemax="100">{{habilidadesTecnicas.porcentaje}}
         </div>
       </div>
-
     </div>
   </div>
 </section>

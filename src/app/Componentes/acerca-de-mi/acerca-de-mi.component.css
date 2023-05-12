@@ -21,7 +21,6 @@
     height: 200px;
     width: 200px;
     padding: 5px;
-    /* Si quiero el borde en blanco, descomenta el primer background-color y comenta el 2do. */
     background-color: white;
     /* background-color: rgb(14, 13, 13); */
     /* position: absolute;

@@ -1,18 +1,13 @@
 <div id="redes"></div>
 <footer class="footer">
   <p class="texto">¡Para contactarte conmigo podes seguirme en las redes!</p>
-
   <div *ngFor="let red of miPortfolio"
     class="redes d-flex flex-row flex-wrap align-items-center justify-content-center ">
-
-
     <a class="nav-link" [href]="red.github" target="_blank">
       <i class="fa-brands fa-github text-white"></i>
     </a>
-
     <a class="nav-link" title="Telegram" [href]="red.telegrema" target="_blank"><i
       class="fa-brands fa-telegram text-white"></i></a>
-
     <a class="nav-link" title="Linkedin" [href]="red.linkedin" target="_blank"><i
       class="fa-brands fa-linkedin text-white"></i></a>
   </div>
@@ -20,5 +15,4 @@
     <a title="Volver al inicio" (click)="toInicio()"> <i class="fa-regular fa-circle-up text-white fa-2x"></i></a>
   </div>
   <p class="disclaimer">Copyright © Creada por Florencia Fuentes 05/2023</p>
-
 </footer>

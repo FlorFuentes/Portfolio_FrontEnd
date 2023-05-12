@@ -1,84 +1,15 @@
 <!-- efbanner E=edicion F=Formulario -->
-<!-- <i class="fa-solid fa-pen"></i> -->
 <div id="inicio"></div>
 <section class="banner" id="inicio">
-  <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center" *ngFor="let banner of miPortfolio">
-
-    <!-- boton para editar banner -->
-    <label class="ban" for="efbanner" routerLink="/banner/editar/{{banner.id}}" >Editar<i class="fa-solid fa-pen"></i></label>
-<!-- ESTE NO SIRVE <input name="efbanner" id="efbanner" class="form-banner" type="checkbox" checked>
- -->
-    <!-- Formulario edicion -->
-    <!-- <form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="form-edicion" id="banner">
-      <div class="form-div">
-        <label for="nombre">Edite el Nombre y Apellido</label>
-        <input type="text" id="nombre" formControlName="nombre" placeholder="Florencia Fuentes">
-      </div>
-      <div class="form-div">
-        <label for="titulo">Edite el Titulo</label>
-        <input type="text" id="titulo" formControlName="titulo" placeholder="Desarrollador Full Stack Jr.">
-      </div>
-      <div class="form-div">
-
-        <label for="imagen">Edite la imagen para el banner</label>
-        <input type="text" id="imagen" formControlName="imagen" placeholder="../../../../assets/img/FondoBari.jpg">
-      </div>
-      <div class="button-aceptar text-center">
-        <input type="submit" value="Aceptar">
-      </div>
-    </form> -->
-
-
-    <!-- Otro formulario -->
-    <!--         <div class="banner-agregar d-flex flex-column justify-content-center align-items-center">
- -->
-     <!-- <label class="ban-agregar" for="agregar">Agregar<i class="fa-solid fa-plus"></i></label>
-     <input name="agregar" id="agregar" class="form-agregar" type="checkbox" checked>
-
-    <form [formGroup]="formBanner" (ngSubmit)="onSubmitBanner()" class="formulario-agregar">
-      <div class="form-div">
-        <label for="agregar-nom-ape">Agregue Nombre y Apellido</label>
-        <input type="imagen" id="agregar-nom-ape" formControlName="agregar-nom-ape" placeholder="Juan Perez">
-      </div>
-
-      <div class="form-div">
-        <label for="title-agregar">Agregue el Titulo</label>
-        <input type="text" id="title-agregar" formControlName="title-agregar" placeholder="Desarrollador web">
-      </div>
-
-
-      <div class="form-div">
-        <label for="agregar-img-banner">Agregue una imagen para el banner</label>
-        <input type="text" id="agregar-img-banner" formControlName="agregar-img-banner"
-          placeholder="../../../../assets/img/FondoBari.jpg">
-
-      </div>
-
-      <div class="button-aceptar text-center">
-        <input type="submit" value="Aceptar">
-      </div>
-
-
-    </form> -->
-
-    <!-- 
-    <div class="button-eliminar text-center">
-      <a   (click)="onDelete(banner.id)"> Eliminar
-        <i class="fa-solid fa-trash-can"></i>
-      </a>  
-    </div> -->
+  <div class="banner-edicion  d-flex flex-column justify-content-center align-items-center"
+    *ngFor="let banner of miPortfolio">
+    <label class="ban" for="efbanner" routerLink="/banner/editar/{{banner.id}}">Editar<i
+        class="fa-solid fa-pen"></i></label>
   </div>
-
-  <!--   </div> -->
-  <!--  ESTO ESTABA ANTES,OSEA APLIQUE UN NGfOR PARA LA LISTA
-     <h1 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.nombre}}</h1>
-    <br />
-    <h2 *ngIf="miPortfolio" class="text-center intro">{{miPortfolio.banner.descripcion}}</h2> -->
-
   <div *ngFor="let banner of miPortfolio">
-      <img class="banner" *ngIf="miPortfolio" [src]="banner.imagen" alt="">
-      <h1 *ngIf="miPortfolio" class="text-center intro">{{banner.nombre}}</h1>
-      <h2 *ngIf="miPortfolio" class="text-center intro">{{banner.titulo}}</h2>
+    <img class="banner" *ngIf="miPortfolio" [src]="banner.imagen" alt="">
+    <h1 *ngIf="miPortfolio" class="text-center intro">{{banner.nombre}}</h1>
+    <h2 *ngIf="miPortfolio" class="text-center intro">{{banner.titulo}}</h2>
   </div>
 
 </section>

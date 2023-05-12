@@ -2,20 +2,9 @@
 
 <section class="proyecto">
     <h1 class="pro-title text-center">Proyectos</h1>
-    <label class="proyectos text-center" for="efproyectos" routerLink="/proyectos/new">Nuevo Proyecto  <i class="fa-solid fa-pen"></i></label>
-<!--     <input name="efproyectos" id="efproyectos" class="form-proyectos" type="checkbox" checked>
- -->    <!-- Formulario -->
-    <!--  -->
-    <!-- Otro formulario -->
-   <!--  <label class="proyectos text-center" for="proyec-agregar">Agregar <i class="fa-solid fa-pen"></i></label>
-    <input name="proyec-agregar" id="proyec-agregar" class="form-proyectos-agre" type="checkbox" checked>
-    --> <!-- Formulario -->
-    <!--  -->
-    
+    <label class="proyectos text-center" for="efproyectos" routerLink="/proyectos/new">Nuevo Proyecto  <i class="fa-solid fa-pen"></i></label>   
     <div class="container row">
-        
-        <div *ngFor="let proyectos of miPortfolio" class="card col-12 col-md-6 col-lg-4">
-            
+        <div *ngFor="let proyectos of miPortfolio" class="card col-12 col-md-6 col-lg-4">            
             <div class="cont-top">
                 <a class="edit" title="Eliminar" (click)="onDelete(proyectos.id)">
                   <i class="fa-regular fa-trash-can"></i>
@@ -23,10 +12,7 @@
                 <a class="edit" title="Editar" routerLink="/proyectos/editar/{{proyectos.id}}">
                   <i class="fa-solid fa-pen"></i>
                 </a>
-             </div> 
-        
-            
-            
+             </div>      
             <div class="face face1">
                 <div class="content">
                     <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
@@ -41,8 +27,5 @@
             </div>
         </div>
     </div>
-    <!-- </div>
-    </div> -->
 </section>
-
 <br><br>

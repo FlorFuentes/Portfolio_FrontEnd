@@ -8,7 +8,7 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
   styleUrls: ['./educacion-edicion.component.css']
 })
 export class EducacionEdicionComponent {
-  miPortfolio: Educacion[]=[];
+  miPortfolio: Educacion[] = [];
   //Defino variable para recorrer el array de educacion
   //educacionLista: any;
   constructor(private datosPortfolio: EducacionService) { }
@@ -22,15 +22,11 @@ export class EducacionEdicionComponent {
   }
   onDelete(id: any) {
     let elim = confirm("Desea eliminar este elemento?");
-   if (elim == true) {
-     this.datosPortfolio.borrarEducacion(id).subscribe(() => {
-       alert("Elemento eliminado correctamente!");
-       location.reload();
-     })
-   }
- }
-
-
-
-
+    if (elim == true) {
+      this.datosPortfolio.borrarEducacion(id).subscribe(() => {
+        alert("Elemento eliminado correctamente!");
+        location.reload();
+      })
+    }
+  }
 }

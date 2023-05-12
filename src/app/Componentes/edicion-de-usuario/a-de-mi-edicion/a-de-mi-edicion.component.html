@@ -3,70 +3,22 @@
 <section class="presentacion">
   <div class="container-fluid div-profile row d-flex flex-column flex-md-row">
     <div class="div-img-profile col-12 col-md-4 d-flex justify-content-center">
-      <img  [src]="miPortfolio[0].fotoPerfil" alt="fotoPerfil" class="fotoperfil rounded-circle img-fluid perfil" />
+      <img [src]="miPortfolio[0].fotoPerfil" alt="fotoPerfil" class="fotoperfil rounded-circle img-fluid perfil" />
     </div>
     <!-- Acerca de mi -->
     <div class="container text-center row d-flex justify-content-center col-12 col-md-8">
       <div class="col-12 text-center div-p">
         <!-- Formulario edicion -->
-        <div class="acercademi-edicion d-flex flex-column justify-content-center align-items-center" *ngFor="let acercaDeMi of miPortfolio">
-          <label class="acercademi" for="efa-de-mi" routerLink="/acercaDeMi/editar/{{acercaDeMi.id}}" >Editar<i class="fa-solid fa-pen"></i></label>
-<!--           <input name="efa-de-mi" id="efa-de-mi" class="form-a-de-mi" type="checkbox" checked>
- -->          <!-- <form class="form-edicion" id="presentacion">
-            <div class="form-div">
-              <label for="fotoPerfil">Foto de perfil</label>
-              <input type="imagen" id="fotoPerfil" name="fotoPerfil"
-                placeholder="../../../../assets/img/FB_IMG_1428285724958.jpg">
-            </div>
-
-            <div class="form-div">
-              <label for="text-area">Descripcion</label>
-              <textarea name="text-area" id="text-area" cols="30" rows="5"
-                placeholder="Una de mis grandes pasiones es el desarrollo de paginas web.Siempre me gusto este hermoso mundo de la programación..."></textarea>
-            </div>
-
-            <div class="button-aceptar text-center">
-              <input type="submit" value="Aceptar">
-            </div>
-          </form> -->
-
-          <!-- Otro formulario -->
-            <!-- <label class="acercademi" for="efa-de-mi-agregar">Agregar<i class="fa-solid fa-plus"></i></label>
-            <input name="efa-de-mi-agregar" id="efa-de-mi-agregar" class="form-a-de-mi-agregar" type="checkbox" checked>
-
-            <form class="form-agregar">
-              <div class="form-div">
-                <label for="agregar-fotoPerfil">Agregue foto de perfil</label>
-                <input type="imagen" id="agregar-fotoPerfil" name="agregar-fotoPerfil" placeholder="cargar url">
-              </div>
-
-              <div class="form-div">
-                <label for="text-area">Agregue una descripcion</label>
-                <textarea name="text-area" id="text-area" cols="30" rows="5"
-                  placeholder="Contanos un poco sobre vos"></textarea>
-              </div>
-
-              <div class="button-aceptar text-center">
-                <input type="submit" value="Aceptar">
-              </div>
-            </form>
-            -->
-            <div class="button-eliminar text-center">
-              <a (click)="onDelete(acercaDeMi.id)"> Eliminar <i class="fa-solid fa-trash-can"></i> </a>  
-            </div>
-          
-
-
-
-
-
+        <div class="acercademi-edicion d-flex flex-column justify-content-center align-items-center"
+          *ngFor="let acercaDeMi of miPortfolio">
+          <label class="acercademi" for="efa-de-mi" routerLink="/acercaDeMi/editar/{{acercaDeMi.id}}">Editar<i
+              class="fa-solid fa-pen"></i></label>
+          <div class="button-eliminar text-center">
+            <a (click)="onDelete(acercaDeMi.id)"> Eliminar <i class="fa-solid fa-trash-can"></i> </a>
+          </div>
         </div>
-        
-        <p >{{miPortfolio[0].sobreMi}}</p>
-         
+        <p>{{miPortfolio[0].sobreMi}}</p>
       </div>
-
-
     </div>
   </div>
 </section>
