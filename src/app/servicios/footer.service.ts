@@ -10,6 +10,8 @@ export class FooterService {
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -21,7 +23,7 @@ export class FooterService {
   /*------------------------------- Ver Redes -------------------------------*/
 
   public obtenerDatosFooter(): Observable<Footer[]>{
-    return this.http.get<Footer[]>(this.ProyectoArgPrograma + "/redes/ver");
+    return this.http.get<Footer[]>(this.RenderBackend + "/redes/ver");
   }
 
   /* -------------------------------Editar Redes------------------------------- */
@@ -29,7 +31,7 @@ export class FooterService {
   public editarFooter(foo: Footer): Observable<Footer>{
     console.log(foo);
 
-    return this.http.put<Footer>(this.ProyectoArgPrograma + "/redes/editar/", foo, this.httpOptions);  
+    return this.http.put<Footer>(this.RenderBackend + "/redes/editar/", foo, this.httpOptions);  
   }
 
   

@@ -9,6 +9,8 @@ import { Observable } from 'rxjs';
 export class UsuarioService {
 
   private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -19,7 +21,7 @@ export class UsuarioService {
   /*------------------------------- Ver Usuario -------------------------------*/
 
   public obtenerDatosUsuario(): Observable<Usuario[]>{
-    return this.http.get<Usuario[]>(this.ProyectoArgPrograma + "/usuarios/ver");
+    return this.http.get<Usuario[]>(this.RenderBackend + "/usuarios/ver");
   }
 
 /* -------------------------------Editar Usuario------------------------------- */
@@ -27,7 +29,7 @@ export class UsuarioService {
 public editarUsuario(usu: Usuario): Observable<Usuario>{
   console.log(usu);
 
-  return this.http.put<Usuario>(this.ProyectoArgPrograma + "/usuario/editar/", usu, this.httpOptions);  
+  return this.http.put<Usuario>(this.RenderBackend + "/usuario/editar/", usu, this.httpOptions);  
 }
 
 }

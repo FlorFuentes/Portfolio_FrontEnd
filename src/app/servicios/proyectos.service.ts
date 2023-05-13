@@ -10,6 +10,8 @@ export class ProyectosService {
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -21,7 +23,7 @@ export class ProyectosService {
   /*------------------------------- Ver Proyectos -------------------------------*/
 
   public obtenerDatosProyectos(): Observable<Proyectos[]>{
-    return this.http.get<Proyectos[]>(this.ProyectoArgPrograma + "/proyectos/ver");
+    return this.http.get<Proyectos[]>(this.RenderBackend + "/proyectos/ver");
   }
 
   /* -------------------------------Editar Proyectos------------------------------- */
@@ -29,18 +31,18 @@ export class ProyectosService {
   public editarProyectos(pro: Proyectos): Observable<Proyectos>{
     console.log(pro);
 
-    return this.http.put<Proyectos>(this.ProyectoArgPrograma + "/proyectos/editar/", pro, this.httpOptions);  
+    return this.http.put<Proyectos>(this.RenderBackend + "/proyectos/editar/", pro, this.httpOptions);  
   }
 
   /*------------------------------- Agregar Proyectos------------------------------- */
 
   public agregarProyectos(pro: Proyectos): Observable<Proyectos> {
-    return this.http.post<Proyectos>(this.ProyectoArgPrograma + `/proyectos/new`, pro, this.httpOptions);
+    return this.http.post<Proyectos>(this.RenderBackend + `/proyectos/new`, pro, this.httpOptions);
   }
 
   /*------------------------------- Eliminar Proyectos------------------------------- */
   public borrarProyectos(id:number): Observable<any>{
-    return this.http.delete<any>(this.ProyectoArgPrograma + "/proyectos/delete/" +id);
+    return this.http.delete<any>(this.RenderBackend + "/proyectos/delete/" +id);
   }
 
 }

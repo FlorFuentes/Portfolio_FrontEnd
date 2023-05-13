@@ -9,7 +9,9 @@ import { Banner } from '../Model/banner';
 export class MiServicioService {
 
   private json = './assets/data/data.json';
-  private ProyectoArgPrograma = 'http://localhost:8080';//Saque el (/banner/) xq tp funciona
+  private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -20,7 +22,7 @@ export class MiServicioService {
   /*------------------------------- Ver Banner -------------------------------*/
   public obtenerDatosBanner(): Observable<Banner[]>{
 
-    return this.http.get<Banner[]>(this.ProyectoArgPrograma + "/banner/ver");
+    return this.http.get<Banner[]>(this.RenderBackend + "/banner/ver");
   }
 
   /* -------------------------------Editar Banner------------------------------- */
@@ -29,16 +31,16 @@ export class MiServicioService {
     console.log(banner);
     
    
-    return this.http.put<Banner>(this.ProyectoArgPrograma + "/banner/editar/", banner, this.httpOptions);  
+    return this.http.put<Banner>(this.RenderBackend + "/banner/editar/", banner, this.httpOptions);  
   }
 //SACAR DESPUES DE QUE CADA UNO TENGA SU SERVICIO
     obtenerDatos(): Observable<any> {
-    return this.http.get(this.ProyectoArgPrograma + "/banner/ver", this.httpOptions);
+    return this.http.get(this.RenderBackend + "/banner/ver", this.httpOptions);
   } 
 
   /*------------------------------- Eliminar Banner------------------------------- */
   /* public borrarBanner(id:number): Observable<any>{
-    return this.http.delete<any>(this.ProyectoArgPrograma + "/banner/delete/" +id);
+    return this.http.delete<any>(this.RenderBackend + "/banner/delete/" +id);
   }
    */
 }

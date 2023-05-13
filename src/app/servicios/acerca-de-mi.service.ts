@@ -10,6 +10,7 @@ export class AcercaDeMiService {
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -24,7 +25,7 @@ export class AcercaDeMiService {
 
   public obtenerDatosAcercaDeMi(): Observable<AcercaDeMi[]>{
 
-    return this.http.get<AcercaDeMi[]>( this.ProyectoArgPrograma + "/acercaDeMi/ver");
+    return this.http.get<AcercaDeMi[]>( this.RenderBackend + "/acercaDeMi/ver");
   }
   /* -------------------------------Editar AcercaDeMi------------------------------- */
 
@@ -33,14 +34,14 @@ export class AcercaDeMiService {
     console.log(acerDeMi);
     
    
-    return this.http.put<AcercaDeMi>(this.ProyectoArgPrograma + "/acercaDeMi/editar/", acerDeMi, this.httpOptions);
+    return this.http.put<AcercaDeMi>(this.RenderBackend + "/acercaDeMi/editar/", acerDeMi, this.httpOptions);
   }
 
   
   
   /*------------------------------- Eliminar AcercaDeMi------------------------------- */
    public borrarAcercaDeMi(id:number): Observable<any>{
-    return this.http.delete<any>(this.ProyectoArgPrograma + "/acercaDeMi/delete/" +id);
+    return this.http.delete<any>(this.RenderBackend + "/acercaDeMi/delete/" +id);
   }
    
 

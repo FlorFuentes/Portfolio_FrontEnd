@@ -12,10 +12,7 @@
         <div class="acercademi-edicion d-flex flex-column justify-content-center align-items-center"
           *ngFor="let acercaDeMi of miPortfolio">
           <label class="acercademi" for="efa-de-mi" routerLink="/acercaDeMi/editar/{{acercaDeMi.id}}">Editar<i
-              class="fa-solid fa-pen"></i></label>
-          <div class="button-eliminar text-center">
-            <a (click)="onDelete(acercaDeMi.id)"> Eliminar <i class="fa-solid fa-trash-can"></i> </a>
-          </div>
+              class="fa-solid fa-pen"></i></label>          
         </div>
         <p>{{miPortfolio[0].sobreMi}}</p>
       </div>

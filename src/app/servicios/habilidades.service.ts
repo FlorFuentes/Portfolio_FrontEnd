@@ -10,6 +10,8 @@ export class HabilidadesService {
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -20,7 +22,7 @@ export class HabilidadesService {
 /*------------------------------- Ver Habilidades -------------------------------*/
 
 public obtenerDatosHabilidades(): Observable<Habilidades[]>{
-  return this.http.get<Habilidades[]>(this.ProyectoArgPrograma + "/habilidades/ver");
+  return this.http.get<Habilidades[]>(this.RenderBackend + "/habilidades/ver");
 }
 
 /* -------------------------------Editar Habilidades------------------------------- */
@@ -28,18 +30,18 @@ public obtenerDatosHabilidades(): Observable<Habilidades[]>{
 public editarHabilidades(hab: Habilidades): Observable<Habilidades>{
   console.log(hab);
 
-  return this.http.put<Habilidades>(this.ProyectoArgPrograma + "/habilidades/editar/", hab, this.httpOptions);  
+  return this.http.put<Habilidades>(this.RenderBackend + "/habilidades/editar/", hab, this.httpOptions);  
 }
 
 /*------------------------------- Agregar Habilidades------------------------------- */
 
 public agregarHabilidades(hab: Habilidades): Observable<Habilidades> {
-  return this.http.post<Habilidades>(this.ProyectoArgPrograma + `/habilidades/new`, hab, this.httpOptions);
+  return this.http.post<Habilidades>(this.RenderBackend + `/habilidades/new`, hab, this.httpOptions);
 }
 
 /*------------------------------- Eliminar Habilidades------------------------------- */
 public borrarHabilidades(id:number): Observable<any>{
-  return this.http.delete<any>(this.ProyectoArgPrograma + "/habilidades/delete/" +id);
+  return this.http.delete<any>(this.RenderBackend + "/habilidades/delete/" +id);
 }
 
 

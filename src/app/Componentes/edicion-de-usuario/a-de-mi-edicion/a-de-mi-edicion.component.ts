@@ -19,15 +19,7 @@ export class ADeMiEdicionComponent {
       this.miPortfolio = data;
     });
   }
-  onDelete(id: any) {
-     let elim = confirm("Desea eliminar este elemento?");
-    if (elim == true) {
-      this.datosPortfolio.borrarAcercaDeMi(id).subscribe(() => {
-        alert("Elemento eliminado correctamente!");
-        location.reload();
-      })
-    }
-  } 
+   
 /*
   */
 

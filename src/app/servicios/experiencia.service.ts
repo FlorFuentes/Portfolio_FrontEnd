@@ -10,6 +10,8 @@ export class ExperienciaService {
 
   private json = './assets/data/data.json';
   private ProyectoArgPrograma = 'http://localhost:8080';
+  private RenderBackend= 'https://portfolio-backend-tmqc.onrender.com';
+
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -20,7 +22,7 @@ export class ExperienciaService {
   /*------------------------------- Ver Experiencia -------------------------------*/
 
   public obtenerDatosExperiencia(): Observable<Experiencia[]>{
-    return this.http.get<Experiencia[]>(this.ProyectoArgPrograma + "/experiencia/ver");
+    return this.http.get<Experiencia[]>(this.RenderBackend + "/experiencia/ver");
   }
 
   /* -------------------------------Editar Experiencia------------------------------- */
@@ -28,18 +30,18 @@ export class ExperienciaService {
   public editarExperiencia(expe: Experiencia): Observable<Experiencia>{
     console.log(expe);
 
-    return this.http.put<Experiencia>(this.ProyectoArgPrograma + "/experiencia/editar/", expe, this.httpOptions);  
+    return this.http.put<Experiencia>(this.RenderBackend + "/experiencia/editar/", expe, this.httpOptions);  
   }
 
   /*------------------------------- Agregar Experiencia------------------------------- */
 
   public agregarExperiencia(expe: Experiencia): Observable<Experiencia> {
-    return this.http.post<Experiencia>(this.ProyectoArgPrograma + `/experiencia/new`, expe, this.httpOptions);
+    return this.http.post<Experiencia>(this.RenderBackend + `/experiencia/new`, expe, this.httpOptions);
   }
 
   /*------------------------------- Eliminar Experiencia------------------------------- */
   public borrarExperiencia(id:number): Observable<any>{
-    return this.http.delete<any>(this.ProyectoArgPrograma + "/experiencia/delete/" +id);
+    return this.http.delete<any>(this.RenderBackend + "/experiencia/delete/" +id);
   }
    
 }
